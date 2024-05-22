@@ -6,9 +6,6 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 function Navbar() {
   return (
     <nav id="navbar-container">
-      <div id="nav-slogan-wrapper">
-        <h1>Heavenly good burgers</h1>
-      </div>
       <div id="nav-logo-wrapper">
         <NavLink to="/">
           <img id="nav-logo-image" src="images\logo black.png" />

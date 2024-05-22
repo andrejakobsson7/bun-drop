@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #dbe4d2;
+  overflow-x: hidden;
 }
 
 /* Navbar */
@@ -14,9 +15,9 @@ body {
   min-height: 10vh;
   height: 10vh;
   display: grid;
-  grid-template-columns: 1fr 0.5fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   font-family: "Poetsen One", Arial, Helvetica, sans-serif;
-  padding-left: 2rem;
+  padding-left: 1rem;
   padding-right: 2rem;
   align-items: center;
 }
@@ -26,26 +27,27 @@ body {
 #nav-logo-wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
-  grid-column: 2;
+  justify-content: start;
+  grid-column: 1;
 }
 #nav-logo-image {
   max-height: 8vh;
 }
 #nav-links-wrapper {
-  grid-column: 3;
+  grid-column: 2;
   display: flex;
   justify-content: end;
 }
 #nav-links {
   display: flex;
+  justify-content: space-evenly;
   list-style: none;
 }
 #nav-links a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 3rem;
+  margin-left: 2.5rem;
 }
 #nav-links p {
   margin: 0;
@@ -63,22 +65,85 @@ body {
   text-decoration-style: double;
 }
 
+/* //Landing page */
+#home-container {
+  height: 80vh;
+  min-height: 80vh;
+  width: 100vw;
+  min-width: 100vw;
+  font-family: "Poetsen One", Arial, Helvetica, sans-serif;
+  color: white;
+}
+#home-hero-wrapper {
+  height: 55vh;
+  min-height: 55vh;
+  background-image: url("images/large-burger-drone-8685610_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  display: flex;
+  justify-content: start;
+}
+
+#home-best-sellers-wrapper {
+  padding: 1rem;
+  height: 20vh;
+  max-height: 20vh;
+  -webkit-overflow-scrolling: touch;
+}
+#home-best-sellers-label-wrapper {
+  color: black;
+}
+#home-best-sellers {
+  display: flex;
+  height: 100%;
+}
+
+.favorite {
+  width: 20vw;
+  background-color: #eee;
+  height: 80%;
+  margin: 1rem;
+  border-radius: 25px;
+}
+
 @media (max-width: 750px) {
   #navbar-container {
     grid-template-columns: 0.25fr 1fr;
-    padding-left: 1rem;
     padding-right: 1rem;
   }
-  #nav-slogan-wrapper {
-    display: none;
+
+  #home-hero-wrapper {
+    padding-left: 1rem;
+    background-image: url("images/small-burger-drone-8685610_1920.jpg");
+    background-position-x: 23%;
   }
-  #nav-logo-wrapper {
-    grid-column: 1;
-    justify-content: start;
+  #home-hero-wrapper h1 {
+    font-size: 30px;
   }
-  #nav-links-wrapper {
-    grid-column: 2;
+  #home-best-sellers {
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow-x: auto;
   }
+  .favorite {
+    width: 25vw;
+  }
+}
+@media (max-width: 830px) {
+  #nav-links a {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #nav-links a {
+    margin-left: 1.25rem;
+  }
+}
+@media (max-width: 420px) {
   #nav-links a {
     margin-left: 0.5rem;
   }
