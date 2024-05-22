@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #dbe4d2;
+  overflow-x: hidden;
 }
 
 /* Navbar */
@@ -70,10 +71,6 @@ body {
   min-height: 80vh;
   width: 100vw;
   min-width: 100vw;
-  /* background-image: url("images/large-burger-drone-8685610_1920.jpg"); */
-  /* background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom; */
   font-family: "Poetsen One", Arial, Helvetica, sans-serif;
   color: white;
 }
@@ -90,10 +87,31 @@ body {
   justify-content: start;
 }
 
+#home-best-sellers-wrapper {
+  padding: 1rem;
+  height: 20vh;
+  max-height: 20vh;
+  -webkit-overflow-scrolling: touch;
+}
+#home-best-sellers-label-wrapper {
+  color: black;
+}
+#home-best-sellers {
+  display: flex;
+  height: 100%;
+}
+
+.favorite {
+  width: 20vw;
+  background-color: #eee;
+  height: 80%;
+  margin: 1rem;
+  border-radius: 25px;
+}
+
 @media (max-width: 750px) {
   #navbar-container {
     grid-template-columns: 0.25fr 1fr;
-    padding-left: 1rem;
     padding-right: 1rem;
   }
 
@@ -104,6 +122,14 @@ body {
   }
   #home-hero-wrapper h1 {
     font-size: 30px;
+  }
+  #home-best-sellers {
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow-x: auto;
+  }
+  .favorite {
+    width: 25vw;
   }
 }
 @media (max-width: 830px) {
