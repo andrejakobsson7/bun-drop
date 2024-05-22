@@ -2,7 +2,9 @@ import React from "react";
 function Home() {
   return (
     <div id="home-container">
-      <p>Home</p>
+      <div id="home-hero-wrapper">
+        <h1>Heavenly good burgers</h1>
+      </div>
     </div>
   );
 }
