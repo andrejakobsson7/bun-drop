@@ -194,7 +194,8 @@ body {
 .cart-item-quantity-input {
   width: 50%;
 }
-.cart-continue-to-payment-btn {
+.cart-continue-to-payment-btn,
+.payment-pay-btn {
   margin: 1rem;
   padding: 1rem;
   width: 25vw;
@@ -265,16 +266,19 @@ body {
   align-items: end;
 }
 .add-to-cart-btn,
-.cart-continue-to-payment-btn {
+.cart-continue-to-payment-btn,
+.payment-pay-btn {
   background-color: rgb(109, 114, 104);
   color: white;
   height: 60%;
 }
 .add-to-cart-btn:hover,
-.cart-continue-to-payment-btn:hover {
+.cart-continue-to-payment-btn:hover,
+.payment-pay-btn:hover {
   background-color: rgb(55, 57, 52);
 }
-#cart-container {
+#cart-container,
+#payment-container {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 #cart-container label {
@@ -335,6 +339,85 @@ body {
   font-size: 18px;
 }
 
+/* Payment */
+#payment-container {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  grid-template-rows: repeat(3, 0.3fr) 2fr;
+  height: 80vh;
+}
+
+#payment-form-wrapper {
+  grid-column: 2;
+  grid-row: 2/5;
+  border-radius: 25px;
+  border: 1px solid black;
+  background-color: white;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.5fr repeat(2, 1fr) 0.5fr repeat(2, 1fr) 0.5fr repeat(
+      3,
+      1fr
+    );
+}
+#payment-form-wrapper > div {
+  padding: 1rem;
+}
+#payment-label-wrapper {
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.form-label {
+  grid-column: 1/3;
+  /* border-bottom: 1px solid black; */
+  color: white;
+  background-color: rgb(109, 114, 104);
+}
+#payment-delivery-label {
+  grid-row: 4/5;
+  /* border-top: 1px solid black; */
+}
+#payment-payment-label {
+  /* border-top: 1px solid black; */
+  color: white;
+}
+#pay-btn-wrapper {
+  grid-column: 1/3;
+  grid-row: 10;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.payment-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 20vw;
+}
+.payment-input-wrapper label {
+  font-weight: bold;
+}
+
+#payment-delivery-wrapper {
+  grid-column: 1/3;
+  grid-row: 5/7;
+  background-color: yellow;
+}
+#payment-payment-wrapper {
+  grid-column: 1/3;
+  grid-row: 8/11;
+  background-color: aqua;
+}
+#payment-credit-card-wrapper {
+  padding: 1rem;
+}
+
+.error-text {
+  color: red;
+}
 /* General rules */
 button,
 input {
@@ -348,26 +431,6 @@ button {
 }
 
 /* Responsiveness */
-@media (max-width: 760px) {
-  #navbar-container {
-    grid-template-columns: 0.25fr 1fr;
-    padding-right: 1rem;
-  }
-
-  #home-hero-wrapper {
-    padding-left: 1rem;
-    background-image: url("images/small-burger-drone-8685610_1920.jpg");
-    background-position-x: 23%;
-  }
-  #home-hero-wrapper h1 {
-    font-size: 30px;
-  }
-  #home-best-sellers {
-    flex-wrap: wrap;
-    flex-direction: column;
-    overflow-x: auto;
-  }
-}
 
 @media (max-width: 830px) {
   #nav-links a {
@@ -403,8 +466,30 @@ button {
     justify-content: center;
     align-items: center;
   }
-  .cart-continue-to-payment-btn {
+  .cart-continue-to-payment-btn,
+  .payment-pay-btn {
     width: 45vw;
+  }
+}
+
+@media (max-width: 760px) {
+  #navbar-container {
+    grid-template-columns: 0.25fr 1fr;
+    padding-right: 1rem;
+  }
+
+  #home-hero-wrapper {
+    padding-left: 1rem;
+    background-image: url("images/small-burger-drone-8685610_1920.jpg");
+    background-position-x: 23%;
+  }
+  #home-hero-wrapper h1 {
+    font-size: 30px;
+  }
+  #home-best-sellers {
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow-x: auto;
   }
 }
 
