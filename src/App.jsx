@@ -7,6 +7,7 @@ import Register from "./pages/Register";
 import Menu from "./pages/Menu";
 import Cart from "./pages/Cart";
 import Payment from "./pages/Payment";
+import Confirmation from "./pages/Confirmation";
 import "./App.css";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/Menu" element={<Menu />}></Route>
           <Route path="/Cart" element={<Cart />}></Route>
           <Route path="/Payment" element={<Payment />}></Route>
+          <Route path="/Confirmation" element={<Confirmation />}></Route>
         </Routes>
       </Router>
     </>

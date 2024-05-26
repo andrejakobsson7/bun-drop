@@ -195,7 +195,8 @@ body {
   width: 50%;
 }
 .cart-continue-to-payment-btn,
-.payment-pay-btn {
+.payment-pay-btn,
+.confirmation-return-home-btn {
   margin: 1rem;
   padding: 1rem;
   width: 25vw;
@@ -267,14 +268,16 @@ body {
 }
 .add-to-cart-btn,
 .cart-continue-to-payment-btn,
-.payment-pay-btn {
+.payment-pay-btn,
+.confirmation-return-home-btn {
   background-color: rgb(109, 114, 104);
   color: white;
   height: 60%;
 }
 .add-to-cart-btn:hover,
 .cart-continue-to-payment-btn:hover,
-.payment-pay-btn:hover {
+.payment-pay-btn:hover,
+.confirmation-return-home-btn:hover {
   background-color: rgb(55, 57, 52);
 }
 #cart-container,
@@ -365,7 +368,8 @@ body {
 #payment-form-wrapper > div {
   padding: 1rem;
 }
-#payment-label-wrapper {
+#payment-label-wrapper,
+#confirmation-label-wrapper {
   grid-column: 2;
   display: flex;
   justify-content: center;
@@ -414,7 +418,37 @@ body {
 #payment-credit-card-wrapper {
   padding: 1rem;
 }
+/* Confirmation */
+#confirmation-container {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  grid-template-rows: repeat(2, 0.3fr) 2fr;
+  height: 80vh;
+  font-family: "Poetsen One";
+}
+#confirmation-text-wrapper {
+  grid-column: 2;
+  grid-row: 2;
+  text-align: center;
+}
+#confirmation-image-wrapper {
+  grid-column: 2;
+  grid-row: 3;
+  background-image: url("images/success.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 6.5px;
+}
+#confirmation-return-home-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  grid-column: 2;
+  grid-row: 4;
+}
 
+/* Error */
 .error-text {
   color: red;
 }
@@ -467,7 +501,8 @@ button {
     align-items: center;
   }
   .cart-continue-to-payment-btn,
-  .payment-pay-btn {
+  .payment-pay-btn,
+  .confirmation-return-home-btn {
     width: 45vw;
   }
 }
