@@ -1,0 +1,164 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "title": "Classic Burger",
+      "price": 4.99,
+      "description": "A classic beef burger with lettuce, tomato and onion",
+      "category": "burgers",
+      "image": "images/menu/burgers/classic-burger.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Cheeseburger",
+      "price": 5.49,
+      "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+      "category": "burgers",
+      "image": "images/menu/burgers/cheeseburger.png"
+    },
+    {
+      "id": 3,
+      "title": "Cheese and bacon burger",
+      "price": 5.99,
+      "description": "A juicy beef patty topped with crispy bacon, melted cheese, lettuce, and tomato",
+      "category": "burgers",
+      "image": "images/menu/burgers/cheese-and-bacon-burger.png"
+    },
+    {
+      "id": 4,
+      "title": "Double cheeseburger",
+      "price": 6.49,
+      "description": "Two beef patties layered with melted American cheese",
+      "category": "burgers",
+      "image": "images/menu/burgers/double-cheeseburger.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Chicken Parmesan Burger",
+      "price": 5.99,
+      "description": "A crispy chicken topped with melted cheese, parmesan, lettuce, onion and tomato",
+      "category": "burgers",
+      "image": "images/menu/burgers/chicken-parmesan-burger.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Crispy fries",
+      "price": 3.99,
+      "description": "Fries made from our founder's secret recipe",
+      "category": "sides",
+      "image": "images/menu/sides/crispy-fries.png"
+    },
+    {
+      "id": 7,
+      "title": "Sweet potato fries",
+      "price": 4.49,
+      "description": "Our world famous sweet potato fries",
+      "category": "sides",
+      "image": "images/menu/sides/sweet-potato-fries.png"
+    },
+    {
+      "id": 8,
+      "title": "Onion rings",
+      "price": 3.49,
+      "description": "Crispy fresh onion rings, served hot",
+      "category": "sides",
+      "image": "images/menu/sides/onion-rings.png"
+    },
+    {
+      "id": 9,
+      "title": "Chili cheese",
+      "price": 2.99,
+      "description": "Crispy and hot, fried cheddar cheese with jalapeños",
+      "category": "sides",
+      "image": "images/menu/sides/chili-cheese.png"
+    },
+    {
+      "id": 10,
+      "title": "Apple slices",
+      "price": 2.99,
+      "description": "Crispy, sweet apple slices",
+      "category": "sides",
+      "image": "images/menu/sides/apple-slices.png"
+    },
+    {
+      "id": 11,
+      "title": "Coca cola",
+      "price": 2.49,
+      "description": "Classic Coca Cola",
+      "category": "drinks",
+      "image": "images/menu/drinks/coca-cola.png"
+    },
+    {
+      "id": 12,
+      "title": "Coca cola Zero",
+      "price": 2.49,
+      "description": "The classic drink without sugar",
+      "category": "drinks",
+      "image": "images/menu/drinks/coca-cola-zero.png"
+    },
+    {
+      "id": 13,
+      "title": "Fanta",
+      "price": 2.49,
+      "description": "Soda with orange flavour",
+      "category": "drinks",
+      "image": "images/menu/drinks/fanta.png"
+    },
+    {
+      "id": 14,
+      "title": "Apple juice",
+      "price": 2.49,
+      "description": "Refreshing apple juice from Kullamust",
+      "category": "drinks",
+      "image": "images/menu/drinks/apple-juice.png"
+    },
+    {
+      "id": 15,
+      "title": "Strawberry Smoothie",
+      "price": 3.49,
+      "description": "Handmade smoothie with strawberries, blueberry, banana, apple juice and ice",
+      "category": "drinks",
+      "image": "images/menu/drinks/smoothie.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Lava cake with ice cream",
+      "price": 3.49,
+      "description": "A tasty dessert fitting all chocolate lovers, topped with ice cream",
+      "category": "desserts",
+      "image": "images/menu/desserts/lava-cake.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Raspberry pie",
+      "price": 3.49,
+      "description": "Raspberry pie with ice cream",
+      "category": "desserts",
+      "image": "images/menu/desserts/raspberry-pie.jpg"
+    },
+    {
+      "id": 18,
+      "title": "Luxury shake",
+      "price": 4.49,
+      "description": "Handmade milkshake on soft ice cream whipped with milk and sweet strawberries, topped with whipped cream",
+      "category": "desserts",
+      "image": "images/menu/desserts/luxury-shake.jpg"
+    },
+    {
+      "id": 19,
+      "title": "Sundae Fudge & Sprinkles",
+      "price": 3.49,
+      "description": "Soft ice cream with fudge and sprinkles",
+      "category": "desserts",
+      "image": "images/menu/desserts/sundae.jpg"
+    },
+    {
+      "id": 20,
+      "title": "Sundae chocolate",
+      "price": 3.49,
+      "description": "Soft ice cream with chocolate sauce",
+      "category": "desserts",
+      "image": "images/menu/desserts/sundae-chocolate.jpg"
+    }
+  ]
+}
