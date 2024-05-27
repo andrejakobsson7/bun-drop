@@ -104,11 +104,17 @@ body {
   height: 100%;
 }
 
-.favorite {
-  width: 20vw;
+.best-seller {
+  width: 20%;
   background-color: #eee;
   height: 80%;
   margin: 1rem;
+  border-radius: 25px;
+}
+.best-seller img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
   border-radius: 25px;
 }
 /* Menu */
