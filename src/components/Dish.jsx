@@ -7,14 +7,14 @@ function Dish(props) {
       </div>
       <div className="dish-info-wrapper">
         <div className="dish-name">
-          <em>{props.dish.title}</em>
+          <h3>{props.dish.title}</h3>
         </div>
         <div className="dish-price">
-          <em>$ {props.dish.price}</em>
+          <strong>$ {props.dish.price}</strong>
         </div>
         <div className="dish-add-to-cart">
           <button className="add-to-cart-btn">
-            <i className="bi bi-cart3"> Add to cart</i>
+            <p className="bi bi-cart3"> Add to cart</p>
           </button>
         </div>
       </div>

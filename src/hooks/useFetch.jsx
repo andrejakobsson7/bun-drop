@@ -12,7 +12,7 @@ function useFetch(url) {
         const result = await response.json();
         setData(result);
       } catch (err) {
-        setError(err);
+        setError(new String(err));
       } finally {
         setLoading(false);
       }
@@ -20,22 +20,6 @@ function useFetch(url) {
     fetchData();
   }, [url]);
 
-  // useEffect(() => {
-  //   setLoading(true);
-  //   setData(null);
-  //   setError("");
-  //   fetch(url, options).then((response) => {
-  //     if (response.ok) {
-  //       response.json().then((data) => {
-  //         setData(data);
-  //         setLoading(false);
-  //       });
-  //     } else {
-  //       setError(response.statusText);
-  //       setLoading(false);
-  //     }
-  //   });
-  // }, [url, options]);
   return { loading, data, error };
 }
 

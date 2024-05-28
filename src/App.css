@@ -166,6 +166,9 @@ body {
   flex-wrap: wrap;
   overflow-y: scroll;
 }
+#menu-items-wrapper > * {
+  margin: 10px;
+}
 
 /* Cart */
 #cart-container {
@@ -227,7 +230,6 @@ body {
 .dish-container {
   width: 40%;
   height: 40%;
-  margin: 10px;
   border-radius: 12.5px;
   border: 1px solid rgb(109, 114, 104);
   display: grid;
@@ -288,7 +290,8 @@ body {
   background-color: rgb(55, 57, 52);
 }
 #cart-container,
-#payment-container {
+#payment-container,
+#menu-container {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 #cart-container label {

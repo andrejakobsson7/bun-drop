@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { act, useEffect, useState } from "react";
 import PageLabel from "../components/PageLabel";
 import FilterButton from "../components/FilterButton";
 import Dish from "../components/Dish";
@@ -38,6 +38,22 @@ function Menu() {
     }
     setActiveFilter(filterOption);
   }
+  function handleSearch(e) {
+    let foundDishes = [];
+    const searchValue = e.target.value.toLowerCase();
+    if (activeFilter === defaultFilterOption) {
+      foundDishes = originalMenu.filter((d) =>
+        d.title.toLowerCase().includes(searchValue)
+      );
+    } else {
+      foundDishes = originalMenu.filter(
+        (d) =>
+          d.title.toLowerCase().includes(searchValue) &&
+          d.category === activeFilter.toLowerCase()
+      );
+    }
+    setMenu(foundDishes);
+  }
   return (
     <div id="menu-container">
       <div id="menu-label-wrapper">
@@ -63,13 +79,21 @@ function Menu() {
             id="menu-search-input"
             type="search"
             placeholder="Search dishes"
+            onChange={handleSearch}
           />
         </div>
       </div>
       {fetchMenu.loading ? (
-        <p>Loading menu</p>
+        <div id="menu-items-wrapper">
+          <p>Loading menu</p>
+        </div>
       ) : fetchMenu.error ? (
-        <p>Error {fetchMenu.error} fetching menu</p>
+        <div id="menu-items-wrapper">
+          <p>
+            Error An error occurred fetching the menu. Error code:{" "}
+            {fetchMenu.error}. Please contact the support department.
+          </p>
+        </div>
       ) : (
         <div id="menu-items-wrapper">
           {menu.map((d) => (
