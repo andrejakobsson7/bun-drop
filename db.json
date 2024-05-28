@@ -166,191 +166,769 @@
       "id": 1,
       "userid": "GUEST",
       "dishes": [
-        { "id": 1, "quantity": 1 },
-        { "id": 6, "quantity": 1 },
-        { "id": 13, "quantity": 3 },
-        { "id": 20, "quantity": 1 }
+        {
+          "id": 1,
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 6,
+          "title": "Crispy fries",
+          "price": 3.99,
+          "description": "Fries made from our founder's secret recipe",
+          "category": "sides",
+          "image": "images/menu/sides/crispy-fries-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 13,
+          "title": "Fanta",
+          "price": 2.49,
+          "description": "Soda with orange flavour",
+          "category": "drinks",
+          "image": "images/menu/drinks/fanta-lg.png",
+          "quantity": 3
+        },
+        {
+          "id": 20,
+          "title": "Sundae chocolate",
+          "price": 3.49,
+          "description": "Soft ice cream with chocolate sauce",
+          "category": "desserts",
+          "image": "images/menu/desserts/sundae-chocolate-lg.png",
+          "quantity": 1
+        }
       ]
     },
     {
       "id": 2,
       "userid": "GUEST",
       "dishes": [
-        { "id": 2, "quantity": 1 },
-        { "id": 7, "quantity": 3 },
-        { "id": 14, "quantity": 1 },
-        { "id": 19, "quantity": 2 }
+        {
+          "id": 2,
+          "title": "Cheeseburger",
+          "price": 5.49,
+          "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+          "category": "burgers",
+          "image": "images/menu/burgers/cheeseburger-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 7,
+          "title": "Sweet potato fries",
+          "price": 4.49,
+          "description": "Our world famous sweet potato fries",
+          "category": "sides",
+          "image": "images/menu/sides/sweet-potato-fries-lg.png",
+          "quantity": 3
+        },
+        {
+          "id": 14,
+          "title": "Apple juice",
+          "price": 2.49,
+          "description": "Refreshing apple juice from Kullamust",
+          "category": "drinks",
+          "image": "images/menu/drinks/apple-juice-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 19,
+          "title": "Sundae Fudge & Sprinkles",
+          "price": 3.49,
+          "description": "Soft ice cream with fudge and sprinkles",
+          "category": "desserts",
+          "image": "images/menu/desserts/sundae-lg.png",
+          "quantity": 2
+        }
       ]
     },
     {
       "id": 3,
       "userid": "GUEST",
       "dishes": [
-        { "id": 3, "quantity": 5 },
-        { "id": 8, "quantity": 5 },
-        { "id": 15, "quantity": 5 },
-        { "id": 18, "quantity": 5 }
+        {
+          "id": 3,
+          "title": "Cheese and bacon burger",
+          "price": 5.99,
+          "description": "A juicy beef patty topped with crispy bacon, melted cheese, lettuce, and tomato",
+          "category": "burgers",
+          "image": "images/menu/burgers/cheese-and-bacon-burger-lg.png",
+          "quantity": 5
+        },
+        {
+          "id": 8,
+          "title": "Onion rings",
+          "price": 3.49,
+          "description": "Crispy fresh onion rings, served hot",
+          "category": "sides",
+          "image": "images/menu/sides/onion-rings-lg.png",
+          "quantity": 5
+        },
+        {
+          "id": 15,
+          "title": "Strawberry Smoothie",
+          "price": 3.49,
+          "description": "Handmade smoothie with strawberries, blueberry, banana, apple juice and ice",
+          "category": "drinks",
+          "image": "images/menu/drinks/smoothie-lg.png",
+          "quantity": 5
+        },
+        {
+          "id": 18,
+          "title": "Luxury shake",
+          "price": 4.49,
+          "description": "Handmade milkshake on soft ice cream whipped with milk and sweet strawberries, topped with whipped cream",
+          "category": "desserts",
+          "image": "images/menu/desserts/luxury-shake-lg.png",
+          "quantity": 5
+        }
       ]
     },
     {
       "id": 4,
       "userid": "GUEST",
       "dishes": [
-        { "id": 4, "quantity": 20 },
-        { "id": 9, "quantity": 15 },
-        { "id": 16, "quantity": 10 },
-        { "id": 17, "quantity": 5 }
+        {
+          "id": 4,
+          "title": "Double cheeseburger",
+          "price": 6.49,
+          "description": "Two beef patties layered with melted American cheese",
+          "category": "burgers",
+          "image": "images/menu/burgers/double-cheeseburger-lg.png",
+          "quantity": 20
+        },
+        {
+          "id": 9,
+          "title": "Chili cheese",
+          "price": 2.99,
+          "description": "Crispy and hot, fried cheddar cheese with jalapeños",
+          "category": "sides",
+          "image": "images/menu/sides/chili-cheese-lg.png",
+          "quantity": 15
+        },
+        {
+          "id": 16,
+          "title": "Lava cake with ice cream",
+          "price": 3.49,
+          "description": "A tasty dessert fitting all chocolate lovers, topped with ice cream",
+          "category": "desserts",
+          "image": "images/menu/desserts/lava-cake-lg.png",
+          "quantity": 10
+        },
+        {
+          "id": 17,
+          "title": "Raspberry pie",
+          "price": 3.49,
+          "description": "Raspberry pie with ice cream",
+          "category": "desserts",
+          "image": "images/menu/desserts/raspberry-pie-lg.png",
+          "quantity": 5
+        }
       ]
     },
     {
       "id": 5,
       "userid": "GUEST",
       "dishes": [
-        { "id": 5, "quantity": 1 },
-        { "id": 10, "quantity": 1 },
-        { "id": 12, "quantity": 1 },
-        { "id": 11, "quantity": 1 }
+        {
+          "id": 5,
+          "title": "Chicken Parmesan Burger",
+          "price": 5.99,
+          "description": "A crispy chicken topped with melted cheese, parmesan, lettuce, onion and tomato",
+          "category": "burgers",
+          "image": "images/menu/burgers/chicken-parmesan-burger-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 10,
+          "title": "Apple slices",
+          "price": 2.99,
+          "description": "Crispy, sweet apple slices",
+          "category": "sides",
+          "image": "images/menu/sides/apple-slices-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 12,
+          "title": "Coca cola Zero",
+          "price": 2.49,
+          "description": "The classic drink without sugar",
+          "category": "drinks",
+          "image": "images/menu/drinks/coca-cola-zero-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 10,
+          "title": "Apple slices",
+          "price": 2.99,
+          "description": "Crispy, sweet apple slices",
+          "category": "sides",
+          "image": "images/menu/sides/apple-slices-lg.png",
+          "quantity": 1
+        }
       ]
     },
     {
       "id": 6,
       "userid": "GUEST",
       "dishes": [
-        { "id": 6, "quantity": 2 },
-        { "id": 11, "quantity": 2 },
-        { "id": 12, "quantity": 2 },
-        { "id": 10, "quantity": 2 }
+        {
+          "id": 6,
+          "title": "Crispy fries",
+          "price": 3.99,
+          "description": "Fries made from our founder's secret recipe",
+          "category": "sides",
+          "image": "images/menu/sides/crispy-fries-lg.png",
+          "quantity": 2
+        },
+        {
+          "id": 11,
+          "title": "Coca cola",
+          "price": 2.49,
+          "description": "Classic Coca Cola",
+          "category": "drinks",
+          "image": "images/menu/drinks/coca-cola-lg.png",
+          "quantity": 2
+        },
+        {
+          "id": 12,
+          "title": "Coca cola Zero",
+          "price": 2.49,
+          "description": "The classic drink without sugar",
+          "category": "drinks",
+          "image": "images/menu/drinks/coca-cola-zero-lg.png",
+          "quantity": 2
+        },
+        {
+          "id": 10,
+          "title": "Apple slices",
+          "price": 2.99,
+          "description": "Crispy, sweet apple slices",
+          "category": "sides",
+          "image": "images/menu/sides/apple-slices-lg.png",
+          "quantity": 2
+        }
       ]
     },
     {
       "id": 7,
       "userid": "GUEST",
       "dishes": [
-        { "id": 7, "quantity": 3 },
-        { "id": 12, "quantity": 4 },
-        { "id": 11, "quantity": 3 },
-        { "id": 9, "quantity": 1 }
+        {
+          "id": 7,
+          "title": "Sweet potato fries",
+          "price": 4.49,
+          "description": "Our world famous sweet potato fries",
+          "category": "sides",
+          "image": "images/menu/sides/sweet-potato-fries-lg.png",
+          "quantity": 3
+        },
+        {
+          "id": 12,
+          "title": "Coca cola Zero",
+          "price": 2.49,
+          "description": "The classic drink without sugar",
+          "category": "drinks",
+          "image": "images/menu/drinks/coca-cola-zero-lg.png",
+          "quantity": 4
+        },
+        {
+          "id": 11,
+          "title": "Coca cola",
+          "price": 2.49,
+          "description": "Classic Coca Cola",
+          "category": "drinks",
+          "image": "images/menu/drinks/coca-cola-lg.png",
+          "quantity": 3
+        },
+        {
+          "id": 9,
+          "title": "Chili cheese",
+          "price": 2.99,
+          "description": "Crispy and hot, fried cheddar cheese with jalapeños",
+          "category": "sides",
+          "image": "images/menu/sides/chili-cheese-lg.png",
+          "quantity": 1
+        }
       ]
     },
     {
       "id": 8,
       "userid": "GUEST",
       "dishes": [
-        { "id": 8, "quantity": 6 },
-        { "id": 13, "quantity": 2 },
-        { "id": 10, "quantity": 1 }
+        {
+          "id": 8,
+          "title": "Onion rings",
+          "price": 3.49,
+          "description": "Crispy fresh onion rings, served hot",
+          "category": "sides",
+          "image": "images/menu/sides/onion-rings-lg.png",
+          "quantity": 6
+        },
+        {
+          "id": 13,
+          "title": "Fanta",
+          "price": 2.49,
+          "description": "Soda with orange flavour",
+          "category": "drinks",
+          "image": "images/menu/drinks/fanta-lg.png",
+          "quantity": 2
+        },
+        {
+          "id": 10,
+          "title": "Apple slices",
+          "price": 2.99,
+          "description": "Crispy, sweet apple slices",
+          "category": "sides",
+          "image": "images/menu/sides/apple-slices-lg.png",
+          "quantity": 1
+        }
       ]
     },
     {
       "id": 9,
       "userid": "GUEST",
       "dishes": [
-        { "id": 9, "quantity": 1 },
-        { "id": 14, "quantity": 1 },
-        { "id": 9, "quantity": 1 },
-        { "id": 7, "quantity": 1 }
+        {
+          "id": 9,
+          "title": "Chili cheese",
+          "price": 2.99,
+          "description": "Crispy and hot, fried cheddar cheese with jalapeños",
+          "category": "sides",
+          "image": "images/menu/sides/chili-cheese-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 14,
+          "title": "Apple juice",
+          "price": 2.49,
+          "description": "Refreshing apple juice from Kullamust",
+          "category": "drinks",
+          "image": "images/menu/drinks/apple-juice-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 9,
+          "title": "Chili cheese",
+          "price": 2.99,
+          "description": "Crispy and hot, fried cheddar cheese with jalapeños",
+          "category": "sides",
+          "image": "images/menu/sides/chili-cheese-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 7,
+          "title": "Sweet potato fries",
+          "price": 4.49,
+          "description": "Our world famous sweet potato fries",
+          "category": "sides",
+          "image": "images/menu/sides/sweet-potato-fries-lg.png",
+          "quantity": 1
+        }
       ]
     },
     {
       "id": 10,
       "userid": "GUEST",
       "dishes": [
-        { "id": 10, "quantity": 1 },
-        { "id": 15, "quantity": 1 },
-        { "id": 8, "quantity": 1 },
-        { "id": 6, "quantity": 1 }
+        {
+          "id": 10,
+          "title": "Apple slices",
+          "price": 2.99,
+          "description": "Crispy, sweet apple slices",
+          "category": "sides",
+          "image": "images/menu/sides/apple-slices-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 15,
+          "title": "Strawberry Smoothie",
+          "price": 3.49,
+          "description": "Handmade smoothie with strawberries, blueberry, banana, apple juice and ice",
+          "category": "drinks",
+          "image": "images/menu/drinks/smoothie-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 8,
+          "title": "Onion rings",
+          "price": 3.49,
+          "description": "Crispy fresh onion rings, served hot",
+          "category": "sides",
+          "image": "images/menu/sides/onion-rings-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 6,
+          "title": "Crispy fries",
+          "price": 3.99,
+          "description": "Fries made from our founder's secret recipe",
+          "category": "sides",
+          "image": "images/menu/sides/crispy-fries-lg.png",
+          "quantity": 1
+        }
       ]
     },
     {
       "id": 11,
       "userid": "GUEST",
       "dishes": [
-        { "id": 11, "quantity": 5 },
-        { "id": 16, "quantity": 4 },
-        { "id": 7, "quantity": 3 }
+        {
+          "id": 11,
+          "title": "Coca cola",
+          "price": 2.49,
+          "description": "Classic Coca Cola",
+          "category": "drinks",
+          "image": "images/menu/drinks/coca-cola-lg.png",
+          "quantity": 5
+        },
+        {
+          "id": 16,
+          "title": "Lava cake with ice cream",
+          "price": 3.49,
+          "description": "A tasty dessert fitting all chocolate lovers, topped with ice cream",
+          "category": "desserts",
+          "image": "images/menu/desserts/lava-cake-lg.png",
+          "quantity": 4
+        },
+        {
+          "id": 7,
+          "title": "Sweet potato fries",
+          "price": 4.49,
+          "description": "Our world famous sweet potato fries",
+          "category": "sides",
+          "image": "images/menu/sides/sweet-potato-fries-lg.png",
+          "quantity": 3
+        }
       ]
     },
     {
       "id": 12,
       "userid": "GUEST",
       "dishes": [
-        { "id": 12, "quantity": 1 },
-        { "id": 17, "quantity": 1 },
-        { "id": 6, "quantity": 1 },
-        { "id": 4, "quantity": 1 }
+        {
+          "id": 12,
+          "title": "Coca cola Zero",
+          "price": 2.49,
+          "description": "The classic drink without sugar",
+          "category": "drinks",
+          "image": "images/menu/drinks/coca-cola-zero-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 17,
+          "title": "Raspberry pie",
+          "price": 3.49,
+          "description": "Raspberry pie with ice cream",
+          "category": "desserts",
+          "image": "images/menu/desserts/raspberry-pie-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 6,
+          "title": "Crispy fries",
+          "price": 3.99,
+          "description": "Fries made from our founder's secret recipe",
+          "category": "sides",
+          "image": "images/menu/sides/crispy-fries-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 4,
+          "title": "Double cheeseburger",
+          "price": 6.49,
+          "description": "Two beef patties layered with melted American cheese",
+          "category": "burgers",
+          "image": "images/menu/burgers/double-cheeseburger-lg.png",
+          "quantity": 1
+        }
       ]
     },
     {
       "id": 13,
       "userid": "GUEST",
       "dishes": [
-        { "id": 13, "quantity": 2 },
-        { "id": 18, "quantity": 1 },
-        { "id": 7, "quantity": 1 },
-        { "id": 2, "quantity": 1 }
+        {
+          "id": 13,
+          "title": "Fanta",
+          "price": 2.49,
+          "description": "Soda with orange flavour",
+          "category": "drinks",
+          "image": "images/menu/drinks/fanta-lg.png",
+          "quantity": 2
+        },
+        {
+          "id": 18,
+          "title": "Luxury shake",
+          "price": 4.49,
+          "description": "Handmade milkshake on soft ice cream whipped with milk and sweet strawberries, topped with whipped cream",
+          "category": "desserts",
+          "image": "images/menu/desserts/luxury-shake-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 7,
+          "title": "Sweet potato fries",
+          "price": 4.49,
+          "description": "Our world famous sweet potato fries",
+          "category": "sides",
+          "image": "images/menu/sides/sweet-potato-fries-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "title": "Cheeseburger",
+          "price": 5.49,
+          "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+          "category": "burgers",
+          "image": "images/menu/burgers/cheeseburger-lg.png",
+          "quantity": 1
+        }
       ]
     },
     {
       "id": 14,
       "userid": "GUEST",
       "dishes": [
-        { "id": 14, "quantity": 3 },
-        { "id": 17, "quantity": 1 },
-        { "id": 8, "quantity": 1 },
-        { "id": 1, "quantity": 1 }
+        {
+          "id": 14,
+          "title": "Apple juice",
+          "price": 2.49,
+          "description": "Refreshing apple juice from Kullamust",
+          "category": "drinks",
+          "image": "images/menu/drinks/apple-juice-lg.png",
+          "quantity": 3
+        },
+        {
+          "id": 17,
+          "title": "Raspberry pie",
+          "price": 3.49,
+          "description": "Raspberry pie with ice cream",
+          "category": "desserts",
+          "image": "images/menu/desserts/raspberry-pie-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 8,
+          "title": "Onion rings",
+          "price": 3.49,
+          "description": "Crispy fresh onion rings, served hot",
+          "category": "sides",
+          "image": "images/menu/sides/onion-rings-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 1,
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1
+        }
       ]
     },
     {
       "id": 15,
       "userid": "GUEST",
       "dishes": [
-        { "id": 15, "quantity": 4 },
-        { "id": 16, "quantity": 1 },
-        { "id": 9, "quantity": 1 },
-        { "id": 3, "quantity": 1 }
+        {
+          "id": 15,
+          "title": "Strawberry Smoothie",
+          "price": 3.49,
+          "description": "Handmade smoothie with strawberries, blueberry, banana, apple juice and ice",
+          "category": "drinks",
+          "image": "images/menu/drinks/smoothie-lg.png",
+          "quantity": 4
+        },
+        {
+          "id": 16,
+          "title": "Lava cake with ice cream",
+          "price": 3.49,
+          "description": "A tasty dessert fitting all chocolate lovers, topped with ice cream",
+          "category": "desserts",
+          "image": "images/menu/desserts/lava-cake-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 9,
+          "title": "Chili cheese",
+          "price": 2.99,
+          "description": "Crispy and hot, fried cheddar cheese with jalapeños",
+          "category": "sides",
+          "image": "images/menu/sides/chili-cheese-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 3,
+          "title": "Cheese and bacon burger",
+          "price": 5.99,
+          "description": "A juicy beef patty topped with crispy bacon, melted cheese, lettuce, and tomato",
+          "category": "burgers",
+          "image": "images/menu/burgers/cheese-and-bacon-burger-lg.png",
+          "quantity": 1
+        }
       ]
     },
     {
       "id": 16,
       "userid": "GUEST",
       "dishes": [
-        { "id": 16, "quantity": 5 },
-        { "id": 15, "quantity": 1 },
-        { "id": 10, "quantity": 1 },
-        { "id": 4, "quantity": 1 }
+        {
+          "id": 16,
+          "title": "Lava cake with ice cream",
+          "price": 3.49,
+          "description": "A tasty dessert fitting all chocolate lovers, topped with ice cream",
+          "category": "desserts",
+          "image": "images/menu/desserts/lava-cake-lg.png",
+          "quantity": 5
+        },
+        {
+          "id": 15,
+          "title": "Strawberry Smoothie",
+          "price": 3.49,
+          "description": "Handmade smoothie with strawberries, blueberry, banana, apple juice and ice",
+          "category": "drinks",
+          "image": "images/menu/drinks/smoothie-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 10,
+          "title": "Apple slices",
+          "price": 2.99,
+          "description": "Crispy, sweet apple slices",
+          "category": "sides",
+          "image": "images/menu/sides/apple-slices-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 4,
+          "title": "Double cheeseburger",
+          "price": 6.49,
+          "description": "Two beef patties layered with melted American cheese",
+          "category": "burgers",
+          "image": "images/menu/burgers/double-cheeseburger-lg.png",
+          "quantity": 1
+        }
       ]
     },
     {
       "id": 17,
       "userid": "GUEST",
       "dishes": [
-        { "id": 17, "quantity": 6 },
-        { "id": 14, "quantity": 1 },
-        { "id": 11, "quantity": 1 },
-        { "id": 5, "quantity": 1 }
+        {
+          "id": 17,
+          "title": "Raspberry pie",
+          "price": 3.49,
+          "description": "Raspberry pie with ice cream",
+          "category": "desserts",
+          "image": "images/menu/desserts/raspberry-pie-lg.png",
+          "quantity": 6
+        },
+        {
+          "id": 14,
+          "title": "Apple juice",
+          "price": 2.49,
+          "description": "Refreshing apple juice from Kullamust",
+          "category": "drinks",
+          "image": "images/menu/drinks/apple-juice-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 11,
+          "title": "Coca cola",
+          "price": 2.49,
+          "description": "Classic Coca Cola",
+          "category": "drinks",
+          "image": "images/menu/drinks/coca-cola-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 5,
+          "title": "Chicken Parmesan Burger",
+          "price": 5.99,
+          "description": "A crispy chicken topped with melted cheese, parmesan, lettuce, onion and tomato",
+          "category": "burgers",
+          "image": "images/menu/burgers/chicken-parmesan-burger-lg.png",
+          "quantity": 1
+        }
       ]
     },
     {
       "id": 18,
       "userid": "GUEST",
       "dishes": [
-        { "id": 13, "quantity": 1 },
-        { "id": 12, "quantity": 1 },
-        { "id": 6, "quantity": 1 }
+        {
+          "id": 13,
+          "title": "Fanta",
+          "price": 2.49,
+          "description": "Soda with orange flavour",
+          "category": "drinks",
+          "image": "images/menu/drinks/fanta-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 12,
+          "title": "Coca cola Zero",
+          "price": 2.49,
+          "description": "The classic drink without sugar",
+          "category": "drinks",
+          "image": "images/menu/drinks/coca-cola-zero-lg.png",
+          "quantity": 1
+        },
+        {
+          "id": 6,
+          "title": "Crispy fries",
+          "price": 3.99,
+          "description": "Fries made from our founder's secret recipe",
+          "category": "sides",
+          "image": "images/menu/sides/crispy-fries-lg.png",
+          "quantity": 1
+        }
       ]
     },
     {
       "id": 19,
       "userid": "GUEST",
       "dishes": [
-        { "id": 19, "quantity": 8 },
-        { "id": 7, "quantity": 1 }
+        {
+          "id": 19,
+          "title": "Sundae Fudge & Sprinkles",
+          "price": 3.49,
+          "description": "Soft ice cream with fudge and sprinkles",
+          "category": "desserts",
+          "image": "images/menu/desserts/sundae-lg.png",
+          "quantity": 8
+        },
+        {
+          "id": 7,
+          "title": "Sweet potato fries",
+          "price": 4.49,
+          "description": "Our world famous sweet potato fries",
+          "category": "sides",
+          "image": "images/menu/sides/sweet-potato-fries-lg.png",
+          "quantity": 1
+        }
       ]
     },
     {
       "id": 20,
       "userid": "GUEST",
-      "dishes": [{ "id": 20, "quantity": 9 }]
+      "dishes": [
+        {
+          "id": 20,
+          "title": "Sundae chocolate",
+          "price": 3.49,
+          "description": "Soft ice cream with chocolate sauce",
+          "category": "desserts",
+          "image": "images/menu/desserts/sundae-chocolate-lg.png",
+          "quantity": 9
+        }
+      ]
     }
   ]
 }
