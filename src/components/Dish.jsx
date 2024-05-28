@@ -1,16 +1,16 @@
 import React from "react";
-function Dish() {
+function Dish(props) {
   return (
     <div className="dish-container">
       <div className="dish-image-wrapper">
-        <img src="images/burger-5.png" />
+        <img src={props.dish.image} />
       </div>
       <div className="dish-info-wrapper">
         <div className="dish-name">
-          <em>Classic cheeseburger</em>
+          <em>{props.dish.title}</em>
         </div>
         <div className="dish-price">
-          <em>79 SEK</em>
+          <em>$ {props.dish.price}</em>
         </div>
         <div className="dish-add-to-cart">
           <button className="add-to-cart-btn">
