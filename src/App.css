@@ -283,6 +283,9 @@ body {
   color: white;
   height: 60%;
 }
+.add-to-cart-btn {
+  min-width: 80%;
+}
 .add-to-cart-btn:hover,
 .cart-continue-to-payment-btn:hover,
 .payment-pay-btn:hover,
@@ -473,7 +476,9 @@ button {
   border-radius: 6.75px;
   padding: 5px 12.5px;
 }
-
+.confirm-click {
+  background-color: green;
+}
 /* Responsiveness */
 
 @media (max-width: 830px) {
