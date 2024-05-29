@@ -51,9 +51,11 @@ function Cart() {
               <h3>
                 Total $ <span className="cart-total">{totalCartValue}</span>
               </h3>
-              <button className="cart-continue-to-payment-btn">
-                Continue to payment
-              </button>
+              <Link to="/payment">
+                <button className="cart-continue-to-payment-btn">
+                  Continue to payment
+                </button>
+              </Link>
             </div>
           </>
         ) : (
