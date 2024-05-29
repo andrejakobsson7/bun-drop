@@ -315,9 +315,11 @@ body {
   box-shadow: 2px 3px rgb(109, 114, 104);
 }
 .cart-item-info-wrapper {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1.5fr repeat(4, 1fr);
   align-items: center;
+  /* justify-content: space-around;
+  align-items: center; */
 }
 .cart-item-info-wrapper div {
   margin-bottom: 0.5rem;
@@ -339,7 +341,8 @@ body {
 }
 .cart-item-quantity-wrapper,
 .cart-item-price-wrapper,
-.cart-item-total-price-wrapper {
+.cart-item-total-price-wrapper,
+.cart-item-delete-wrapper-lg {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -479,6 +482,9 @@ button {
 .confirm-click {
   background-color: green;
 }
+.input-warning-text {
+  color: red;
+}
 /* Responsiveness */
 
 @media (max-width: 830px) {
@@ -497,6 +503,7 @@ button {
     grid-template-rows: 0.3fr;
   }
   .cart-item-info-wrapper {
+    display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: start;
