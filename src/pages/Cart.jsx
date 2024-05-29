@@ -26,8 +26,9 @@ function Cart() {
     const items = await localStorageHandler.getLocalStorage("cartItems");
     setCart(items);
   }
-  function handleItemDelete() {
-    console.log("Deleting item, need to recalculate total...");
+  async function handleItemDelete() {
+    const items = await localStorageHandler.getLocalStorage("cartItems");
+    setCart(items);
   }
   return (
     <div id="cart-container">

@@ -32,12 +32,24 @@ function CartItem(props) {
     );
     setTotalPrice(fixedTotalPrice);
     const items = await localStorageHandler.getLocalStorage("cartItems");
-    const itemToUpdateIndex = items.findIndex((i) => i.id === props.item.id);
+    const itemToUpdateIndex = getIndexOfCartItem(items, props.item.id);
     items[itemToUpdateIndex].quantity = enteredQuantity;
     items[itemToUpdateIndex].totalPrice = fixedTotalPrice;
     await localStorageHandler.setLocalStorage("cartItems", items);
     props.onQuantityChange();
   }
+  async function handleItemDelete() {
+    const items = await localStorageHandler.getLocalStorage("cartItems");
+    const itemToUpdateIndex = getIndexOfCartItem(items, props.item.id);
+    items.splice(itemToUpdateIndex, 1);
+    await localStorageHandler.setLocalStorage("cartItems", items);
+    props.onItemDelete();
+  }
+
+  function getIndexOfCartItem(items, itemId) {
+    return items.findIndex((i) => i.id === itemId);
+  }
+
   return (
     <div className="cart-item-container">
       <div className="cart-item-image-wrapper">
@@ -67,7 +79,7 @@ function CartItem(props) {
           <p>$ {totalPrice}</p>
         </div>
         <div className="cart-item-delete-wrapper-lg">
-          <button className="remove-from-cart-btn" onClick={props.onItemDelete}>
+          <button className="remove-from-cart-btn" onClick={handleItemDelete}>
             <p className="bi bi-trash3-fill "></p>
           </button>
         </div>
