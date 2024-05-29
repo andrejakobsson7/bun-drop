@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import useLocalStorage from "../hooks/useLocalStorage";
 import useSharedVariables from "../hooks/useSharedVariables";
+import useHelpers from "../hooks/useHelpers";
 function CartItem(props) {
   const [quantity, setQuantity] = useState(props.item.quantity);
   const [totalPrice, setTotalPrice] = useState(props.item.totalPrice);
   const [quantityOptions, setQuantityOptions] = useState([]);
   const localStorageHandler = useLocalStorage();
   const sharedVariablesHandler = useSharedVariables();
+  const helpers = useHelpers();
 
   useEffect(() => {
     let options = [];
@@ -27,8 +29,9 @@ function CartItem(props) {
   async function handleQuantityChange(e) {
     const enteredQuantity = parseInt(e.target.value);
     setQuantity(enteredQuantity);
-    const fixedTotalPrice = parseFloat(
-      (enteredQuantity * props.item.price).toFixed(2)
+    const fixedTotalPrice = helpers.calculateTotal(
+      enteredQuantity,
+      props.item.price
     );
     setTotalPrice(fixedTotalPrice);
     const items = await localStorageHandler.getLocalStorage("cartItems");
