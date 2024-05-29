@@ -277,6 +277,7 @@ body {
   display: flex;
   align-items: end;
 }
+
 .add-to-cart-btn,
 .cart-continue-to-payment-btn,
 .payment-pay-btn,
@@ -286,6 +287,10 @@ body {
   color: white;
   max-height: 40vh;
 }
+.dish-maxed-out {
+  background-color: red;
+}
+
 .add-to-cart-btn {
   min-width: 80%;
 }
@@ -295,6 +300,10 @@ body {
 .confirmation-return-home-btn:hover,
 .cart-go-to-menu-btn:hover {
   background-color: rgb(55, 57, 52);
+}
+.dish-maxed-out:hover {
+  background-color: red;
+  cursor: default;
 }
 #cart-container,
 #payment-container,
@@ -490,6 +499,9 @@ button {
   padding: 5px 12.5px;
 }
 .confirm-click {
+  background-color: green;
+}
+.confirm-click:hover {
   background-color: green;
 }
 .input-warning-text {
