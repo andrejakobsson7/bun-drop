@@ -55,7 +55,7 @@ function CartItem(props) {
       <div className="cart-item-image-wrapper">
         <img src={props.item.image} />
         <div className="cart-item-delete-wrapper-sm">
-          <button className="remove-from-cart-btn" onClick={props.onItemDelete}>
+          <button className="remove-from-cart-btn" onClick={handleItemDelete}>
             <p className="bi bi-trash3-fill"></p>
           </button>
         </div>

@@ -206,10 +206,12 @@ body {
 }
 .cart-continue-to-payment-btn,
 .payment-pay-btn,
-.confirmation-return-home-btn {
+.confirmation-return-home-btn,
+.cart-go-to-menu-btn {
   margin: 1rem;
   padding: 1rem;
   width: 25vw;
+  max-height: 25vh;
 }
 
 /* Page-label */
@@ -278,10 +280,11 @@ body {
 .add-to-cart-btn,
 .cart-continue-to-payment-btn,
 .payment-pay-btn,
-.confirmation-return-home-btn {
+.confirmation-return-home-btn,
+.cart-go-to-menu-btn {
   background-color: rgb(109, 114, 104);
   color: white;
-  height: 60%;
+  max-height: 40vh;
 }
 .add-to-cart-btn {
   min-width: 80%;
@@ -289,7 +292,8 @@ body {
 .add-to-cart-btn:hover,
 .cart-continue-to-payment-btn:hover,
 .payment-pay-btn:hover,
-.confirmation-return-home-btn:hover {
+.confirmation-return-home-btn:hover,
+.cart-go-to-menu-btn:hover {
   background-color: rgb(55, 57, 52);
 }
 #cart-container,
@@ -356,6 +360,12 @@ body {
   color: red;
   background-color: transparent;
   font-size: 18px;
+}
+#cart-empty-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
 }
 
 /* Payment */
