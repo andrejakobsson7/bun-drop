@@ -1576,6 +1576,37 @@
         }
       ],
       "orderTime": "2024-05-30T19:14:58.384Z"
+    },
+    {
+      "id": "2d52",
+      "orderTime": "2024-05-30T19:43:34.914Z",
+      "user": {
+        "firstName": "abc",
+        "lastName": "Svensson",
+        "email": "abvxcxc@gotmail.com",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "stormgatan",
+        "houseNumber": "A",
+        "postalNumber": "26242",
+        "city": "ÄNGELHOLM",
+        "paymentOption": "swish",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "",
+        "expirationDate": "",
+        "cvc": ""
+      },
+      "dishes": [
+        {
+          "id": "2",
+          "title": "Cheeseburger",
+          "price": 5.49,
+          "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+          "category": "burgers",
+          "image": "images/menu/burgers/cheeseburger-lg.png",
+          "quantity": 1,
+          "totalPrice": 5.49
+        }
+      ]
     }
   ]
 }
