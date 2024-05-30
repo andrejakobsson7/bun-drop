@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import useFetch from "../hooks/useFetch";
 import BestSeller from "../components/BestSeller";
+import Error from "../components/Error";
 function Home() {
-  const fetchOrder = useFetch("http://localhost:9999/orders");
+  const fetchUrl = "http://localhost:9999/orders";
+  const fetchOrder = useFetch(fetchUrl);
   const [bestSellers, setBestSellers] = useState([]);
 
   useEffect(() => {
@@ -38,7 +40,11 @@ function Home() {
         {fetchOrder.loading ? (
           <h3>Loading bestsellers...</h3>
         ) : fetchOrder.error ? (
-          <h3>Error fetching bestsellers. Contact support department</h3>
+          <Error
+            errorText={fetchOrder.error}
+            action="fetching bestsellers"
+            url={fetchUrl}
+          ></Error>
         ) : (
           <div id="home-best-sellers">
             {bestSellers.map((d) => (

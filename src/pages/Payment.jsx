@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 import useCart from "../hooks/useCart";
 import useDate from "../hooks/useDate";
 import CartEmpty from "../components/CartEmpty";
+import Error from "../components/Error";
 function Payment() {
   const [paymentDetails, setPaymentDetails] = useState({
     firstName: "",
@@ -28,6 +29,7 @@ function Payment() {
   const navigate = useNavigate();
   const [cart, setCart] = useState([]);
   const [cartTotal, setCartTotal] = useState(0);
+  const [postingError, setPostingError] = useState("");
   const localStorageHandler = useLocalStorage();
   const cartHandler = useCart();
   const dateHandler = useDate();
@@ -55,11 +57,13 @@ function Payment() {
       dishes: cart,
     };
     const response = await postHandler.postData(postUrl, orderObj);
+    console.log(response);
     if (response.ok) {
       navigate("/confirmation");
       localStorageHandler.removeFromLocalStorage("cartItems");
     } else {
       //DISPLAY ERROR DIALOG
+      setPostingError(response.statusText);
     }
   }
 
@@ -282,6 +286,17 @@ function Payment() {
           <CartEmpty />
         </div>
       )}
+      <>
+        {postingError !== "" ? (
+          <Error
+            errorText={postingError}
+            action="sending order"
+            url={postUrl}
+          />
+        ) : (
+          ""
+        )}
+      </>
     </div>
   );
 }

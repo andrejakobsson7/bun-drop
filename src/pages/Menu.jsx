@@ -4,9 +4,11 @@ import FilterButton from "../components/FilterButton";
 import Dish from "../components/Dish";
 import useFetch from "../hooks/useFetch";
 import useLocalStorage from "../hooks/useLocalStorage";
+import Error from "../components/Error";
 function Menu() {
   //Get all dishes in menu
-  const fetchMenu = useFetch("http://localhost:9999/menu");
+  const fetchUrl = "http://localhost:9999/menu";
+  const fetchMenu = useFetch(fetchUrl);
   const [menu, setMenu] = useState([]);
   const [originalMenu, setOriginalMenu] = useState([]);
   const [filterOptions, setFilterOptions] = useState([]);
@@ -100,12 +102,11 @@ function Menu() {
           <p>Loading menu</p>
         </div>
       ) : fetchMenu.error ? (
-        <div id="menu-items-wrapper">
-          <p>
-            Error An error occurred fetching the menu. Error code:{" "}
-            {fetchMenu.error}. Please contact the support department.
-          </p>
-        </div>
+        <Error
+          errorText={fetchMenu.error}
+          action="fetching menu"
+          url={fetchUrl}
+        />
       ) : (
         <div id="menu-items-wrapper">
           {menu.map((d) => (
