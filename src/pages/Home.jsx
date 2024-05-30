@@ -42,8 +42,8 @@ function Home() {
         ) : (
           <div id="home-best-sellers">
             {bestSellers.map((d) => (
-              <div className="best-seller">
-                <BestSeller key={d.id} dish={d} />
+              <div className="best-seller" key={d.id}>
+                <BestSeller dish={d} />
               </div>
             ))}
           </div>
