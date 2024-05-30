@@ -307,7 +307,8 @@ body {
 }
 #cart-container,
 #payment-container,
-#menu-container {
+#menu-container,
+#error-dialog {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 #cart-container label {
@@ -510,6 +511,37 @@ button {
 }
 .input-warning-text {
   color: red;
+}
+/* Error */
+#error-dialog {
+  text-align: center;
+  padding: 0.5rem;
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  margin-top: 2rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 12.5px;
+  border: 1px solid black;
+  min-height: 20%;
+  min-width: 30%;
+}
+#error-dialog-header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.error-header-label {
+  grid-column: 2/4;
+}
+.close-error-dialog-btn {
+  justify-self: end;
+  max-width: 50%;
+  background-color: transparent;
 }
 /* Responsiveness */
 

@@ -12,11 +12,9 @@ function ControlledInputField(props) {
     const errorMessage = inputFieldHandler.setErrorMessage(input, props);
     setErrorText(errorMessage);
     setInputValue(input);
-    // if (props.onDefaultInputChange !== undefined) {
-    //   props.onDefaultInputChange(input);
-    // }
     props.onInputChange(props.propName, input);
   }
+
   return (
     <>
       <label htmlFor={props.inputId}>
