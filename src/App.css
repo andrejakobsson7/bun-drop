@@ -370,7 +370,9 @@ body {
   background-color: transparent;
   font-size: 18px;
 }
-#cart-empty-wrapper {
+#cart-cart-empty-wrapper,
+#payment-cart-empty-wrapper {
+  grid-column: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
