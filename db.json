@@ -1607,6 +1607,37 @@
           "totalPrice": 5.49
         }
       ]
+    },
+    {
+      "id": "cf93",
+      "orderTime": "2024-05-30T19:45:54.136Z",
+      "user": {
+        "firstName": "André",
+        "lastName": "Svensson",
+        "email": "abvxcxc@gotmail.com",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "stormgatan",
+        "houseNumber": "A",
+        "postalNumber": "26242",
+        "city": "ÄNGELHOLM",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "",
+        "cardNumber": "142236542365478",
+        "expirationDate": "2024-07",
+        "cvc": "322"
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
+        }
+      ]
     }
   ]
 }
