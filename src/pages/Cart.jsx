@@ -10,7 +10,9 @@ function Cart() {
   useEffect(() => {
     const getItemsInCart = async () => {
       const items = await localStorageHandler.getLocalStorage("cartItems");
-      setCart(items);
+      if (items !== null) {
+        setCart(items);
+      }
     };
     getItemsInCart();
   }, []);
@@ -36,9 +38,9 @@ function Cart() {
       <div id="cart-label-wrapper">
         <PageLabel label="CART" />
       </div>
-      <div id="cart-items-wrapper">
+      <>
         {cart.length > 0 ? (
-          <>
+          <div id="cart-items-wrapper">
             {cart.map((i) => (
               <CartItem
                 key={i.id}
@@ -57,16 +59,16 @@ function Cart() {
                 </button>
               </Link>
             </div>
-          </>
+          </div>
         ) : (
-          <div id="cart-empty-wrapper">
+          <div id="cart-cart-empty-wrapper">
             <p>Cart is empty</p>
             <Link to="/menu">
               <button className="cart-go-to-menu-btn">Go to menu</button>
             </Link>
           </div>
         )}
-      </div>
+      </>
     </div>
   );
 }
