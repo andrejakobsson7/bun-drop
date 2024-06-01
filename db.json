@@ -161,7 +161,24 @@
       "image": "images/menu/desserts/sundae-chocolate-lg.png"
     }
   ],
-  "users": [],
+  "users": [
+    {
+      "id": "man@bundrop.com",
+      "password": "Password123!"
+    },
+    {
+      "id": "user@bundrop.com",
+      "password": "Password123!"
+    },
+    {
+      "id": "andrejacobsson_@hotmail.com",
+      "password": "Password123!"
+    },
+    {
+      "id": "test@bundrop.com",
+      "password": "Password123!"
+    }
+  ],
   "orders": [
     {
       "id": "1",
@@ -1734,37 +1751,6 @@
       ]
     },
     {
-      "id": "28e5",
-      "orderTime": "2024-05-31T21:19:07.605Z",
-      "user": {
-        "firstName": "abc",
-        "lastName": "Svensson",
-        "email": "tumadre@puta.com",
-        "contactPhoneNumber": "0707526057",
-        "streetName": "puta street",
-        "houseNumber": "10",
-        "postalNumber": "25242",
-        "city": "stockholm",
-        "paymentOption": "swish",
-        "payingPhoneNumber": "0707526057",
-        "cardNumber": "",
-        "expirationDate": "",
-        "cvc": ""
-      },
-      "dishes": [
-        {
-          "id": "2",
-          "title": "Cheeseburger",
-          "price": 5.49,
-          "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
-          "category": "burgers",
-          "image": "images/menu/burgers/cheeseburger-lg.png",
-          "quantity": 1,
-          "totalPrice": 5.49
-        }
-      ]
-    },
-    {
       "id": "4ce0",
       "orderTime": "2024-06-01T07:35:21.587Z",
       "user": {
@@ -1833,6 +1819,47 @@
           "image": "images/menu/burgers/classic-burger-lg.png",
           "quantity": 12,
           "totalPrice": 59.88
+        }
+      ]
+    },
+    {
+      "id": "2ba3",
+      "orderTime": "2024-06-01T10:54:57.748Z",
+      "user": {
+        "firstName": "abc",
+        "lastName": "Svensson",
+        "email": "abvxcxc@gotmail.com",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "stormgatan",
+        "houseNumber": "A",
+        "postalNumber": "25242",
+        "city": "ÄNGELHOLM",
+        "paymentOption": "swish",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "",
+        "expirationDate": "",
+        "cvc": ""
+      },
+      "dishes": [
+        {
+          "id": "2",
+          "title": "Cheeseburger",
+          "price": 5.49,
+          "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+          "category": "burgers",
+          "image": "images/menu/burgers/cheeseburger-lg.png",
+          "quantity": 1,
+          "totalPrice": 5.49
+        },
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
         }
       ]
     }

@@ -5,6 +5,7 @@ import ErrorText from "../components/ErrorText";
 import useFetch from "../hooks/useFetch";
 import usePost from "../hooks/usePost";
 import useInputField from "../hooks/useInputField";
+import SuccessDialog from "../components/SuccessDialog";
 
 function Register() {
   const [userCredentials, setUserCredentials] = useState({
@@ -13,6 +14,7 @@ function Register() {
     confirmedPassword: "",
   });
   const [validationError, setValidationError] = useState("");
+  const [showSuccessDialog, setShowSuccessDialog] = useState(false);
   const fetchUrl = "http://localhost:9999/users/";
   const fetchHandler = useFetch();
   const postHandler = usePost();
@@ -43,6 +45,7 @@ function Register() {
         const response = await postHandler.postData(fetchUrl, newUser);
         if (response.ok) {
           //Show success dialog
+          setShowSuccessDialog(true);
         }
       } else {
         setValidationError(
@@ -65,14 +68,11 @@ function Register() {
       </div>
       <div id="register-info-wrapper">
         <strong>
-          Register to get exclusive preview on special offers and to get a
+          Register to enjoy first hand access to special offers and to get a
           smoother order process
         </strong>
       </div>
       <form id="register-form-wrapper" onSubmit={handleSubmit}>
-        <div id="register-label-input-wrapper">
-          <h3>User information</h3>
-        </div>
         <div className="register-user-input-wrapper">
           <ControlledInputField
             inputName="Email"
@@ -116,6 +116,7 @@ function Register() {
           </button>
         </div>
       </form>
+      {showSuccessDialog ? <SuccessDialog /> : ""}
     </div>
   );
 }

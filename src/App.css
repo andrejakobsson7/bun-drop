@@ -302,7 +302,8 @@ body {
 .payment-pay-btn:hover,
 .confirmation-return-home-btn:hover,
 .cart-go-to-menu-btn:hover,
-.register-user-btn:hover {
+.register-user-btn:hover,
+.success-go-to-sign-in-page-btn:hover {
   background-color: rgb(55, 57, 52);
 }
 .dish-maxed-out:hover {
@@ -312,8 +313,8 @@ body {
 #cart-container,
 #payment-container,
 #menu-container,
-#error-dialog,
-#register-container {
+#register-container,
+dialog {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
@@ -488,6 +489,14 @@ body {
 .error-text {
   color: red;
 }
+.error {
+  color: red;
+  font-size: 40px;
+}
+.success {
+  color: green;
+  font-size: 40px;
+}
 
 /* Register */
 #register-container {
@@ -504,7 +513,7 @@ body {
   text-align: center;
 }
 #register-form-wrapper div {
-  padding: 1rem;
+  padding-bottom: 1rem;
 }
 #register-form-wrapper {
   grid-column: 2;
@@ -514,11 +523,6 @@ body {
   height: fit-content;
   justify-self: center;
   width: 50vw;
-  background-color: white;
-  border-radius: 25px;
-  border: 1px solid black;
-  background-color: white;
-  overflow: hidden;
 }
 
 .register-user-input-wrapper {
@@ -529,15 +533,14 @@ body {
   display: flex;
   justify-content: center;
 }
-#register-label-input-wrapper {
-  color: white;
-  background-color: rgb(109, 114, 104);
-}
 
 /* General rules */
 button,
 input {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+input {
+  padding-left: 1px;
 }
 button {
   cursor: pointer;
@@ -558,7 +561,8 @@ label {
   color: red;
 }
 /* Error */
-#error-dialog {
+#error-dialog,
+#success-dialog {
   text-align: center;
   padding: 0.5rem;
   display: grid;
@@ -574,13 +578,13 @@ label {
   min-height: 20%;
   min-width: 30%;
 }
-#error-dialog-header {
+.dialog-header {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(4, 1fr);
 }
 
-.error-header-label {
+.dialog-header-label {
   grid-column: 2/4;
 }
 .close-error-dialog-btn {
@@ -588,6 +592,20 @@ label {
   max-width: 50%;
   background-color: transparent;
 }
+
+.success-go-to-sign-in-page-btn {
+  margin: 1rem;
+  padding: 1rem;
+  max-height: 25vh;
+  width: auto;
+  background-color: rgb(109, 114, 104);
+  color: white;
+}
+#success-dialog strong,
+#success-dialog p {
+  margin-top: 10px;
+}
+
 /* Responsiveness */
 
 @media (max-width: 830px) {

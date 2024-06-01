@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 import useCart from "../hooks/useCart";
 import useDate from "../hooks/useDate";
 import CartEmpty from "../components/CartEmpty";
-import Error from "../components/Error";
+import ErrorDialog from "../components/ErrorDialog";
 function Payment() {
   const [paymentDetails, setPaymentDetails] = useState({
     firstName: "",
@@ -282,7 +282,7 @@ function Payment() {
       )}
       <>
         {postingError !== "" ? (
-          <Error
+          <ErrorDialog
             errorText={postingError}
             action="sending order"
             url={postUrl}
