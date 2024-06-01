@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import useSharedVariables from "../hooks/useSharedVariables";
-function Error(props) {
+import CloseDialogButton from "./CloseDialogButton";
+function ErrorDialog(props) {
   const sharedVariablesHandler = useSharedVariables();
   const [showDialog, setShowDialog] = useState(true);
   function handleDialogClose() {
@@ -10,16 +11,11 @@ function Error(props) {
     <>
       {showDialog ? (
         <dialog id="error-dialog" open>
-          <div id="error-dialog-header">
-            <strong className="error-header-label error-text">ERROR</strong>
-            <button
-              onClick={handleDialogClose}
-              className="close-error-dialog-btn"
-            >
-              <h3 className="bi bi-x-lg"></h3>
-            </button>
+          <div className="dialog-header">
+            <h3 className="dialog-header-label">ERROR</h3>
+            <CloseDialogButton onDialogClose={handleDialogClose} />
           </div>
-          <h1 className="bi bi-bug-fill"></h1>
+          <h1 className="bi bi-bug-fill error"></h1>
           <p>Following error occured while {props.action}:</p>
           <strong>{props.errorText}</strong>
           <p>
@@ -39,4 +35,4 @@ function Error(props) {
   );
 }
 
-export default Error;
+export default ErrorDialog;

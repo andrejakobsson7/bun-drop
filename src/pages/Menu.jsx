@@ -4,7 +4,7 @@ import FilterButton from "../components/FilterButton";
 import Dish from "../components/Dish";
 import useFetch from "../hooks/useFetch";
 import useLocalStorage from "../hooks/useLocalStorage";
-import Error from "../components/Error";
+import ErrorDialog from "../components/ErrorDialog";
 function Menu() {
   //Get all dishes in menu
   const fetchUrl = "http://localhost:9999/menu";
@@ -102,7 +102,7 @@ function Menu() {
           <p>Loading menu</p>
         </div>
       ) : fetchMenu.error ? (
-        <Error
+        <ErrorDialog
           errorText={fetchMenu.error}
           action="fetching menu"
           url={fetchUrl}

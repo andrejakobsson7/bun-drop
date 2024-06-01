@@ -161,6 +161,24 @@
       "image": "images/menu/desserts/sundae-chocolate-lg.png"
     }
   ],
+  "users": [
+    {
+      "id": "man@bundrop.com",
+      "password": "Password123!"
+    },
+    {
+      "id": "user@bundrop.com",
+      "password": "Password123!"
+    },
+    {
+      "id": "andrejacobsson_@hotmail.com",
+      "password": "Password123!"
+    },
+    {
+      "id": "test@bundrop.com",
+      "password": "Password123!"
+    }
+  ],
   "orders": [
     {
       "id": "1",
@@ -1689,6 +1707,150 @@
         "cvc": ""
       },
       "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "91e6",
+      "orderTime": "2024-05-31T14:30:54.919Z",
+      "user": {
+        "firstName": "abc",
+        "lastName": "Svensson",
+        "email": "andre.jakobsson@hotm",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "stormgatan",
+        "houseNumber": "A",
+        "postalNumber": "26242",
+        "city": "ÄNGELHOLM",
+        "paymentOption": "swish",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "",
+        "expirationDate": "",
+        "cvc": ""
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "4ce0",
+      "orderTime": "2024-06-01T07:35:21.587Z",
+      "user": {
+        "firstName": "Tiger",
+        "lastName": "Woods",
+        "email": "tiger@woods.com",
+        "contactPhoneNumber": "0703898082",
+        "streetName": "Tree Street",
+        "houseNumber": "2000",
+        "postalNumber": "112999",
+        "city": "Hawaii",
+        "paymentOption": "swish",
+        "payingPhoneNumber": "0703898081",
+        "cardNumber": "",
+        "expirationDate": "",
+        "cvc": ""
+      },
+      "dishes": [
+        {
+          "id": "2",
+          "title": "Cheeseburger",
+          "price": 5.49,
+          "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+          "category": "burgers",
+          "image": "images/menu/burgers/cheeseburger-lg.png",
+          "quantity": 1,
+          "totalPrice": 5.49
+        },
+        {
+          "id": "6",
+          "title": "Crispy fries",
+          "price": 3.99,
+          "description": "Fries made from our founder's secret recipe",
+          "category": "sides",
+          "image": "images/menu/sides/crispy-fries-lg.png",
+          "quantity": 7,
+          "totalPrice": 27.93
+        }
+      ]
+    },
+    {
+      "id": "ed2c",
+      "orderTime": "2024-06-01T08:14:22.124Z",
+      "user": {
+        "firstName": "User",
+        "lastName": "Usersson",
+        "email": "user@bundrop.com",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "stormgatan",
+        "houseNumber": "m",
+        "postalNumber": "26253",
+        "city": "Hawaii",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "123456789012341",
+        "expirationDate": "2024-07",
+        "cvc": "999"
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png",
+          "quantity": 12,
+          "totalPrice": 59.88
+        }
+      ]
+    },
+    {
+      "id": "2ba3",
+      "orderTime": "2024-06-01T10:54:57.748Z",
+      "user": {
+        "firstName": "abc",
+        "lastName": "Svensson",
+        "email": "abvxcxc@gotmail.com",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "stormgatan",
+        "houseNumber": "A",
+        "postalNumber": "25242",
+        "city": "ÄNGELHOLM",
+        "paymentOption": "swish",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "",
+        "expirationDate": "",
+        "cvc": ""
+      },
+      "dishes": [
+        {
+          "id": "2",
+          "title": "Cheeseburger",
+          "price": 5.49,
+          "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+          "category": "burgers",
+          "image": "images/menu/burgers/cheeseburger-lg.png",
+          "quantity": 1,
+          "totalPrice": 5.49
+        },
         {
           "id": "1",
           "title": "Classic Burger",

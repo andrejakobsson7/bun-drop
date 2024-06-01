@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import useFetch from "../hooks/useFetch";
 import BestSeller from "../components/BestSeller";
-import Error from "../components/Error";
+import ErrorDialog from "../components/ErrorDialog";
 function Home() {
   const fetchUrl = "http://localhost:9999/orders";
   const fetchOrder = useFetch(fetchUrl);
@@ -40,11 +40,11 @@ function Home() {
         {fetchOrder.loading ? (
           <h3>Loading bestsellers...</h3>
         ) : fetchOrder.error ? (
-          <Error
+          <ErrorDialog
             errorText={fetchOrder.error}
             action="fetching bestsellers"
             url={fetchUrl}
-          ></Error>
+          ></ErrorDialog>
         ) : (
           <div id="home-best-sellers">
             {bestSellers.map((d) => (

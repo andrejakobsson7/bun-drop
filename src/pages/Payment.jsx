@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 import useCart from "../hooks/useCart";
 import useDate from "../hooks/useDate";
 import CartEmpty from "../components/CartEmpty";
-import Error from "../components/Error";
+import ErrorDialog from "../components/ErrorDialog";
 function Payment() {
   const [paymentDetails, setPaymentDetails] = useState({
     firstName: "",
@@ -57,7 +57,6 @@ function Payment() {
       dishes: cart,
     };
     const response = await postHandler.postData(postUrl, orderObj);
-    console.log(response);
     if (response.ok) {
       navigate("/confirmation");
       localStorageHandler.removeFromLocalStorage("cartItems");
@@ -118,7 +117,6 @@ function Payment() {
               inputName="Email"
               inputType="email"
               propName="email"
-              pattern="[A-Za-z0-9\._%+\-]+@[A-Za-z0-9\.\-]+\.[A-Za-z]{2,}"
               isRequired={true}
               onInputChange={handleInputChange}
             ></ControlledInputField>
@@ -129,7 +127,6 @@ function Payment() {
               inputName="Phone number"
               inputType="tel"
               propName="contactPhoneNumber"
-              pattern="^[0-9]{10,10}$"
               maxLength={10}
               isRequired={true}
               onInputChange={handleInputChange}
@@ -170,7 +167,7 @@ function Payment() {
               inputName="Postal number"
               inputType="text"
               propName="postalNumber"
-              pattern="^[0-9]{5,}$"
+              // pattern="^[0-9]{5,}$"
               isRequired={true}
               onInputChange={handleInputChange}
             ></ControlledInputField>
@@ -216,7 +213,6 @@ function Payment() {
                 inputType="tel"
                 propName="payingPhoneNumber"
                 defaultValue={paymentDetails.contactPhoneNumber}
-                pattern="^[0-9]{10,10}$"
                 maxLength={10}
                 isRequired={paymentDetails.paymentOption === "swish"}
                 onInputChange={handleInputChange}
@@ -236,7 +232,6 @@ function Payment() {
                   inputName="Card number"
                   inputType="text"
                   propName="cardNumber"
-                  pattern="^[0-9]{15,16}$"
                   maxLength={16}
                   isRequired={paymentDetails.paymentOption === "credit-card"}
                   onInputChange={handleInputChange}
@@ -265,7 +260,6 @@ function Payment() {
                   inputName="CVC"
                   inputType="text"
                   propName="cvc"
-                  pattern="^[0-9]{3,3}$"
                   maxLength={3}
                   isRequired={paymentDetails.paymentOption === "credit-card"}
                   onInputChange={handleInputChange}
@@ -288,7 +282,7 @@ function Payment() {
       )}
       <>
         {postingError !== "" ? (
-          <Error
+          <ErrorDialog
             errorText={postingError}
             action="sending order"
             url={postUrl}
