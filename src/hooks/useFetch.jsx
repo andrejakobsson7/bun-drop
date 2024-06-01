@@ -4,6 +4,18 @@ function useFetch(url) {
   const [error, setError] = useState(null);
   const [data, setData] = useState([]);
 
+  async function fetchData(url) {
+    return fetch(url).then((response) => {
+      if (response.ok) {
+        response.json().then((data) => {
+          return data;
+        });
+      } else {
+        return null;
+      }
+    });
+  }
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -20,7 +32,7 @@ function useFetch(url) {
     fetchData();
   }, [url]);
 
-  return { loading, data, error };
+  return { loading, data, error, fetchData };
 }
 
 export default useFetch;
