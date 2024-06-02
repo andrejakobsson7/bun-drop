@@ -48,7 +48,8 @@ body {
   justify-content: space-evenly;
   list-style: none;
 }
-#nav-links a {
+.active-link,
+.inactive-link {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,6 +65,52 @@ body {
 }
 .active-link {
   text-decoration-style: double;
+}
+.navbar-user-dropdown {
+  margin-left: 2.5rem;
+}
+.navbar-user-dropdown-content {
+  display: flex;
+}
+.navbar-user-dropdown-select:hover .navbar-user-dropdown-content {
+  display: flex;
+}
+.navbar-user-dropdown-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 7%;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.navbar-dropdown-link-wrapper {
+  padding: 0.5rem;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+.navbar-dropdown-link {
+  text-decoration: none;
+}
+.navbar-dropdown-link:visited {
+  text-decoration: none;
+  color: black;
+}
+.navbar-dropdown-link-wrapper:hover {
+  background-color: #eee;
+}
+.navbar-user-dropdown-select {
+  margin-left: 2.5rem;
+  display: flex;
+}
+.navbar-user-icon {
+  display: flex;
+  justify-content: center;
+}
+a {
+  cursor: pointer;
 }
 
 /* //Landing page */
@@ -127,7 +174,8 @@ body {
   font-family: "Poetsen One";
 }
 #menu-label-wrapper,
-#register-label-wrapper {
+#register-label-wrapper,
+#sign-in-label-wrapper {
   grid-column: 2;
   display: flex;
   justify-content: center;
@@ -209,7 +257,8 @@ body {
 .payment-pay-btn,
 .confirmation-return-home-btn,
 .cart-go-to-menu-btn,
-.register-user-btn {
+.register-user-btn,
+.sign-in-user-btn {
   margin: 1rem;
   padding: 1rem;
   width: 25vw;
@@ -285,7 +334,8 @@ body {
 .payment-pay-btn,
 .confirmation-return-home-btn,
 .cart-go-to-menu-btn,
-.register-user-btn {
+.register-user-btn,
+.sign-in-user-btn {
   background-color: rgb(109, 114, 104);
   color: white;
   max-height: 40vh;
@@ -303,6 +353,7 @@ body {
 .confirmation-return-home-btn:hover,
 .cart-go-to-menu-btn:hover,
 .register-user-btn:hover,
+.sign-in-user-btn:hover,
 .success-go-to-sign-in-page-btn:hover {
   background-color: rgb(55, 57, 52);
 }
@@ -314,7 +365,8 @@ body {
 #payment-container,
 #menu-container,
 #register-container,
-dialog {
+dialog,
+#sign-in-container {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
@@ -499,23 +551,27 @@ dialog {
 }
 
 /* Register */
-#register-container {
+#register-container,
+#sign-in-container {
   display: grid;
   grid-template-columns: 0.5fr 2fr 0.5fr;
   grid-template-rows: repeat(2, 0.3fr) 2fr;
   min-height: 80vh;
 }
-#register-info-wrapper {
+#register-info-wrapper,
+#sign-in-info-wrapper {
   grid-column: 2;
   grid-row: 2;
   display: flex;
   justify-content: center;
   text-align: center;
 }
-#register-form-wrapper div {
+#register-form-wrapper div,
+#sign-in-form-wrapper div {
   padding-bottom: 1rem;
 }
-#register-form-wrapper {
+#register-form-wrapper,
+#sign-in-form-wrapper {
   grid-column: 2;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -525,11 +581,13 @@ dialog {
   width: 50vw;
 }
 
-.register-user-input-wrapper {
+.register-user-input-wrapper,
+.sign-in-user-input-wrapper {
   display: flex;
   flex-direction: column;
 }
-.register-user-btn-wrapper {
+.register-user-btn-wrapper,
+.sign-in-user-btn-wrapper {
   display: flex;
   justify-content: center;
 }
@@ -605,11 +663,15 @@ label {
 #success-dialog p {
   margin-top: 10px;
 }
+#sign-in-container {
+  display: grid;
+}
 
 /* Responsiveness */
 
 @media (max-width: 830px) {
-  #nav-links a {
+  .active-link,
+  .inactive link {
     margin-left: 2rem;
   }
   .dish-container {
@@ -686,7 +748,8 @@ label {
     flex-direction: column;
     overflow-x: auto;
   }
-  #register-form-wrapper {
+  #register-form-wrapper,
+  #sign-in-form-wrapper {
     width: 90vw;
   }
 }

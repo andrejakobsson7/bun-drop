@@ -37,6 +37,7 @@ function Register() {
       const foundUserWithEmail = await fetchHandler.fetchData(
         fetchUrl + userCredentials.email
       );
+      console.log("Error", fetchHandler.error);
       if (foundUserWithEmail === null) {
         const newUser = {
           id: userCredentials.email,
@@ -55,7 +56,6 @@ function Register() {
     }
   }
   function handleInputChange(propName, inputValue) {
-    console.log(propName, inputValue);
     const userCredsCopy = { ...userCredentials };
     userCredsCopy[propName] = inputValue;
     setUserCredentials(userCredsCopy);

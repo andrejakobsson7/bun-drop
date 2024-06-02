@@ -5,15 +5,32 @@ function useFetch(url) {
   const [data, setData] = useState([]);
 
   async function fetchData(url) {
-    return fetch(url).then((response) => {
-      if (response.ok) {
-        response.json().then((data) => {
-          return data;
-        });
-      } else {
-        return null;
-      }
-    });
+    setLoading(true);
+    const response = await fetch(url);
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Returning", data);
+      setData(data);
+      return data;
+    } else {
+      setError(response.statusText);
+      return null;
+    }
+  }
+
+  async function postData(url, obj) {
+    const postOptions = createPostOptions(obj);
+    let apiResponse = Response;
+    try {
+      setLoading(true);
+      apiResponse = await fetch(url, postOptions);
+      setResponse(apiResponse);
+    } catch (err) {
+      setError(new String(err));
+    } finally {
+      setLoading(false);
+    }
+    return apiResponse;
   }
 
   useEffect(() => {
