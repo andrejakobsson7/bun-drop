@@ -177,6 +177,10 @@
     {
       "id": "test@bundrop.com",
       "password": "Password123!"
+    },
+    {
+      "id": "man@bundrop",
+      "password": "Password123!"
     }
   ],
   "orders": [

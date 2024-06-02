@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
@@ -9,10 +10,11 @@ import Cart from "./pages/Cart";
 import Payment from "./pages/Payment";
 import Confirmation from "./pages/Confirmation";
 import "./App.css";
+import AuthProvider from "./contexts/AuthProvider";
 
 function App() {
   return (
-    <>
+    <AuthProvider>
       <Router>
         <Navbar />
         <Routes>
@@ -25,7 +27,7 @@ function App() {
           <Route path="/Confirmation" element={<Confirmation />}></Route>
         </Routes>
       </Router>
-    </>
+    </AuthProvider>
   );
 }
 
