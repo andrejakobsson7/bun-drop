@@ -247,7 +247,7 @@ function UserSettings() {
                 inputName="Phone number"
                 inputType="tel"
                 propName="payingPhoneNumber"
-                defaultValue={user.contactPhoneNumber}
+                defaultValue={user.payingPhoneNumber}
                 maxLength={10}
                 onInputChange={handleInputChange}
               />

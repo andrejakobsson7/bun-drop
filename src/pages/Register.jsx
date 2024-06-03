@@ -131,7 +131,7 @@ function Register() {
       {showSuccessDialog ? (
         <SuccessDialog
           navigationSuggestion="sign in page"
-          navigationSuggestionUrl="/"
+          navigationSuggestionUrl="/signin"
           confirmationText="You are now officially a Bun Drop-member!"
         />
       ) : (

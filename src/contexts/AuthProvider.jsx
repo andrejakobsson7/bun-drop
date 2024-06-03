@@ -25,6 +25,7 @@ const AuthProvider = ({ children }) => {
 
   const signOut = () => {
     setIsAuthenticated(false);
+    localStorageHandler.removeFromLocalStorage("signedInUser");
   };
 
   return (

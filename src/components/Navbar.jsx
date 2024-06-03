@@ -1,18 +1,15 @@
 import React, { useEffect, useState, useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-import useLocalStorage from "../hooks/useLocalStorage";
 import { AuthContext } from "../contexts/AuthProvider";
 import { useNavigate } from "react-router-dom";
 
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 function Navbar() {
-  const localStorageHandler = useLocalStorage();
   const authHandler = useContext(AuthContext);
   const navigate = useNavigate();
 
   function handleSignOut() {
-    localStorageHandler.removeFromLocalStorage("signedInUser");
     authHandler.signOut();
     navigate("/");
   }
