@@ -1,0 +1,8 @@
+.action-btn {
+  background-color: rgb(109, 114, 104);
+  color: white;
+  max-height: 40vh;
+}
+.action-btn:hover {
+  background-color: rgb(55, 57, 52);
+}

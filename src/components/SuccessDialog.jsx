@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import CloseDialogButton from "./CloseDialogButton";
 import { Link } from "react-router-dom";
-function SuccessDialog() {
+function SuccessDialog(props) {
   const [showDialog, setShowDialog] = useState(true);
 
   function handleDialogClose() {
@@ -17,13 +17,13 @@ function SuccessDialog() {
             <CloseDialogButton onDialogClose={handleDialogClose} />
           </div>{" "}
           <h1 className="bi bi-check-circle-fill success"></h1>
-          <strong>You are now officially a Bun Drop-user!</strong>
-          <p>Our drones are ready to take your order and deliver it to you. </p>
-          <p>Click the button below to go to sign in page.</p>
+          <strong>{props.confirmationText}</strong>
+          <p>{props.upperInfoText}</p>
+          <p>Click the button below to go to {props.navigationSuggestion}</p>
           <div>
-            <Link to="/signin">
+            <Link to={props.navigationSuggestionUrl}>
               <button className="success-go-to-sign-in-page-btn">
-                Go to sign in page
+                Go to {props.navigationSuggestion}
               </button>
             </Link>
           </div>

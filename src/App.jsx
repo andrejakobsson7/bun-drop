@@ -11,6 +11,7 @@ import Payment from "./pages/Payment";
 import Confirmation from "./pages/Confirmation";
 import "./App.css";
 import AuthProvider from "./contexts/AuthProvider";
+import UserSettings from "./pages/UserSettings";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/Cart" element={<Cart />}></Route>
           <Route path="/Payment" element={<Payment />}></Route>
           <Route path="/Confirmation" element={<Confirmation />}></Route>
+          <Route path="UserSettings" element={<UserSettings />}></Route>
         </Routes>
       </Router>
     </AuthProvider>

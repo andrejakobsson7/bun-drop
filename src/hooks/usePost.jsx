@@ -1,23 +1,23 @@
 import React, { useState } from "react";
-function usePost(url, obj) {
+function usePost(url, obj, method) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [response, setResponse] = useState([]);
 
-  function createPostOptions(obj) {
+  function createOptions(obj, method) {
     return {
-      method: "POST",
+      method: method,
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(obj),
     };
   }
 
-  async function postData(url, obj) {
-    const postOptions = createPostOptions(obj);
+  async function setData(url, obj, method) {
+    const options = createOptions(obj, method);
     let apiResponse = Response;
     try {
       setLoading(true);
-      apiResponse = await fetch(url, postOptions);
+      apiResponse = await fetch(url, options);
       setResponse(apiResponse);
     } catch (err) {
       setError(new String(err));
@@ -27,7 +27,7 @@ function usePost(url, obj) {
     return apiResponse;
   }
 
-  return { postData, loading, error, response };
+  return { setData, loading, error, response };
 }
 
 export default usePost;

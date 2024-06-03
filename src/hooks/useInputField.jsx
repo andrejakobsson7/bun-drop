@@ -69,7 +69,10 @@ function useInputField() {
   function setErrorMessage(input, props, pattern) {
     if (input.trim().length === 0 && props.isRequired) {
       return getDefaultErrorMessage(props.inputName);
-    } else if (validateInputVsPattern(input, pattern) === false) {
+    } else if (
+      input.trim().length > 0 &&
+      validateInputVsPattern(input, pattern) === false
+    ) {
       return getFormatErrorMessage(props.inputType, props.propName);
     } else {
       return "";

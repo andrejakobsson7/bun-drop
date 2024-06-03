@@ -7,6 +7,7 @@ function ControlledInputField(props) {
   const [errorText, setErrorText] = useState(null);
   const [pattern, setPattern] = useState("");
   const inputFieldHandler = useInputField();
+  const [disabled, setDisabled] = useState({});
 
   function handleInput(e) {
     const input = e.target.value;
@@ -26,7 +27,15 @@ function ControlledInputField(props) {
       props.propName
     );
     setPattern(pattern);
+    if (props.disabled) {
+      const disabledCopy = { ...disabled };
+      disabledCopy["disabled"] = "disabled";
+      setDisabled(disabledCopy);
+    }
   }, []);
+  useEffect(() => {
+    setInputValue(props.value);
+  }, [props.value]);
 
   return (
     <>
@@ -44,6 +53,7 @@ function ControlledInputField(props) {
         maxLength={props.maxLength}
         min={props.minValue}
         required={props.isRequired}
+        {...disabled}
       />
       <ErrorText text={errorText} />
     </>
