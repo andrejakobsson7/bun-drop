@@ -1,7 +1,8 @@
 /* Dish */
 .dish-container {
   width: 40%;
-  height: 40%;
+  max-height: 20vh;
+  min-height: 20vh;
   border-radius: 12.5px;
   border: 1px solid rgb(109, 114, 104);
   display: grid;
@@ -81,7 +82,6 @@
   background-color: red;
   cursor: default;
 }
-
 .confirm-click {
   background-color: green;
 }
