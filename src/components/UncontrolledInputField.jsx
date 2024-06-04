@@ -15,11 +15,13 @@ function UncontrolledInputField(props) {
   }
 
   useEffect(() => {
-    const errorMessage = inputFieldHandler.setErrorMessage(
-      props.defaultValue,
-      props
-    );
-    setErrorText(errorMessage);
+    if (props.defaultValue !== undefined) {
+      const errorMessage = inputFieldHandler.setErrorMessage(
+        props.defaultValue,
+        props
+      );
+      setErrorText(errorMessage);
+    }
     setInputValue(props.defaultValue);
     props.onInputChange(props.propName, props.defaultValue);
   }, [props.defaultValue]);

@@ -181,6 +181,97 @@
     {
       "id": "man@bundrop",
       "password": "Password123!"
+    },
+    {
+      "id": "",
+      "firstName": "",
+      "lastName": "",
+      "password": "",
+      "contactPhoneNumber": "",
+      "streetName": "",
+      "houseNumber": "",
+      "postalNumber": "",
+      "city": "",
+      "paymentOption": "",
+      "payingPhoneNumber": "",
+      "cardNumber": "",
+      "expirationDate": "",
+      "cvc": ""
+    },
+    {
+      "id": "",
+      "firstName": "",
+      "lastName": "",
+      "password": "Password123!",
+      "contactPhoneNumber": "",
+      "streetName": "",
+      "houseNumber": "",
+      "postalNumber": "",
+      "city": "",
+      "paymentOption": "",
+      "payingPhoneNumber": "",
+      "cardNumber": "",
+      "expirationDate": "",
+      "cvc": ""
+    },
+    {
+      "id": "bundrop@master.com",
+      "firstName": "MASTER",
+      "lastName": "Bundrop",
+      "password": "Password123!",
+      "contactPhoneNumber": "",
+      "streetName": "Money street",
+      "houseNumber": "99",
+      "postalNumber": "12345",
+      "city": "Stockholm",
+      "paymentOption": "credit-card",
+      "payingPhoneNumber": "0707526057",
+      "cardNumber": "1234567898765413",
+      "expirationDate": "2024-11",
+      "cvc": "124",
+      "favorites": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png"
+        }
+      ]
+    },
+    {
+      "id": "email@bundrop.com",
+      "firstName": "",
+      "lastName": "",
+      "password": "Password123!",
+      "contactPhoneNumber": "",
+      "streetName": "",
+      "houseNumber": "",
+      "postalNumber": "",
+      "city": "",
+      "paymentOption": "",
+      "payingPhoneNumber": "",
+      "cardNumber": "",
+      "expirationDate": "",
+      "cvc": ""
+    },
+    {
+      "id": "andy@andy.com",
+      "firstName": "",
+      "lastName": "",
+      "password": "Password123!",
+      "contactPhoneNumber": "",
+      "streetName": "",
+      "houseNumber": "",
+      "postalNumber": "",
+      "city": "",
+      "paymentOption": "",
+      "payingPhoneNumber": "",
+      "cardNumber": "",
+      "expirationDate": "",
+      "cvc": "",
+      "favorites": []
     }
   ],
   "orders": [
@@ -1855,6 +1946,102 @@
           "quantity": 1,
           "totalPrice": 5.49
         },
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "a576",
+      "orderTime": "2024-06-03T12:26:45.753Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTER",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0703898082",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "swish",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "123"
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "6882",
+      "orderTime": "2024-06-03T12:32:15.510Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTER",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526051",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "swish",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "123"
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "8e53",
+      "orderTime": "2024-06-03T18:25:38.917Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTER",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526051",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "124"
+      },
+      "dishes": [
         {
           "id": "1",
           "title": "Classic Burger",

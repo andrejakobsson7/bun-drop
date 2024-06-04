@@ -1,14 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import PageLabel from "../components/PageLabel";
 import useLocalStorage from "../hooks/useLocalStorage";
 import usePost from "../hooks/usePost";
 import ControlledInputField from "../components/ControlledInputField";
 import UncontrolledInputField from "../components/UncontrolledInputField";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../contexts/AuthProvider";
 import useCart from "../hooks/useCart";
 import useDate from "../hooks/useDate";
 import CartEmpty from "../components/CartEmpty";
 import ErrorDialog from "../components/ErrorDialog";
+import "../styles/Payment.css";
+import "../styles/Button.css";
 function Payment() {
   const [paymentDetails, setPaymentDetails] = useState({
     firstName: "",
@@ -30,6 +33,7 @@ function Payment() {
   const [cart, setCart] = useState([]);
   const [cartTotal, setCartTotal] = useState(0);
   const [postingError, setPostingError] = useState("");
+  const authHandler = useContext(AuthContext);
   const localStorageHandler = useLocalStorage();
   const cartHandler = useCart();
   const dateHandler = useDate();
@@ -45,7 +49,14 @@ function Payment() {
         setCartTotal(cartTotal);
       }
     };
+    const getUser = async () => {
+      const user = await localStorageHandler.getLocalStorage("signedInUser");
+      if (user !== null) {
+        setPaymentDetails(user);
+      }
+    };
     getItemsInCart();
+    getUser();
   }, []);
 
   async function handleSubmit(e) {
@@ -56,7 +67,7 @@ function Payment() {
       user: paymentDetails,
       dishes: cart,
     };
-    const response = await postHandler.postData(postUrl, orderObj);
+    const response = await postHandler.setData(postUrl, orderObj, "POST");
     if (response.ok) {
       navigate("/confirmation");
       localStorageHandler.removeFromLocalStorage("cartItems");
@@ -83,9 +94,24 @@ function Payment() {
       <div id="payment-label-wrapper">
         <PageLabel label="PAYMENT"></PageLabel>
       </div>
+      <div id="payment-info-wrapper">
+        {authHandler.isAuthenticated === false ? (
+          <>
+            <p>
+              <Link to="/signin">Sign in</Link>
+              <span> to get your information prefilled</span>
+            </p>
+            <p>
+              Not a member yet? <Link to="/register">Register here!</Link>
+            </p>
+          </>
+        ) : (
+          <strong>Welcome back {paymentDetails.firstName}</strong>
+        )}
+      </div>
       {cart.length > 0 ? (
         <form id="payment-form-wrapper" onSubmit={handleSubmit}>
-          <div id="payment-contact-label" className="form-label">
+          <div id="payment-contact-label" className="payment-form-label">
             <h3>Contact</h3>
           </div>
           <div
@@ -98,6 +124,7 @@ function Payment() {
               inputType="text"
               propName="firstName"
               isRequired={true}
+              value={paymentDetails.firstName}
               onInputChange={handleInputChange}
             ></ControlledInputField>
           </div>
@@ -108,6 +135,7 @@ function Payment() {
               inputType="text"
               propName="lastName"
               isRequired={true}
+              value={paymentDetails.lastName}
               onInputChange={handleInputChange}
             ></ControlledInputField>
           </div>
@@ -118,6 +146,7 @@ function Payment() {
               inputType="email"
               propName="email"
               isRequired={true}
+              value={paymentDetails.id}
               onInputChange={handleInputChange}
             ></ControlledInputField>
           </div>
@@ -129,10 +158,11 @@ function Payment() {
               propName="contactPhoneNumber"
               maxLength={10}
               isRequired={true}
+              value={paymentDetails.contactPhoneNumber}
               onInputChange={handleInputChange}
             ></ControlledInputField>
           </div>
-          <div id="payment-delivery-label" className="form-label">
+          <div id="payment-delivery-label" className="payment-form-label">
             <h3>Delivery</h3>
           </div>
           <div id="payment-street-wrapper" className="payment-input-wrapper">
@@ -142,6 +172,7 @@ function Payment() {
               inputType="text"
               propName="streetName"
               isRequired={true}
+              value={paymentDetails.streetName}
               onInputChange={handleInputChange}
             ></ControlledInputField>
           </div>
@@ -155,6 +186,7 @@ function Payment() {
               inputType="text"
               propName="houseNumber"
               isRequired={true}
+              value={paymentDetails.houseNumber}
               onInputChange={handleInputChange}
             ></ControlledInputField>
           </div>
@@ -167,8 +199,8 @@ function Payment() {
               inputName="Postal number"
               inputType="text"
               propName="postalNumber"
-              // pattern="^[0-9]{5,}$"
               isRequired={true}
+              value={paymentDetails.postalNumber}
               onInputChange={handleInputChange}
             ></ControlledInputField>
           </div>
@@ -179,10 +211,11 @@ function Payment() {
               inputType="text"
               propName="city"
               isRequired={true}
+              value={paymentDetails.city}
               onInputChange={handleInputChange}
             ></ControlledInputField>
           </div>
-          <div id="payment-payment-label" className="form-label">
+          <div id="payment-payment-label" className="payment-form-label">
             <h3>Payment</h3>
           </div>
           <div
@@ -197,7 +230,11 @@ function Payment() {
                 ""
               )}
             </label>
-            <select defaultValue={""} onChange={handlePaymentSelect} required>
+            <select
+              defaultValue={paymentDetails.paymentOption}
+              onChange={handlePaymentSelect}
+              required
+            >
               <option value="" disabled hidden>
                 Select payment type
               </option>
@@ -212,7 +249,7 @@ function Payment() {
                 inputName="Phone number"
                 inputType="tel"
                 propName="payingPhoneNumber"
-                defaultValue={paymentDetails.contactPhoneNumber}
+                defaultValue={paymentDetails.payingPhoneNumber}
                 maxLength={10}
                 isRequired={paymentDetails.paymentOption === "swish"}
                 onInputChange={handleInputChange}
@@ -234,6 +271,7 @@ function Payment() {
                   propName="cardNumber"
                   maxLength={16}
                   isRequired={paymentDetails.paymentOption === "credit-card"}
+                  value={paymentDetails.cardNumber}
                   onInputChange={handleInputChange}
                 ></ControlledInputField>
               </div>
@@ -248,6 +286,7 @@ function Payment() {
                   propName="expirationDate"
                   minValue={todaysYearAndMonth}
                   isRequired={paymentDetails.paymentOption === "credit-card"}
+                  value={paymentDetails.expirationDate}
                   onInputChange={handleInputChange}
                 ></ControlledInputField>
               </div>
@@ -262,6 +301,7 @@ function Payment() {
                   propName="cvc"
                   maxLength={3}
                   isRequired={paymentDetails.paymentOption === "credit-card"}
+                  value={paymentDetails.cvc}
                   onInputChange={handleInputChange}
                 ></ControlledInputField>
               </div>
@@ -270,7 +310,7 @@ function Payment() {
             ""
           )}
           <div id="pay-btn-wrapper">
-            <button className="payment-pay-btn" type="submit">
+            <button className="action-btn" type="submit">
               Pay $ {cartTotal}
             </button>
           </div>

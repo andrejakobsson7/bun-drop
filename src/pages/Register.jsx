@@ -40,10 +40,23 @@ function Register() {
       console.log("Error", fetchHandler.error);
       if (foundUserWithEmail === null) {
         const newUser = {
+          firstName: "",
+          lastName: "",
           id: userCredentials.email,
           password: userCredentials.password,
+          contactPhoneNumber: "",
+          streetName: "",
+          houseNumber: "",
+          postalNumber: "",
+          city: "",
+          paymentOption: "",
+          payingPhoneNumber: "",
+          cardNumber: "",
+          expirationDate: "",
+          cvc: "",
+          favorites: [],
         };
-        const response = await postHandler.postData(fetchUrl, newUser);
+        const response = await postHandler.setData(fetchUrl, newUser, "POST");
         if (response.ok) {
           //Show success dialog
           setShowSuccessDialog(true);
@@ -116,7 +129,15 @@ function Register() {
           </button>
         </div>
       </form>
-      {showSuccessDialog ? <SuccessDialog /> : ""}
+      {showSuccessDialog ? (
+        <SuccessDialog
+          navigationSuggestion="sign in page"
+          navigationSuggestionUrl="/signin"
+          confirmationText="You are now officially a Bun Drop-member!"
+        />
+      ) : (
+        ""
+      )}
     </div>
   );
 }
