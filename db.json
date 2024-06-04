@@ -228,7 +228,25 @@
       "payingPhoneNumber": "0707526057",
       "cardNumber": "1234567898765413",
       "expirationDate": "2024-11",
-      "cvc": "124"
+      "cvc": "124",
+      "favorites": [
+        {
+          "id": "18",
+          "title": "Luxury shake",
+          "price": 4.49,
+          "description": "Handmade milkshake on soft ice cream whipped with milk and sweet strawberries, topped with whipped cream",
+          "category": "desserts",
+          "image": "images/menu/desserts/luxury-shake-lg.png"
+        },
+        {
+          "id": "17",
+          "title": "Raspberry pie",
+          "price": 3.49,
+          "description": "Raspberry pie with ice cream",
+          "category": "desserts",
+          "image": "images/menu/desserts/raspberry-pie-lg.png"
+        }
+      ]
     },
     {
       "id": "email@bundrop.com",

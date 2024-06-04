@@ -67,6 +67,25 @@ function Dish(props) {
     <div className="dish-container">
       <div className="dish-image-wrapper">
         <img src={props.dish.image} />
+        <div className="add-to-favorites-wrapper">
+          {props.favorite ? (
+            <button
+              className="favorite-btn"
+              onClick={() => props.onFavoriteRemove(props.dish.id)}
+            >
+              <i className="bi bi-star-fill"></i> Favorite
+            </button>
+          ) : props.favorite === false ? (
+            <button
+              className="non-favorite-btn"
+              onClick={() => props.onFavoriteAdd(props.dish)}
+            >
+              <i className="bi bi-star"></i> Add as favorite
+            </button>
+          ) : (
+            props.favorite === null
+          )}
+        </div>
       </div>
       <div className="dish-info-wrapper">
         <div className="dish-name">

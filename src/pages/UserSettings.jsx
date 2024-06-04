@@ -7,6 +7,7 @@ import useLocalStorage from "../hooks/useLocalStorage";
 import ControlledInputField from "../components/ControlledInputField";
 import UncontrolledInputField from "../components/UncontrolledInputField";
 import useDate from "../hooks/useDate";
+import useFetch from "../hooks/useFetch";
 import usePost from "../hooks/usePost";
 import SuccessDialog from "../components/SuccessDialog";
 import ErrorDialog from "../components/ErrorDialog";
@@ -91,7 +92,7 @@ function UserSettings() {
       </div>
       <div id="user-settings-selector-wrapper">
         <label>Action</label>
-        <select value={""} onChange={handleSettingsSelect}>
+        <select defaultValue={""} onChange={handleSettingsSelect}>
           <option value="" disabled hidden>
             Select action
           </option>
@@ -101,9 +102,7 @@ function UserSettings() {
         </select>
       </div>
       {selectedAction === "1" ? (
-        <div id="user-settings-favorites-wrapper">
-          <label>Manage favorites</label>
-        </div>
+        <div id="user-settings-favorites-wrapper"></div>
       ) : selectedAction === "2" ? (
         <form id="user-settings-form-wrapper" onSubmit={handleSubmit}>
           <div className="user-settings-form-label">

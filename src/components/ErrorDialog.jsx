@@ -27,6 +27,7 @@ function ErrorDialog(props) {
             </a>{" "}
             to resolve the issue.
           </p>
+          <p>{props.infoText}</p>
         </dialog>
       ) : (
         ""

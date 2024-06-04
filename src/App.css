@@ -296,6 +296,21 @@ a {
 .dish-image-wrapper {
   grid-column: 1;
   grid-row: 1/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.add-to-favorites-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.favorite-btn {
+  color: blue;
+  background-color: transparent;
+}
+.non-favorite-btn {
+  color: red;
+  background-color: transparent;
 }
 .dish-image-wrapper img {
   width: 100%;
