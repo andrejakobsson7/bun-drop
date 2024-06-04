@@ -54,6 +54,7 @@ function Register() {
           cardNumber: "",
           expirationDate: "",
           cvc: "",
+          favorites: [],
         };
         const response = await postHandler.setData(fetchUrl, newUser, "POST");
         if (response.ok) {

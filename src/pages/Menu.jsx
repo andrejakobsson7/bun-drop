@@ -17,11 +17,13 @@ function Menu() {
   const [originalMenu, setOriginalMenu] = useState([]);
   const [filterOptions, setFilterOptions] = useState([]);
   const [activeFilter, setActiveFilter] = useState("Show all");
+  const [searchValue, setSearchValue] = useState("");
   const [user, setUser] = useState({});
   const [postingError, setPostingError] = useState("");
   const localStorageHandler = useLocalStorage();
   const [cart, setCart] = useState([]);
   const defaultFilterOption = "Show all";
+  const favoritesFilter = "My favorites";
   const authHandler = useContext(AuthContext);
 
   useEffect(() => {
@@ -34,6 +36,9 @@ function Menu() {
         categories.push(category);
       }
     });
+    if (authHandler.isAuthenticated) {
+      categories.unshift(favoritesFilter);
+    }
     categories.unshift(defaultFilterOption);
     setFilterOptions(categories);
   }, [fetchMenu.data]);
@@ -54,9 +59,12 @@ function Menu() {
   }, []);
 
   function handleFilter(e) {
+    setSearchValue("");
     const filterOption = e.target.innerText;
     if (filterOption === defaultFilterOption) {
       setMenu(originalMenu);
+    } else if (filterOption === favoritesFilter) {
+      setMenu(user.favorites);
     } else {
       const filteredMenu = originalMenu.filter(
         (dish) => dish.category === filterOption.toLowerCase()
@@ -68,8 +76,13 @@ function Menu() {
   function handleSearch(e) {
     let foundDishes = [];
     const searchValue = e.target.value.toLowerCase();
+    setSearchValue(searchValue);
     if (activeFilter === defaultFilterOption) {
       foundDishes = originalMenu.filter((d) =>
+        d.title.toLowerCase().includes(searchValue)
+      );
+    } else if (activeFilter === favoritesFilter) {
+      foundDishes = user.favorites.filter((d) =>
         d.title.toLowerCase().includes(searchValue)
       );
     } else {
@@ -84,7 +97,11 @@ function Menu() {
   async function handleFavoriteAdd(dish) {
     const userCopy = { ...user };
     userCopy.favorites.push(dish);
+    userCopy.favorites.sort((a, b) => a.id - b.id);
     setUser(userCopy);
+    if (activeFilter === favoritesFilter) {
+      setMenu(userCopy.favorites);
+    }
     //Make put request
     await updateUser(userCopy);
   }
@@ -93,7 +110,12 @@ function Menu() {
     const remainingFavorites = userCopy.favorites.filter(
       (f) => f.id !== dishId
     );
+    console.log(remainingFavorites);
     userCopy.favorites = remainingFavorites;
+    console.log(userCopy.favorites);
+    if (activeFilter === favoritesFilter) {
+      setMenu(userCopy.favorites);
+    }
     setUser(userCopy);
     await updateUser(userCopy);
   }
@@ -105,7 +127,7 @@ function Menu() {
       "PUT"
     );
     if (response.ok) {
-      await localStorageHandler.setLocalStorage("signedInUser", user);
+      await localStorageHandler.setLocalStorage("signedInUser", userObj);
     } else {
       //Show error dialog
       setPostingError(response.statusText);
@@ -138,6 +160,7 @@ function Menu() {
             type="search"
             placeholder="Search dishes"
             onChange={handleSearch}
+            value={searchValue}
           />
         </div>
       </div>
@@ -153,22 +176,28 @@ function Menu() {
         />
       ) : (
         <div id="menu-items-wrapper">
-          {menu.map((d) => (
-            <Dish
-              key={d.id}
-              dish={d}
-              cart={cart}
-              favorite={
-                authHandler.isAuthenticated
-                  ? user.favorites.some((f) => f.id === d.id)
-                    ? true
-                    : false
-                  : null
-              }
-              onFavoriteRemove={handleFavoriteRemove}
-              onFavoriteAdd={handleFavoriteAdd}
-            />
-          ))}
+          {menu.length > 0 ? (
+            menu.map((d) => (
+              <Dish
+                key={d.id}
+                dish={d}
+                cart={cart}
+                favorite={
+                  authHandler.isAuthenticated
+                    ? user.favorites.some((f) => f.id === d.id)
+                      ? true
+                      : false
+                    : null
+                }
+                onFavoriteRemove={handleFavoriteRemove}
+                onFavoriteAdd={handleFavoriteAdd}
+              />
+            ))
+          ) : searchValue !== "" ? (
+            <p>No dishes in current filter matched the search criteria</p>
+          ) : (
+            <p>No dishes in current filter</p>
+          )}
         </div>
       )}
       <>
