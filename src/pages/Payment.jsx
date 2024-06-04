@@ -52,7 +52,6 @@ function Payment() {
     const getUser = async () => {
       const user = await localStorageHandler.getLocalStorage("signedInUser");
       if (user !== null) {
-        console.log(user);
         setPaymentDetails(user);
       }
     };
