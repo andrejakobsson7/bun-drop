@@ -525,24 +525,7 @@
       "cardNumber": "",
       "expirationDate": "",
       "cvc": "",
-      "favorites": [
-        {
-          "id": "1",
-          "title": "Classic Burger",
-          "price": 4.99,
-          "description": "A classic beef burger with lettuce, tomato and onion",
-          "category": "burgers",
-          "image": "images/menu/burgers/classic-burger-lg.png"
-        },
-        {
-          "id": "7",
-          "title": "Sweet potato fries",
-          "price": 4.49,
-          "description": "Our world famous sweet potato fries",
-          "category": "sides",
-          "image": "images/menu/sides/sweet-potato-fries-lg.png"
-        }
-      ]
+      "favorites": []
     }
   ],
   "orders": [
