@@ -10,7 +10,8 @@ import Cart from "./pages/Cart";
 import Payment from "./pages/Payment";
 import Confirmation from "./pages/Confirmation";
 import "./App.css";
-import AuthProvider from "./contexts/AuthProvider";
+import { AuthProvider } from "./contexts/AuthProvider";
+import { ProtectedRoute } from "./components/ProtectedRoute";
 import UserSettings from "./pages/UserSettings";
 
 function App() {
@@ -26,7 +27,14 @@ function App() {
           <Route path="/Cart" element={<Cart />}></Route>
           <Route path="/Payment" element={<Payment />}></Route>
           <Route path="/Confirmation" element={<Confirmation />}></Route>
-          <Route path="UserSettings" element={<UserSettings />}></Route>
+          <Route
+            path="UserSettings"
+            element={
+              <ProtectedRoute>
+                <UserSettings />
+              </ProtectedRoute>
+            }
+          ></Route>
         </Routes>
       </Router>
     </AuthProvider>
