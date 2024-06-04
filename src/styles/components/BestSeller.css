@@ -1,0 +1,14 @@
+.best-seller {
+  width: 20%;
+  background-color: #eee;
+  height: 80%;
+  margin: 1rem;
+  border-radius: 25px;
+  text-align: center;
+}
+.best-seller img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}

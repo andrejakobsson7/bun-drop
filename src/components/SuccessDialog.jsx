@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CloseDialogButton from "./CloseDialogButton";
 import { Link } from "react-router-dom";
+import "../styles/components/SuccessDialog.css";
 function SuccessDialog(props) {
   const [showDialog, setShowDialog] = useState(true);
 

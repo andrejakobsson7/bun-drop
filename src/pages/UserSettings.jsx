@@ -1,7 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
 import { AuthContext } from "../contexts/AuthProvider";
-import "../styles/UserSettingsStyle.css";
-import "../styles/Button.css";
 import PageLabel from "../components/PageLabel";
 import useLocalStorage from "../hooks/useLocalStorage";
 import ControlledInputField from "../components/ControlledInputField";
@@ -11,6 +9,7 @@ import useFetch from "../hooks/useFetch";
 import usePost from "../hooks/usePost";
 import SuccessDialog from "../components/SuccessDialog";
 import ErrorDialog from "../components/ErrorDialog";
+import "../styles/pages/UserSettings.css";
 
 function UserSettings() {
   const [selectedAction, setSelectedAction] = useState("");

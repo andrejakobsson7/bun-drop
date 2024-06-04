@@ -2,6 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../contexts/AuthProvider";
 import { useNavigate } from "react-router-dom";
+import "../styles/components/Navbar.css";
 
 import "bootstrap-icons/font/bootstrap-icons.css";
 

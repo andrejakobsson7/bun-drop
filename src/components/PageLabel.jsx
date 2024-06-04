@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/components/PageLabel.css";
 function PageLabel(props) {
   return (
     <div className="page-label-container">

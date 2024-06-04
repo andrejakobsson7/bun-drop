@@ -10,8 +10,7 @@ import useCart from "../hooks/useCart";
 import useDate from "../hooks/useDate";
 import CartEmpty from "../components/CartEmpty";
 import ErrorDialog from "../components/ErrorDialog";
-import "../styles/Payment.css";
-import "../styles/Button.css";
+import "../styles//pages/Payment.css";
 function Payment() {
   const [paymentDetails, setPaymentDetails] = useState({
     firstName: "",
