@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import useFetch from "../hooks/useFetch";
 import BestSeller from "../components/BestSeller";
 import ErrorDialog from "../components/ErrorDialog";
+import "../styles/pages/Home.css";
 function Home() {
   const fetchUrl = "http://localhost:9999/orders";
   const fetchOrder = useFetch(fetchUrl);

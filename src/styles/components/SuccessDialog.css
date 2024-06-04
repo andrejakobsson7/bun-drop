@@ -1,0 +1,42 @@
+#success-dialog {
+  text-align: center;
+  padding: 0.5rem;
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  margin-top: 2rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 12.5px;
+  border: 1px solid black;
+  min-height: 20%;
+  min-width: 30%;
+}
+.dialog-header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.dialog-header-label {
+  grid-column: 2/4;
+}
+
+.success-go-to-sign-in-page-btn {
+  margin: 1rem;
+  padding: 1rem;
+  max-height: 25vh;
+  width: auto;
+  background-color: rgb(109, 114, 104);
+  color: white;
+}
+#success-dialog strong,
+#success-dialog p {
+  margin-top: 10px;
+}
+.success {
+  color: green;
+  font-size: 40px;
+}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import useSharedVariables from "../hooks/useSharedVariables";
 import CloseDialogButton from "./CloseDialogButton";
+import "../styles/components/ErrorDialog.css";
 function ErrorDialog(props) {
   const sharedVariablesHandler = useSharedVariables();
   const [showDialog, setShowDialog] = useState(true);

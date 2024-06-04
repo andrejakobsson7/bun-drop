@@ -7,6 +7,7 @@ import usePost from "../hooks/usePost";
 import useLocalStorage from "../hooks/useLocalStorage";
 import { AuthContext } from "../contexts/AuthProvider";
 import ErrorDialog from "../components/ErrorDialog";
+import "../styles/pages/Menu.css";
 function Menu() {
   //Get all dishes in menu
   const fetchUrl = "http://localhost:9999/menu";

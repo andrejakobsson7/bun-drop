@@ -1,0 +1,62 @@
+#register-container {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+#register-label-wrapper {
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.register-user-btn {
+  margin: 1rem;
+  padding: 1rem;
+  width: 25vw;
+  max-height: 25vh;
+  background-color: rgb(109, 114, 104);
+  color: white;
+}
+
+.register-user-btn:hover {
+  background-color: rgb(55, 57, 52);
+}
+
+/* Register */
+#register-container {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  grid-template-rows: repeat(2, 0.3fr) 2fr;
+  min-height: 80vh;
+}
+#register-info-wrapper {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#register-form-wrapper div {
+  padding-bottom: 1rem;
+}
+#register-form-wrapper {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  height: fit-content;
+  justify-self: center;
+  width: 50vw;
+}
+
+.register-user-input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.register-user-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 760px) {
+  #register-form-wrapper {
+    width: 90vw;
+  }
+}

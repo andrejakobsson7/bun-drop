@@ -6,6 +6,8 @@ import useFetch from "../hooks/useFetch";
 import usePost from "../hooks/usePost";
 import useInputField from "../hooks/useInputField";
 import SuccessDialog from "../components/SuccessDialog";
+import User from "../classes/user";
+import "../styles//pages/Register.css";
 
 function Register() {
   const [userCredentials, setUserCredentials] = useState({
@@ -37,29 +39,20 @@ function Register() {
       const foundUserWithEmail = await fetchHandler.fetchData(
         fetchUrl + userCredentials.email
       );
-      console.log("Error", fetchHandler.error);
       if (foundUserWithEmail === null) {
-        const newUser = {
-          firstName: "",
-          lastName: "",
-          id: userCredentials.email,
-          password: userCredentials.password,
-          contactPhoneNumber: "",
-          streetName: "",
-          houseNumber: "",
-          postalNumber: "",
-          city: "",
-          paymentOption: "",
-          payingPhoneNumber: "",
-          cardNumber: "",
-          expirationDate: "",
-          cvc: "",
-          favorites: [],
-        };
+        const newUser = new User(
+          userCredentials.email,
+          userCredentials.password
+        );
         const response = await postHandler.setData(fetchUrl, newUser, "POST");
         if (response.ok) {
           //Show success dialog
           setShowSuccessDialog(true);
+          const userCredentialsCopy = { ...userCredentials };
+          Object.entries(userCredentials).forEach((v) => {
+            userCredentialsCopy[v[0]] = "";
+          });
+          setUserCredentials(userCredentialsCopy);
         }
       } else {
         setValidationError(
@@ -93,6 +86,7 @@ function Register() {
             inputType="email"
             propName="email"
             isRequired={true}
+            value={userCredentials.email}
             onInputChange={handleInputChange}
           />
         </div>
@@ -103,6 +97,7 @@ function Register() {
             inputType="password"
             propName="password"
             isRequired={true}
+            value={userCredentials.password}
             onInputChange={handleInputChange}
           />
         </div>
@@ -113,6 +108,7 @@ function Register() {
             inputType="password"
             propName="confirmedPassword"
             isRequired={true}
+            value={userCredentials.confirmedPassword}
             onInputChange={handleInputChange}
           />
         </div>

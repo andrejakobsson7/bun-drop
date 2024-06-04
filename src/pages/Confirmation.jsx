@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PageLabel from "../components/PageLabel";
 import { Link } from "react-router-dom";
+import "../styles/pages/Confirmation.css";
 function Confirmation() {
   const [randomDeliveryTime, setRandomDeliveryTime] = useState(0);
   const maximumDeliveryTime = 60;

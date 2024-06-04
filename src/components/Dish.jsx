@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import useLocalStorage from "../hooks/useLocalStorage";
 import useSharedVariables from "../hooks/useSharedVariables";
 import useHelpers from "../hooks/useHelpers";
+import "../styles/components/Dish.css";
 function Dish(props) {
   const [dishClicked, setDishClicked] = useState(false);
   const [dishIsMaxedOut, setDishIsMaxedOut] = useState(false);

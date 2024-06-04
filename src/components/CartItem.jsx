@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import useLocalStorage from "../hooks/useLocalStorage";
 import useSharedVariables from "../hooks/useSharedVariables";
 import useHelpers from "../hooks/useHelpers";
+import "../styles/components/CartItem.css";
 function CartItem(props) {
   const [quantity, setQuantity] = useState(props.item.quantity);
   const [totalPrice, setTotalPrice] = useState(props.item.totalPrice);

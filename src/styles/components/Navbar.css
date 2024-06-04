@@ -1,0 +1,114 @@
+/* Navbar */
+#navbar-container {
+  min-height: 10vh;
+  height: 10vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-family: "Poetsen One", Arial, Helvetica, sans-serif;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  align-items: center;
+}
+#nav-slogan-wrapper {
+  grid-column: 1;
+}
+#nav-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  grid-column: 1;
+}
+#nav-logo-image {
+  max-height: 8vh;
+}
+#nav-links-wrapper {
+  grid-column: 2;
+  display: flex;
+  justify-content: end;
+}
+#nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.active-link,
+.inactive-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 2.5rem;
+}
+
+.inactive-link,
+.active-link {
+  color: black;
+}
+.inactive-link {
+  text-decoration: none;
+}
+.active-link {
+  text-decoration-style: double;
+}
+.navbar-user-dropdown {
+  margin-left: 2.5rem;
+}
+.navbar-user-dropdown-content {
+  display: flex;
+}
+.navbar-user-dropdown-select:hover .navbar-user-dropdown-content {
+  display: flex;
+}
+.navbar-user-dropdown-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 7%;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 2px 3px rgb(109, 114, 104);
+  border-radius: 6.25px;
+  z-index: 1;
+  overflow: hidden;
+}
+.navbar-dropdown-link-wrapper {
+  padding: 0.5rem;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+.navbar-dropdown-link {
+  text-decoration: none;
+}
+.navbar-dropdown-link:visited {
+  text-decoration: none;
+  color: black;
+}
+.navbar-dropdown-link-wrapper:hover {
+  background-color: #eee;
+}
+.navbar-user-dropdown-select {
+  margin-left: 2.5rem;
+  display: flex;
+}
+.navbar-user-icon {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 760px) {
+  #navbar-container {
+    grid-template-columns: 0.25fr 1fr;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #nav-links a {
+    margin-left: 1.25rem;
+  }
+}
+@media (max-width: 420px) {
+  #nav-links a {
+    margin-left: 0.5rem;
+  }
+}

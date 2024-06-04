@@ -6,6 +6,7 @@ import useFetch from "../hooks/useFetch";
 import useInputField from "../hooks/useInputField";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../contexts/AuthProvider";
+import "../styles/pages/SignIn.css";
 function SignIn() {
   const [validationError, setValidationError] = useState("");
   const [userCredentials, setUserCredentials] = useState({
@@ -23,7 +24,7 @@ function SignIn() {
   async function handleSubmit(e) {
     setValidationError("");
     e.preventDefault();
-    //Get user with username
+    //Get user with email
     const foundUser = await fetchHandler.fetchData(
       fetchUrl + userCredentials.email
     );
@@ -64,6 +65,7 @@ function SignIn() {
             inputType="email"
             propName="email"
             isRequired={true}
+            value={userCredentials.email}
             onInputChange={handleInputChange}
           />
         </div>
@@ -74,6 +76,7 @@ function SignIn() {
             inputType="password"
             propName="password"
             isRequired={true}
+            value={userCredentials.password}
             onInputChange={handleInputChange}
           />
         </div>

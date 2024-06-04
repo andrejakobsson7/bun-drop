@@ -3,6 +3,7 @@ import PageLabel from "../components/PageLabel";
 import CartItem from "../components/CartItem";
 import useLocalStorage from "../hooks/useLocalStorage";
 import { Link } from "react-router-dom";
+import "../styles//pages/Cart.css";
 function Cart() {
   const [cart, setCart] = useState([]);
   const localStorageHandler = useLocalStorage();
