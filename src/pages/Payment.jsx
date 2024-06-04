@@ -28,17 +28,22 @@ function Payment() {
     expirationDate: "",
     cvc: "",
   });
+  const [originalUserInfo, setOriginalUserInfo] = useState({});
   const postHandler = usePost();
   const navigate = useNavigate();
   const [cart, setCart] = useState([]);
   const [cartTotal, setCartTotal] = useState(0);
-  const [postingError, setPostingError] = useState("");
+  const [postingOrderError, setPostingOrderError] = useState("");
+  const [updateUserError, setUpdateUserError] = useState("");
+  const [rememberUserDetails, setRememberDetails] = useState(false);
+  const [userInfoHasChanged, setUserInfoHasChanged] = useState(false);
   const authHandler = useContext(AuthContext);
   const localStorageHandler = useLocalStorage();
   const cartHandler = useCart();
   const dateHandler = useDate();
   const todaysYearAndMonth = dateHandler.getYearAndMonth();
   const postUrl = "http://localhost:9999/orders";
+  const updateUserUrl = "http://localhost:9999/users/";
 
   useEffect(() => {
     const getItemsInCart = async () => {
@@ -53,6 +58,7 @@ function Payment() {
       const user = await localStorageHandler.getLocalStorage("signedInUser");
       if (user !== null) {
         setPaymentDetails(user);
+        setOriginalUserInfo(user);
       }
     };
     getItemsInCart();
@@ -69,11 +75,27 @@ function Payment() {
     };
     const response = await postHandler.setData(postUrl, orderObj, "POST");
     if (response.ok) {
-      navigate("/confirmation");
-      localStorageHandler.removeFromLocalStorage("cartItems");
+      if (userInfoHasChanged && rememberUserDetails) {
+        //Compare original user and payment details
+        const userUpdateResponse = await postHandler.setData(
+          updateUserUrl + paymentDetails.id,
+          paymentDetails,
+          "PUT"
+        );
+        if (userUpdateResponse.ok) {
+          localStorageHandler.setLocalStorage("signedInUser", paymentDetails);
+          navigate("/confirmation");
+          localStorageHandler.removeFromLocalStorage("cartItems");
+        } else {
+          setUpdateUserError(userUpdateResponse.statusText);
+        }
+      } else {
+        navigate("/confirmation");
+        localStorageHandler.removeFromLocalStorage("cartItems");
+      }
     } else {
       //DISPLAY ERROR DIALOG
-      setPostingError(response.statusText);
+      setPostingOrderError(response.statusText);
     }
   }
 
@@ -82,11 +104,27 @@ function Payment() {
     const paymentDetailsCopy = { ...paymentDetails };
     paymentDetailsCopy.paymentOption = selectedPayOption;
     setPaymentDetails(paymentDetailsCopy);
+    updateUserChangedStatus(paymentDetailsCopy);
   }
+
   function handleInputChange(propName, inputValue) {
     const paymentDetailsCopy = { ...paymentDetails };
     paymentDetailsCopy[propName] = inputValue;
     setPaymentDetails(paymentDetailsCopy);
+    updateUserChangedStatus(paymentDetailsCopy);
+  }
+  function handleUserDetailsChange(e) {
+    const checked = e.target.checked;
+    setRememberDetails(checked);
+  }
+  function updateUserChangedStatus(paymentDetailsCopy) {
+    if (
+      JSON.stringify(paymentDetailsCopy) !== JSON.stringify(originalUserInfo)
+    ) {
+      setUserInfoHasChanged(true);
+    } else {
+      setUserInfoHasChanged(false);
+    }
   }
 
   return (
@@ -106,7 +144,7 @@ function Payment() {
             </p>
           </>
         ) : (
-          <strong>Welcome back {paymentDetails.firstName}</strong>
+          <strong>Welcome back {originalUserInfo.firstName}</strong>
         )}
       </div>
       {cart.length > 0 ? (
@@ -309,6 +347,20 @@ function Payment() {
           ) : (
             ""
           )}
+          {authHandler.isAuthenticated && userInfoHasChanged ? (
+            <div id="remember-changed-details-wrapper">
+              <input
+                type="checkbox"
+                onChange={handleUserDetailsChange}
+                checked={rememberUserDetails}
+                id="payment-remember-me-cx"
+              />
+              <p> Save information for future orders</p>
+            </div>
+          ) : (
+            ""
+          )}
+
           <div id="pay-btn-wrapper">
             <button className="action-btn" type="submit">
               Pay $ {cartTotal}
@@ -321,11 +373,18 @@ function Payment() {
         </div>
       )}
       <>
-        {postingError !== "" ? (
+        {postingOrderError !== "" ? (
           <ErrorDialog
-            errorText={postingError}
+            errorText={postingOrderError}
             action="sending order"
             url={postUrl}
+          />
+        ) : updateUserError !== "" ? (
+          <ErrorDialog
+            errorText={updateUserError}
+            action="updating user details"
+            url={updateUserUrl}
+            infoText="Try paying without saving information for future orders"
           />
         ) : (
           ""

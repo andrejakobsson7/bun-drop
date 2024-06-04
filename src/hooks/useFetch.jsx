@@ -18,21 +18,6 @@ function useFetch(url) {
     }
   }
 
-  async function postData(url, obj) {
-    const postOptions = createPostOptions(obj);
-    let apiResponse = Response;
-    try {
-      setLoading(true);
-      apiResponse = await fetch(url, postOptions);
-      setResponse(apiResponse);
-    } catch (err) {
-      setError(new String(err));
-    } finally {
-      setLoading(false);
-    }
-    return apiResponse;
-  }
-
   useEffect(() => {
     const fetchData = async () => {
       try {

@@ -19,14 +19,15 @@ const AuthProvider = ({ children }) => {
     fetchSignedInUser();
   }, []);
 
-  const signIn = () => {
+  function signIn(user) {
     setIsAuthenticated(true);
-  };
+    localStorageHandler.setLocalStorage("signedInUser", user);
+  }
 
-  const signOut = () => {
+  function signOut() {
     setIsAuthenticated(false);
     localStorageHandler.removeFromLocalStorage("signedInUser");
-  };
+  }
 
   return (
     <AuthContext.Provider value={{ isAuthenticated, signIn, signOut }}>

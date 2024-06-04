@@ -178,7 +178,8 @@ a {
 }
 #menu-label-wrapper,
 #register-label-wrapper,
-#sign-in-label-wrapper {
+#sign-in-label-wrapper,
+#confirmation-label-wrapper {
   grid-column: 2;
   display: flex;
   justify-content: center;
