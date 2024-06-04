@@ -4,7 +4,6 @@ import ControlledInputField from "../components/ControlledInputField";
 import ErrorText from "../components/ErrorText";
 import useFetch from "../hooks/useFetch";
 import useInputField from "../hooks/useInputField";
-import useLocalStorage from "../hooks/useLocalStorage";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../contexts/AuthProvider";
 function SignIn() {
@@ -13,37 +12,30 @@ function SignIn() {
     email: "",
     password: "",
   });
-  const [signedInUser, setSignedInUser] = useState(null);
   const fetchUrl = "http://localhost:9999/users/";
   const fetchHandler = useFetch();
   const inputHandler = useInputField();
-  const localStorageHandler = useLocalStorage();
   const authHandler = useContext(AuthContext);
 
   const navigate = useNavigate();
   const defaultSignInErrorMessage = "Invalid email and/or password";
 
   async function handleSubmit(e) {
-    console.log(userCredentials);
     setValidationError("");
     e.preventDefault();
     //Get user with username
     const foundUser = await fetchHandler.fetchData(
       fetchUrl + userCredentials.email
     );
-    console.log("Received", foundUser);
     if (foundUser !== null) {
       //Check password
       if (
         inputHandler.compareInputs(userCredentials.password, foundUser.password)
       ) {
-        console.log("Username and password is OK..");
-        //Sign in user
-        localStorageHandler.setLocalStorage("signedInUser", foundUser);
         //Navigate to home page
         navigate("/");
         //Set context
-        authHandler.signIn();
+        authHandler.signIn(foundUser);
       } else {
         setValidationError(defaultSignInErrorMessage);
       }
