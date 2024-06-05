@@ -26,7 +26,10 @@ function App() {
           <Route path="/Menu" element={<Menu />}></Route>
           <Route path="/Cart" element={<Cart />}></Route>
           <Route path="/Payment" element={<Payment />}></Route>
-          <Route path="/Confirmation" element={<Confirmation />}></Route>
+          <Route
+            path="/Confirmation/:orderId"
+            element={<Confirmation />}
+          ></Route>
           <Route
             path="UserSettings"
             element={

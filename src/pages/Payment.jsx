@@ -71,7 +71,7 @@ function Payment() {
 
   function handleSuccessfulOrder() {
     localStorageHandler.removeFromLocalStorage("cartItems");
-    navigate("/confirmation");
+    navigate(`/confirmation/${postOrderHandler.data.id}`);
   }
   const updateUser = async () => {
     await updateUserHandler.saveData(
