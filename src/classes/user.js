@@ -1,5 +1,5 @@
 const User = class {
-  constructor(email, password) {
+  constructor(email = "", password = "") {
     (this.firstName = ""),
       (this.lastName = ""),
       (this.id = email),

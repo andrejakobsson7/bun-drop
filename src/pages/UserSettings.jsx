@@ -5,19 +5,15 @@ import useLocalStorage from "../hooks/useLocalStorage";
 import ControlledInputField from "../components/ControlledInputField";
 import UncontrolledInputField from "../components/UncontrolledInputField";
 import useDate from "../hooks/useDate";
-import useFetch from "../hooks/useFetch";
 import usePost from "../hooks/usePost";
 import SuccessDialog from "../components/SuccessDialog";
 import ErrorDialog from "../components/ErrorDialog";
 import "../styles/pages/UserSettings.css";
 
 function UserSettings() {
-  const [selectedAction, setSelectedAction] = useState("");
   const [user, setUser] = useState({});
   const [originalName, setOriginalName] = useState("");
   const [url, setUrl] = useState("");
-  const [userSuccessfullyUpdated, setUserSuccessfullyUpdated] = useState(null);
-  const [postingError, setPostingError] = useState("");
   const authHandler = useContext(AuthContext);
   const localStorageHandler = useLocalStorage();
   const dateHandler = useDate();
@@ -44,25 +40,21 @@ function UserSettings() {
     }
   }, [authHandler]);
 
+  useEffect(() => {
+    if (postHandler.data !== null) {
+      localStorageHandler.setLocalStorage("signedInUser", user);
+      setOriginalName(user.firstName + " " + user.lastName);
+    }
+  }, [postHandler.data]);
+
   function handleInputChange(propName, inputValue) {
     const userCopy = { ...user };
     userCopy[propName] = inputValue;
     setUser(userCopy);
   }
   async function handleSubmit(e) {
-    setUserSuccessfullyUpdated(null);
-    setPostingError("");
     e.preventDefault();
-    //Make put request
-    const response = await postHandler.setData(url, user, "PUT");
-    if (response.ok) {
-      setUserSuccessfullyUpdated(true);
-      localStorageHandler.setLocalStorage("signedInUser", user);
-      setOriginalName(user.firstName + " " + user.lastName);
-    } else {
-      setUserSuccessfullyUpdated(false);
-      setPostingError(response.statusText);
-    }
+    await postHandler.saveData(url, user, "PUT");
   }
   function handlePaymentSelect(e) {
     const selectedOption = e.target.value;
@@ -287,16 +279,16 @@ function UserSettings() {
           </button>
         </div>
       </form>
-      {userSuccessfullyUpdated ? (
+      {postHandler.data !== null ? (
         <SuccessDialog
           navigationSuggestion="menu"
           navigationSuggestionUrl="/menu"
           confirmationText="Your information has been updated!"
         />
-      ) : userSuccessfullyUpdated === false ? (
+      ) : postHandler.error !== "" ? (
         <ErrorDialog
           action="updating user information"
-          errorText={postingError}
+          errorText={postHandler.error}
         />
       ) : (
         ""

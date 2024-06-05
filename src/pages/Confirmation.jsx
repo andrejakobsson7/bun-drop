@@ -18,7 +18,7 @@ function Confirmation() {
     const randomGeneratedDeliveryTime = calculateRandomDeliveryTime();
     setRandomDeliveryTime(randomGeneratedDeliveryTime);
   }, []);
-
+  //TODO: SHOULD ACCEPT AN ID AS PARAMETER TO DISPLAY
   return (
     <div id="confirmation-container">
       <div id="confirmation-label-wrapper">
