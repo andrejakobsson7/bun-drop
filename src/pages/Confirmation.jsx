@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import PageLabel from "../components/PageLabel";
 import { Link } from "react-router-dom";
 import "../styles/pages/Confirmation.css";
@@ -6,6 +7,7 @@ function Confirmation() {
   const [randomDeliveryTime, setRandomDeliveryTime] = useState(0);
   const maximumDeliveryTime = 60;
   const minimumDeliveryTime = 5;
+  const { orderId } = useParams();
 
   function calculateRandomDeliveryTime() {
     return Math.floor(
@@ -18,7 +20,6 @@ function Confirmation() {
     const randomGeneratedDeliveryTime = calculateRandomDeliveryTime();
     setRandomDeliveryTime(randomGeneratedDeliveryTime);
   }, []);
-  //TODO: SHOULD ACCEPT AN ID AS PARAMETER TO DISPLAY
   return (
     <div id="confirmation-container">
       <div id="confirmation-label-wrapper">
@@ -27,8 +28,8 @@ function Confirmation() {
       <div id="confirmation-text-wrapper">
         <h2>Great success!</h2>
         <h3>
-          Your order has been confirmed and will be delivered to you in{" "}
-          {randomDeliveryTime} minutes.
+          Your order <u>{orderId}</u> has been confirmed and will be delivered
+          to you in {randomDeliveryTime} minutes.
         </h3>
       </div>
       <div id="confirmation-image-wrapper"></div>

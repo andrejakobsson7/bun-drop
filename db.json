@@ -630,20 +630,29 @@
     },
     {
       "id": "mannen@guest.com",
-      "firstName": "",
-      "lastName": "",
+      "firstName": "man",
+      "lastName": "pan",
       "password": "Password123!",
-      "contactPhoneNumber": "",
-      "streetName": "",
-      "houseNumber": "",
-      "postalNumber": "",
-      "city": "",
-      "paymentOption": "",
-      "payingPhoneNumber": "",
+      "contactPhoneNumber": "0244444444",
+      "streetName": "angelholm",
+      "houseNumber": "20",
+      "postalNumber": "222222222",
+      "city": "angel",
+      "paymentOption": "swish",
+      "payingPhoneNumber": "0244444444",
       "cardNumber": "",
       "expirationDate": "",
       "cvc": "",
-      "favorites": []
+      "favorites": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png"
+        }
+      ]
     }
   ],
   "orders": [
@@ -8292,6 +8301,48 @@
         "cvc": "",
         "favorites": [],
         "email": "manguest@peab.se"
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "b946",
+      "orderTime": "2024-06-05T20:59:42.792Z",
+      "user": {
+        "id": "mannen@guest.com",
+        "firstName": "man",
+        "lastName": "pan",
+        "password": "Password123!",
+        "contactPhoneNumber": "0244444444",
+        "streetName": "angelholm",
+        "houseNumber": "20",
+        "postalNumber": "222222222",
+        "city": "angel",
+        "paymentOption": "swish",
+        "payingPhoneNumber": "0244444444",
+        "cardNumber": "",
+        "expirationDate": "",
+        "cvc": "",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          }
+        ]
       },
       "dishes": [
         {
