@@ -11,29 +11,15 @@ import useDate from "../hooks/useDate";
 import CartEmpty from "../components/CartEmpty";
 import ErrorDialog from "../components/ErrorDialog";
 import "../styles//pages/Payment.css";
+import User from "../classes/user";
 function Payment() {
-  const [paymentDetails, setPaymentDetails] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    contactPhoneNumber: "",
-    streetName: "",
-    houseNumber: "",
-    postalNumber: "",
-    city: "",
-    paymentOption: "",
-    payingPhoneNumber: "",
-    cardNumber: "",
-    expirationDate: "",
-    cvc: "",
-  });
+  const [paymentDetails, setPaymentDetails] = useState(new User());
   const [originalUserInfo, setOriginalUserInfo] = useState({});
-  const postHandler = usePost();
+  const postOrderHandler = usePost();
+  const updateUserHandler = usePost();
   const navigate = useNavigate();
   const [cart, setCart] = useState([]);
   const [cartTotal, setCartTotal] = useState(0);
-  const [postingOrderError, setPostingOrderError] = useState("");
-  const [updateUserError, setUpdateUserError] = useState("");
   const [rememberUserDetails, setRememberDetails] = useState(false);
   const [userInfoHasChanged, setUserInfoHasChanged] = useState(false);
   const authHandler = useContext(AuthContext);
@@ -64,6 +50,37 @@ function Payment() {
     getUser();
   }, []);
 
+  useEffect(() => {
+    //This ensures a successful post has been made
+    if (postOrderHandler.data !== null) {
+      //Continue and check if user has changed information and wants to store it for future
+      if (userInfoHasChanged && rememberUserDetails) {
+        updateUser();
+      } else {
+        handleSuccessfulOrder();
+      }
+    }
+  }, [postOrderHandler.data]);
+
+  useEffect(() => {
+    if (updateUserHandler.data !== null) {
+      localStorageHandler.setLocalStorage("signedInUser", paymentDetails);
+      handleSuccessfulOrder();
+    }
+  }, [updateUserHandler.data]);
+
+  function handleSuccessfulOrder() {
+    localStorageHandler.removeFromLocalStorage("cartItems");
+    navigate("/confirmation");
+  }
+  const updateUser = async () => {
+    await updateUserHandler.saveData(
+      updateUserUrl + paymentDetails.id,
+      paymentDetails,
+      "PUT"
+    );
+  };
+
   async function handleSubmit(e) {
     e.preventDefault();
 
@@ -72,30 +89,7 @@ function Payment() {
       user: paymentDetails,
       dishes: cart,
     };
-    const response = await postHandler.setData(postUrl, orderObj, "POST");
-    if (response.ok) {
-      if (userInfoHasChanged && rememberUserDetails) {
-        //Compare original user and payment details
-        const userUpdateResponse = await postHandler.setData(
-          updateUserUrl + paymentDetails.id,
-          paymentDetails,
-          "PUT"
-        );
-        if (userUpdateResponse.ok) {
-          localStorageHandler.setLocalStorage("signedInUser", paymentDetails);
-          navigate("/confirmation");
-          localStorageHandler.removeFromLocalStorage("cartItems");
-        } else {
-          setUpdateUserError(userUpdateResponse.statusText);
-        }
-      } else {
-        navigate("/confirmation");
-        localStorageHandler.removeFromLocalStorage("cartItems");
-      }
-    } else {
-      //DISPLAY ERROR DIALOG
-      setPostingOrderError(response.statusText);
-    }
+    await postOrderHandler.saveData(postUrl, orderObj, "POST");
   }
 
   function handlePaymentSelect(e) {
@@ -132,7 +126,7 @@ function Payment() {
         <PageLabel label="PAYMENT"></PageLabel>
       </div>
       <div id="payment-info-wrapper">
-        {authHandler.isAuthenticated === false ? (
+        {authHandler.isAuthenticated === false && cart.length > 0 ? (
           <>
             <p>
               <Link to="/signin">Sign in</Link>
@@ -142,8 +136,10 @@ function Payment() {
               Not a member yet? <Link to="/register">Register here!</Link>
             </p>
           </>
-        ) : (
+        ) : authHandler.isAuthenticated ? (
           <strong>Welcome back {originalUserInfo.firstName}</strong>
+        ) : (
+          ""
         )}
       </div>
       {cart.length > 0 ? (
@@ -176,6 +172,7 @@ function Payment() {
               onInputChange={handleInputChange}
             ></ControlledInputField>
           </div>
+
           <div id="payment-email-wrapper" className="payment-input-wrapper">
             <ControlledInputField
               inputId="payment-email-input"
@@ -185,6 +182,7 @@ function Payment() {
               isRequired={true}
               value={paymentDetails.id}
               onInputChange={handleInputChange}
+              disabled={authHandler.isAuthenticated}
             ></ControlledInputField>
           </div>
           <div id="payment-phone-wrapper" className="payment-input-wrapper">
@@ -286,7 +284,7 @@ function Payment() {
                 inputName="Phone number"
                 inputType="tel"
                 propName="payingPhoneNumber"
-                defaultValue={paymentDetails.payingPhoneNumber}
+                defaultValue={paymentDetails.contactPhoneNumber}
                 maxLength={10}
                 isRequired={paymentDetails.paymentOption === "swish"}
                 onInputChange={handleInputChange}
@@ -359,7 +357,6 @@ function Payment() {
           ) : (
             ""
           )}
-
           <div id="pay-btn-wrapper">
             <button className="action-btn" type="submit">
               Pay $ {cartTotal}
@@ -372,15 +369,15 @@ function Payment() {
         </div>
       )}
       <>
-        {postingOrderError !== "" ? (
+        {postOrderHandler.error !== "" ? (
           <ErrorDialog
-            errorText={postingOrderError}
+            errorText={postOrderHandler.error}
             action="sending order"
             url={postUrl}
           />
-        ) : updateUserError !== "" ? (
+        ) : updateUserHandler.error !== "" ? (
           <ErrorDialog
-            errorText={updateUserError}
+            errorText={updateUserHandler.error}
             action="updating user details"
             url={updateUserUrl}
             infoText="Try paying without saving information for future orders"

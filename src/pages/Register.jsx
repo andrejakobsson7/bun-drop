@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PageLabel from "../components/PageLabel";
 import ControlledInputField from "../components/ControlledInputField";
 import ErrorText from "../components/ErrorText";
@@ -6,6 +6,7 @@ import useFetch from "../hooks/useFetch";
 import usePost from "../hooks/usePost";
 import useInputField from "../hooks/useInputField";
 import SuccessDialog from "../components/SuccessDialog";
+import ErrorDialog from "../components/ErrorDialog";
 import User from "../classes/user";
 import "../styles//pages/Register.css";
 
@@ -44,16 +45,7 @@ function Register() {
           userCredentials.email,
           userCredentials.password
         );
-        const response = await postHandler.setData(fetchUrl, newUser, "POST");
-        if (response.ok) {
-          //Show success dialog
-          setShowSuccessDialog(true);
-          const userCredentialsCopy = { ...userCredentials };
-          Object.entries(userCredentials).forEach((v) => {
-            userCredentialsCopy[v[0]] = "";
-          });
-          setUserCredentials(userCredentialsCopy);
-        }
+        await postHandler.saveData(fetchUrl, newUser, "POST");
       } else {
         setValidationError(
           `Email ${userCredentials.email} is already in use, please choose another email`
@@ -61,6 +53,13 @@ function Register() {
       }
     }
   }
+
+  useEffect(() => {
+    if (postHandler.data !== null) {
+      setShowSuccessDialog(true);
+    }
+  }, [postHandler.data]);
+
   function handleInputChange(propName, inputValue) {
     const userCredsCopy = { ...userCredentials };
     userCredsCopy[propName] = inputValue;
@@ -130,6 +129,15 @@ function Register() {
           navigationSuggestion="sign in page"
           navigationSuggestionUrl="/signin"
           confirmationText="You are now officially a Bun Drop-member!"
+        />
+      ) : (
+        ""
+      )}
+      {postHandler.error !== "" ? (
+        <ErrorDialog
+          errorText={postHandler.error}
+          action="registering user"
+          url={fetchUrl}
         />
       ) : (
         ""

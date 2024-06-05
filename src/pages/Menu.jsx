@@ -11,7 +11,8 @@ import "../styles/pages/Menu.css";
 function Menu() {
   //Get all dishes in menu
   const fetchUrl = "http://localhost:9999/menu";
-  const postUrl = "http://localhost:9999/users/";
+  const baseUrl = "http://localhost:9999/users/";
+  const [postUrl, setPostUrl] = useState("");
   const fetchMenu = useFetch(fetchUrl);
   const postHandler = usePost();
   const [menu, setMenu] = useState([]);
@@ -20,7 +21,6 @@ function Menu() {
   const [activeFilter, setActiveFilter] = useState("Show all");
   const [searchValue, setSearchValue] = useState("");
   const [user, setUser] = useState({});
-  const [postingError, setPostingError] = useState("");
   const localStorageHandler = useLocalStorage();
   const [cart, setCart] = useState([]);
   const defaultFilterOption = "Show all";
@@ -53,11 +53,19 @@ function Menu() {
       const user = await localStorageHandler.getLocalStorage("signedInUser");
       if (user !== null) {
         setUser(user);
+        setPostUrl(baseUrl + user.id);
       }
     };
     getItemsInCart();
     getUser();
   }, []);
+
+  useEffect(() => {
+    if (postHandler.data !== null) {
+      localStorageHandler.setLocalStorage("signedInUser", postHandler.data);
+      setUser(postHandler.data);
+    }
+  }, [postHandler.data]);
 
   function handleFilter(e) {
     setSearchValue("");
@@ -99,11 +107,9 @@ function Menu() {
     const userCopy = { ...user };
     userCopy.favorites.push(dish);
     userCopy.favorites.sort((a, b) => a.id - b.id);
-    setUser(userCopy);
     if (activeFilter === favoritesFilter) {
       setMenu(userCopy.favorites);
     }
-    //Make put request
     await updateUser(userCopy);
   }
   async function handleFavoriteRemove(dishId) {
@@ -111,28 +117,14 @@ function Menu() {
     const remainingFavorites = userCopy.favorites.filter(
       (f) => f.id !== dishId
     );
-    console.log(remainingFavorites);
     userCopy.favorites = remainingFavorites;
-    console.log(userCopy.favorites);
     if (activeFilter === favoritesFilter) {
       setMenu(userCopy.favorites);
     }
-    setUser(userCopy);
     await updateUser(userCopy);
   }
   async function updateUser(userObj) {
-    setPostingError("");
-    const response = await postHandler.setData(
-      postUrl + userObj.id,
-      userObj,
-      "PUT"
-    );
-    if (response.ok) {
-      await localStorageHandler.setLocalStorage("signedInUser", userObj);
-    } else {
-      //Show error dialog
-      setPostingError(response.statusText);
-    }
+    await postHandler.saveData(postUrl, userObj, "PUT");
   }
 
   return (
@@ -202,10 +194,10 @@ function Menu() {
         </div>
       )}
       <>
-        {postingError !== "" ? (
+        {postHandler.error !== "" ? (
           <ErrorDialog
             action="saving favorites"
-            errorText={postingError}
+            errorText={postHandler.error}
             infoText="You can continue with your order."
           />
         ) : (
