@@ -6,6 +6,7 @@ function ControlledInputField(props) {
   const [inputValue, setInputValue] = useState("");
   const [errorText, setErrorText] = useState(null);
   const [pattern, setPattern] = useState("");
+  const [comparisonValue, setComparisonValue] = useState("");
   const inputFieldHandler = useInputField();
   const [disabled, setDisabled] = useState({});
 
@@ -18,7 +19,7 @@ function ControlledInputField(props) {
     );
     setErrorText(errorMessage);
     setInputValue(input);
-    props.onInputChange(props.propName, input);
+    props.onInputChange(props.propName, input, errorMessage);
   }
 
   useEffect(() => {
@@ -35,7 +36,12 @@ function ControlledInputField(props) {
   }, []);
   useEffect(() => {
     setInputValue(props.value);
+    console.log(props.defaultValue);
   }, [props.value]);
+
+  useEffect(() => {
+    setComparisonValue(props.comparisonValue);
+  }, [props.comparisonValue]);
 
   return (
     <>

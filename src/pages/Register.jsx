@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import PageLabel from "../components/PageLabel";
 import ControlledInputField from "../components/ControlledInputField";
-import ErrorText from "../components/ErrorText";
 import useFetch from "../hooks/useFetch";
 import usePost from "../hooks/usePost";
-import useInputField from "../hooks/useInputField";
 import SuccessDialog from "../components/SuccessDialog";
 import ErrorDialog from "../components/ErrorDialog";
+import ErrorText from "../components/ErrorText";
 import User from "../classes/user";
 import "../styles//pages/Register.css";
 
@@ -17,25 +16,17 @@ function Register() {
     confirmedPassword: "",
   });
   const [validationError, setValidationError] = useState("");
+  const [emailTakenErrorMessage, setEmailTakenErrorMessage] = useState("");
   const [showSuccessDialog, setShowSuccessDialog] = useState(false);
   const fetchUrl = "http://localhost:9999/users/";
   const fetchHandler = useFetch();
   const postHandler = usePost();
-  const inputHandler = useInputField();
 
   async function handleSubmit(e) {
-    setValidationError("");
+    setShowSuccessDialog(false);
+    setEmailTakenErrorMessage("");
     e.preventDefault();
-
-    //Verify password and confirmed password are the same
-    if (
-      inputHandler.compareInputs(
-        userCredentials.password,
-        userCredentials.confirmedPassword
-      ) === false
-    ) {
-      setValidationError("Passwords doesn't match");
-    } else {
+    if (validationError === "") {
       //Get user with email
       const foundUserWithEmail = await fetchHandler.fetchData(
         fetchUrl + userCredentials.email
@@ -47,10 +38,12 @@ function Register() {
         );
         await postHandler.saveData(fetchUrl, newUser, "POST");
       } else {
-        setValidationError(
+        setEmailTakenErrorMessage(
           `Email ${userCredentials.email} is already in use, please choose another email`
         );
       }
+    } else {
+      //Error messages are already displayed, don't do anything.
     }
   }
 
@@ -60,10 +53,20 @@ function Register() {
     }
   }, [postHandler.data]);
 
-  function handleInputChange(propName, inputValue) {
+  useEffect(() => {
+    //If user first types in confirmed password and then password, reset confirmed password.
+    if (userCredentials.password !== userCredentials.confirmedPassword) {
+      const userCredsCopy = { ...userCredentials };
+      userCredsCopy.confirmedPassword = "";
+      setUserCredentials(userCredsCopy);
+    }
+  }, [userCredentials.password]);
+
+  function handleInputChange(propName, inputValue, errorMessage) {
     const userCredsCopy = { ...userCredentials };
     userCredsCopy[propName] = inputValue;
     setUserCredentials(userCredsCopy);
+    setValidationError(errorMessage);
   }
 
   return (
@@ -108,13 +111,12 @@ function Register() {
             propName="confirmedPassword"
             isRequired={true}
             value={userCredentials.confirmedPassword}
+            comparisonValue={userCredentials.password}
             onInputChange={handleInputChange}
           />
         </div>
-        {validationError !== "" ? (
-          <div>
-            <ErrorText text={validationError} />
-          </div>
+        {emailTakenErrorMessage !== "" ? (
+          <ErrorText text={emailTakenErrorMessage} />
         ) : (
           ""
         )}
@@ -133,6 +135,7 @@ function Register() {
       ) : (
         ""
       )}
+
       {postHandler.error !== "" ? (
         <ErrorDialog
           errorText={postHandler.error}
