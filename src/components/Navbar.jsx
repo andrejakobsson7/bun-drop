@@ -109,7 +109,6 @@ function Navbar() {
           </ul>
         </div>
       </nav>
-      <div id="under-nav"></div>
     </>
   );
 }

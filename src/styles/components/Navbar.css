@@ -1,22 +1,18 @@
 /* Navbar */
 #navbar-container {
-  min-height: 10vh;
   height: 10vh;
-  width: 100vw;
+  width: 99.5vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   font-family: "Poetsen One", Arial, Helvetica, sans-serif;
   padding-left: 1rem;
-  padding-right: 2rem;
-  margin-right: 2rem;
+  /* padding-right: 2rem;
+  margin-right: 2rem; */
   align-items: center;
   background-color: rgb(218, 227, 209);
   position: fixed;
   top: 0;
   left: 0;
-}
-#under-nav {
-  height: 10vh;
 }
 #nav-slogan-wrapper {
   grid-column: 1;

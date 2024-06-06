@@ -13,7 +13,8 @@ body {
 #root {
   height: fit-content;
   position: relative;
-  min-height: 90vh;
+  min-height: 80vh;
+  padding-top: 10vh;
   padding-bottom: 10vh;
 }
 select {
