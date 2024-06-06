@@ -17,6 +17,7 @@
   padding-left: 1rem;
   display: flex;
   justify-content: start;
+  transition: 1000ms ease-in-out;
 }
 
 #home-best-sellers-wrapper {

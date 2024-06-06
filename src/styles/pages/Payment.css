@@ -1,8 +1,7 @@
 #payment-container {
   display: grid;
   grid-template-columns: 0.5fr 2fr 0.5fr;
-  grid-template-rows: repeat(3, 0.3fr) 2fr;
-  height: 80vh;
+  grid-template-rows: auto;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 #payment-info-wrapper {

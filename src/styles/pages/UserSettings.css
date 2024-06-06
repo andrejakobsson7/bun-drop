@@ -1,9 +1,7 @@
 #user-settings-container {
   display: grid;
   grid-template-columns: 0.5fr 2fr 0.5fr;
-  grid-template-rows: repeat(3, 0.3fr) 2fr;
-  min-height: fit-content;
-  height: 90vh;
+  grid-template-rows: auto;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 #user-settings-label-wrapper {

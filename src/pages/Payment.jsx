@@ -350,13 +350,15 @@ function Payment() {
             )}
             {authHandler.isAuthenticated && userInfoHasChanged ? (
               <div id="remember-changed-details-wrapper">
-                <input
-                  type="checkbox"
-                  onChange={handleUserDetailsChange}
-                  checked={rememberUserDetails}
-                  id="payment-remember-me-cx"
-                />
-                <p> Save information for future orders</p>
+                <label>
+                  <input
+                    type="checkbox"
+                    onChange={handleUserDetailsChange}
+                    checked={rememberUserDetails}
+                    id="payment-remember-me-cx"
+                  />
+                  Save information for future orders
+                </label>
               </div>
             ) : (
               ""

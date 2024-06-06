@@ -14,6 +14,7 @@ import { AuthProvider } from "./contexts/AuthProvider";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 import UserSettings from "./pages/UserSettings";
 import NotFound from "./pages/NotFound";
+import Footer from "./components/Footer";
 function App() {
   return (
     <AuthProvider>
@@ -40,6 +41,7 @@ function App() {
           ></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
+        <Footer />
       </Router>
     </AuthProvider>
   );

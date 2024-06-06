@@ -1,0 +1,14 @@
+#footer-container {
+  background-color: rgb(218, 227, 209);
+  height: 10vh;
+  position: absolute;
+  width: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  align-items: center;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
