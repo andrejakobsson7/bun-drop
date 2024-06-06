@@ -826,16 +826,16 @@
     },
     {
       "id": "hello@hello.com212",
-      "firstName": "",
-      "lastName": "",
+      "firstName": "André",
+      "lastName": "Woods",
       "password": "Password123!",
-      "contactPhoneNumber": "",
-      "streetName": "",
-      "houseNumber": "",
-      "postalNumber": "",
-      "city": "",
-      "paymentOption": "",
-      "payingPhoneNumber": "",
+      "contactPhoneNumber": "0707526051",
+      "streetName": "stormgatan",
+      "houseNumber": "11",
+      "postalNumber": "26242",
+      "city": "ÄNGELHOLM",
+      "paymentOption": "swish",
+      "payingPhoneNumber": "0707526051",
       "cardNumber": "",
       "expirationDate": "",
       "cvc": "",
@@ -9461,6 +9461,218 @@
           "image": "images/menu/burgers/cheese-and-bacon-burger-lg.png",
           "quantity": 1,
           "totalPrice": 5.99
+        }
+      ]
+    },
+    {
+      "id": "d7b6",
+      "orderTime": "2024-06-06T12:53:04.410Z",
+      "user": {
+        "id": "hello@hello.com212",
+        "firstName": "André",
+        "lastName": "Woods",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526051",
+        "streetName": "stormgatan",
+        "houseNumber": "11",
+        "postalNumber": "26242",
+        "city": "ÄNGELHOLM",
+        "paymentOption": "swish",
+        "payingPhoneNumber": "0707526051",
+        "cardNumber": "",
+        "expirationDate": "",
+        "cvc": "",
+        "favorites": []
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png",
+          "quantity": 4,
+          "totalPrice": 19.96
+        }
+      ]
+    },
+    {
+      "id": "cfbe",
+      "orderTime": "2024-06-06T13:45:57.645Z",
+      "user": {
+        "id": "hello@hello.com212",
+        "firstName": "André",
+        "lastName": "Woods",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526051",
+        "streetName": "stormgatan",
+        "houseNumber": "11",
+        "postalNumber": "26242",
+        "city": "ÄNGELHOLM",
+        "paymentOption": "swish",
+        "payingPhoneNumber": "0707526051",
+        "cardNumber": "",
+        "expirationDate": "",
+        "cvc": "",
+        "favorites": []
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
+        },
+        {
+          "id": "2",
+          "title": "Cheeseburger",
+          "price": 5.49,
+          "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+          "category": "burgers",
+          "image": "images/menu/burgers/cheeseburger-lg.png",
+          "quantity": 1,
+          "totalPrice": 5.49
+        },
+        {
+          "id": "3",
+          "title": "Cheese and bacon burger",
+          "price": 5.99,
+          "description": "A juicy beef patty topped with crispy bacon, melted cheese, lettuce, and tomato",
+          "category": "burgers",
+          "image": "images/menu/burgers/cheese-and-bacon-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 5.99
+        },
+        {
+          "id": "4",
+          "title": "Double cheeseburger",
+          "price": 6.49,
+          "description": "Two beef patties layered with melted American cheese",
+          "category": "burgers",
+          "image": "images/menu/burgers/double-cheeseburger-lg.png",
+          "quantity": 1,
+          "totalPrice": 6.49
+        },
+        {
+          "id": "5",
+          "title": "Chicken Parmesan Burger",
+          "price": 5.99,
+          "description": "A crispy chicken topped with melted cheese, parmesan, lettuce, onion and tomato",
+          "category": "burgers",
+          "image": "images/menu/burgers/chicken-parmesan-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 5.99
+        },
+        {
+          "id": "6",
+          "title": "Crispy fries",
+          "price": 3.99,
+          "description": "Fries made from our founder's secret recipe",
+          "category": "sides",
+          "image": "images/menu/sides/crispy-fries-lg.png",
+          "quantity": 1,
+          "totalPrice": 3.99
+        },
+        {
+          "id": "7",
+          "title": "Sweet potato fries",
+          "price": 4.49,
+          "description": "Our world famous sweet potato fries",
+          "category": "sides",
+          "image": "images/menu/sides/sweet-potato-fries-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.49
+        },
+        {
+          "id": "8",
+          "title": "Onion rings",
+          "price": 3.49,
+          "description": "Crispy fresh onion rings, served hot",
+          "category": "sides",
+          "image": "images/menu/sides/onion-rings-lg.png",
+          "quantity": 1,
+          "totalPrice": 3.49
+        }
+      ]
+    },
+    {
+      "id": "cb01",
+      "orderTime": "2024-06-06T13:48:50.644Z",
+      "user": {
+        "id": "hello@hello.com212",
+        "firstName": "André",
+        "lastName": "Woods",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526051",
+        "streetName": "stormgatan",
+        "houseNumber": "11",
+        "postalNumber": "26242",
+        "city": "ÄNGELHOLM",
+        "paymentOption": "swish",
+        "payingPhoneNumber": "0707526051",
+        "cardNumber": "",
+        "expirationDate": "",
+        "cvc": "",
+        "favorites": []
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
+        },
+        {
+          "id": "2",
+          "title": "Cheeseburger",
+          "price": 5.49,
+          "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+          "category": "burgers",
+          "image": "images/menu/burgers/cheeseburger-lg.png",
+          "quantity": 1,
+          "totalPrice": 5.49
+        }
+      ]
+    },
+    {
+      "id": "7b61",
+      "orderTime": "2024-06-06T14:12:35.323Z",
+      "user": {
+        "id": "hello@hello.com212",
+        "firstName": "André",
+        "lastName": "Woods",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526051",
+        "streetName": "stormgatan",
+        "houseNumber": "11",
+        "postalNumber": "26242",
+        "city": "ÄNGELHOLM",
+        "paymentOption": "swish",
+        "payingPhoneNumber": "0707526051",
+        "cardNumber": "",
+        "expirationDate": "",
+        "cvc": "",
+        "favorites": []
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
         }
       ]
     }

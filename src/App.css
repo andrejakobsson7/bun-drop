@@ -10,6 +10,12 @@ body {
   background-color: rgb(218, 227, 209);
   overflow-x: hidden;
 }
+#root {
+  height: fit-content;
+  position: relative;
+  min-height: 90vh;
+  padding-bottom: 10vh;
+}
 select {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
