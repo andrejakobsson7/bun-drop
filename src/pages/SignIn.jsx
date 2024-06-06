@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import PageLabel from "../components/PageLabel";
 import ControlledInputField from "../components/ControlledInputField";
 import ErrorText from "../components/ErrorText";
@@ -49,6 +49,7 @@ function SignIn() {
     userCredsCopy[propName] = inputValue;
     setUserCredentials(userCredsCopy);
   }
+
   return (
     <div id="sign-in-container">
       <div id="sign-in-label-wrapper">

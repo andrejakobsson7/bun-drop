@@ -36,7 +36,6 @@ function ControlledInputField(props) {
   }, []);
   useEffect(() => {
     setInputValue(props.value);
-    console.log(props.defaultValue);
   }, [props.value]);
 
   useEffect(() => {
