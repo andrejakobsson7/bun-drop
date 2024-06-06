@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import PageLabel from "../components/PageLabel";
 import ControlledInputField from "../components/ControlledInputField";
 import ErrorText from "../components/ErrorText";
@@ -7,7 +7,7 @@ import useInputField from "../hooks/useInputField";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../contexts/AuthProvider";
 import "../styles/pages/SignIn.css";
-function SignIn() {
+function SignIn(props) {
   const [validationError, setValidationError] = useState("");
   const [userCredentials, setUserCredentials] = useState({
     email: "",
@@ -33,8 +33,8 @@ function SignIn() {
       if (
         inputHandler.compareInputs(userCredentials.password, foundUser.password)
       ) {
-        //Navigate to home page
-        navigate("/");
+        //Navigate to previous page that the user was on. This is not 100% but will work good when coming from the home page and/or payment page which is the most likely scenario
+        navigate(history.go(-1));
         //Set context
         authHandler.signIn(foundUser);
       } else {
@@ -49,6 +49,7 @@ function SignIn() {
     userCredsCopy[propName] = inputValue;
     setUserCredentials(userCredsCopy);
   }
+
   return (
     <div id="sign-in-container">
       <div id="sign-in-label-wrapper">
