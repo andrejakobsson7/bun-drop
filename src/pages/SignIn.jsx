@@ -7,7 +7,7 @@ import useInputField from "../hooks/useInputField";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../contexts/AuthProvider";
 import "../styles/pages/SignIn.css";
-function SignIn(props) {
+function SignIn() {
   const [validationError, setValidationError] = useState("");
   const [userCredentials, setUserCredentials] = useState({
     email: "",
