@@ -58,11 +58,15 @@ function CartItem(props) {
     <div className="cart-item-container">
       <div className="cart-item-image-wrapper">
         <img src={props.item.image} />
-        <div className="cart-item-delete-wrapper-sm">
-          <button className="remove-from-cart-btn" onClick={handleItemDelete}>
-            <p className="bi bi-trash3-fill"></p>
-          </button>
-        </div>
+        {props.onItemDelete !== undefined ? (
+          <div className="cart-item-delete-wrapper-sm">
+            <button className="remove-from-cart-btn" onClick={handleItemDelete}>
+              <p className="bi bi-trash3-fill"></p>
+            </button>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
       <div className="cart-item-info-wrapper">
         <div className="cart-item-name-wrapper">
@@ -70,7 +74,11 @@ function CartItem(props) {
         </div>
         <div className="cart-item-quantity-wrapper">
           <label>Quantity</label>
-          <select value={quantity} onChange={handleQuantityChange}>
+          <select
+            value={quantity}
+            onChange={handleQuantityChange}
+            disabled={props.onQuantityChange === undefined}
+          >
             {quantityOptions}
           </select>
         </div>
@@ -82,11 +90,15 @@ function CartItem(props) {
           <label>Total</label>
           <p>$ {totalPrice}</p>
         </div>
-        <div className="cart-item-delete-wrapper-lg">
-          <button className="remove-from-cart-btn" onClick={handleItemDelete}>
-            <p className="bi bi-trash3-fill "></p>
-          </button>
-        </div>
+        {props.onItemDelete !== undefined ? (
+          <div className="cart-item-delete-wrapper-lg">
+            <button className="remove-from-cart-btn" onClick={handleItemDelete}>
+              <p className="bi bi-trash3-fill "></p>
+            </button>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

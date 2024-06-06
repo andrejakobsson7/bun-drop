@@ -33,8 +33,8 @@ function SignIn() {
       if (
         inputHandler.compareInputs(userCredentials.password, foundUser.password)
       ) {
-        //Navigate to previous page that the user was on. This is not 100% but will work good when coming from the home page and/or payment page which is the most likely scenario
-        navigate(history.go(-1));
+        //Navigate to home page
+        navigate("/");
         //Set context
         authHandler.signIn(foundUser);
       } else {

@@ -10,7 +10,7 @@ function Home() {
 
   useEffect(() => {
     const ordersWithAccumulatedQuantity = [];
-    if (fetchOrder.data.length > 0) {
+    if (fetchOrder.data !== null) {
       fetchOrder.data.forEach((order) => {
         order.dishes.forEach((dish) => {
           let foundDish = ordersWithAccumulatedQuantity.find(

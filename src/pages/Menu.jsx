@@ -28,20 +28,22 @@ function Menu() {
   const authHandler = useContext(AuthContext);
 
   useEffect(() => {
-    setMenu(fetchMenu.data);
-    setOriginalMenu(fetchMenu.data);
-    let categories = [];
-    fetchMenu.data.forEach((d) => {
-      const category = d.category[0].toUpperCase() + d.category.slice(1);
-      if (categories.includes(category) === false) {
-        categories.push(category);
+    if (fetchMenu.data !== null) {
+      setMenu(fetchMenu.data);
+      setOriginalMenu(fetchMenu.data);
+      let categories = [];
+      fetchMenu.data.forEach((d) => {
+        const category = d.category[0].toUpperCase() + d.category.slice(1);
+        if (categories.includes(category) === false) {
+          categories.push(category);
+        }
+      });
+      if (authHandler.isAuthenticated) {
+        categories.unshift(favoritesFilter);
       }
-    });
-    if (authHandler.isAuthenticated) {
-      categories.unshift(favoritesFilter);
+      categories.unshift(defaultFilterOption);
+      setFilterOptions(categories);
     }
-    categories.unshift(defaultFilterOption);
-    setFilterOptions(categories);
   }, [fetchMenu.data]);
 
   useEffect(() => {
