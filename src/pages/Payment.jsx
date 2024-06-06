@@ -125,244 +125,249 @@ function Payment() {
       <div id="payment-label-wrapper">
         <PageLabel label="PAYMENT"></PageLabel>
       </div>
-      <div id="payment-info-wrapper">
-        {authHandler.isAuthenticated === false && cart.length > 0 ? (
-          <>
-            <p>
-              <Link to="/signin">Sign in</Link>
-              <span> to get your information prefilled</span>
-            </p>
-            <p>
-              Not a member yet? <Link to="/register">Register here!</Link>
-            </p>
-          </>
-        ) : authHandler.isAuthenticated ? (
-          <strong>Welcome back {originalUserInfo.firstName}</strong>
-        ) : (
-          ""
-        )}
-      </div>
       {cart.length > 0 ? (
-        <form id="payment-form-wrapper" onSubmit={handleSubmit}>
-          <div id="payment-contact-label" className="payment-form-label">
-            <h3>Contact</h3>
+        <>
+          <div id="payment-info-wrapper">
+            {authHandler.isAuthenticated === false && cart.length > 0 ? (
+              <>
+                <p>
+                  <Link to="/signin">Sign in</Link>
+                  <span> to get your information prefilled</span>
+                </p>
+                <p>
+                  Not a member yet? <Link to="/register">Register here!</Link>
+                </p>
+              </>
+            ) : authHandler.isAuthenticated ? (
+              <strong>Welcome back {originalUserInfo.firstName}</strong>
+            ) : (
+              ""
+            )}
           </div>
-          <div
-            id="payment-first-name-wrapper"
-            className="payment-input-wrapper"
-          >
-            <ControlledInputField
-              inputId="payment-first-name-input"
-              inputName="First name"
-              inputType="text"
-              propName="firstName"
-              isRequired={true}
-              value={paymentDetails.firstName}
-              onInputChange={handleInputChange}
-            ></ControlledInputField>
-          </div>
-          <div id="payment-last-name-wrapper" className="payment-input-wrapper">
-            <ControlledInputField
-              inputId="payment-last-name-input"
-              inputName="Last name"
-              inputType="text"
-              propName="lastName"
-              isRequired={true}
-              value={paymentDetails.lastName}
-              onInputChange={handleInputChange}
-            ></ControlledInputField>
-          </div>
-
-          <div id="payment-email-wrapper" className="payment-input-wrapper">
-            <ControlledInputField
-              inputId="payment-email-input"
-              inputName="Email"
-              inputType="email"
-              propName="email"
-              isRequired={true}
-              value={paymentDetails.id}
-              onInputChange={handleInputChange}
-              disabled={authHandler.isAuthenticated}
-            ></ControlledInputField>
-          </div>
-          <div id="payment-phone-wrapper" className="payment-input-wrapper">
-            <ControlledInputField
-              inputId="payment-phone-input"
-              inputName="Phone number"
-              inputType="tel"
-              propName="contactPhoneNumber"
-              maxLength={10}
-              isRequired={true}
-              value={paymentDetails.contactPhoneNumber}
-              onInputChange={handleInputChange}
-            ></ControlledInputField>
-          </div>
-          <div id="payment-delivery-label" className="payment-form-label">
-            <h3>Delivery</h3>
-          </div>
-          <div id="payment-street-wrapper" className="payment-input-wrapper">
-            <ControlledInputField
-              inputId="payment-street-input"
-              inputName="Street name"
-              inputType="text"
-              propName="streetName"
-              isRequired={true}
-              value={paymentDetails.streetName}
-              onInputChange={handleInputChange}
-            ></ControlledInputField>
-          </div>
-          <div
-            id="payment-house-number-wrapper"
-            className="payment-input-wrapper"
-          >
-            <ControlledInputField
-              inputId="payment-house-number-input"
-              inputName="House/apartment number"
-              inputType="text"
-              propName="houseNumber"
-              isRequired={true}
-              value={paymentDetails.houseNumber}
-              onInputChange={handleInputChange}
-            ></ControlledInputField>
-          </div>
-          <div
-            id="payment-postal-number-wrapper"
-            className="payment-input-wrapper"
-          >
-            <ControlledInputField
-              inputId="payment-postal-number-input"
-              inputName="Postal number"
-              inputType="text"
-              propName="postalNumber"
-              isRequired={true}
-              value={paymentDetails.postalNumber}
-              onInputChange={handleInputChange}
-            ></ControlledInputField>
-          </div>
-          <div id="payment-city-wrapper" className="payment-input-wrapper">
-            <ControlledInputField
-              inputId="payment-city-input"
-              inputName="City"
-              inputType="text"
-              propName="city"
-              isRequired={true}
-              value={paymentDetails.city}
-              onInputChange={handleInputChange}
-            ></ControlledInputField>
-          </div>
-          <div id="payment-payment-label" className="payment-form-label">
-            <h3>Payment</h3>
-          </div>
-          <div
-            id="payment-payment-type-wrapper"
-            className="payment-input-wrapper"
-          >
-            <label>
-              Payment type{" "}
-              {paymentDetails.paymentOption !== "" ? (
-                <i className="bi bi-check-circle-fill"></i>
-              ) : (
-                ""
-              )}
-            </label>
-            <select
-              defaultValue={paymentDetails.paymentOption}
-              onChange={handlePaymentSelect}
-              required
-            >
-              <option value="" disabled hidden>
-                Select payment type
-              </option>
-              <option value="swish">Swish</option>
-              <option value="credit-card">Credit card</option>
-            </select>
-          </div>
-          {paymentDetails.paymentOption === "swish" ? (
-            <div id="payment-swish-wrapper" className="payment-input-wrapper">
-              <UncontrolledInputField
-                inputId="payment-paying-phone-input"
-                inputName="Phone number"
-                inputType="tel"
-                propName="payingPhoneNumber"
-                defaultValue={paymentDetails.contactPhoneNumber}
-                maxLength={10}
-                isRequired={paymentDetails.paymentOption === "swish"}
-                onInputChange={handleInputChange}
-              />
+          <form id="payment-form-wrapper" onSubmit={handleSubmit}>
+            <div id="payment-contact-label" className="payment-form-label">
+              <h3>Contact</h3>
             </div>
-          ) : paymentDetails.paymentOption === "credit-card" ? (
             <div
-              id="payment-credit-card-wrapper"
+              id="payment-first-name-wrapper"
               className="payment-input-wrapper"
             >
-              <div
-                id="payment-card-number-wrapper"
-                className="payment-input-wrapper"
-              >
-                <ControlledInputField
-                  inputId="payment-card-number-input"
-                  inputName="Card number"
-                  inputType="text"
-                  propName="cardNumber"
-                  maxLength={16}
-                  isRequired={paymentDetails.paymentOption === "credit-card"}
-                  value={paymentDetails.cardNumber}
-                  onInputChange={handleInputChange}
-                ></ControlledInputField>
-              </div>
-              <div
-                id="payment-credit-card-exp-date-wrapper"
-                className="payment-input-wrapper"
-              >
-                <ControlledInputField
-                  inputId="payment-card-expiration-input"
-                  inputName="Expiration date"
-                  inputType="month"
-                  propName="expirationDate"
-                  minValue={todaysYearAndMonth}
-                  isRequired={paymentDetails.paymentOption === "credit-card"}
-                  value={paymentDetails.expirationDate}
-                  onInputChange={handleInputChange}
-                ></ControlledInputField>
-              </div>
-              <div
-                id="payment-credit-card-cvc-wrapper"
-                className="payment-input-wrapper"
-              >
-                <ControlledInputField
-                  inputId="payment-card-cvc-input"
-                  inputName="CVC"
-                  inputType="text"
-                  propName="cvc"
-                  maxLength={3}
-                  isRequired={paymentDetails.paymentOption === "credit-card"}
-                  value={paymentDetails.cvc}
-                  onInputChange={handleInputChange}
-                ></ControlledInputField>
-              </div>
+              <ControlledInputField
+                inputId="payment-first-name-input"
+                inputName="First name"
+                inputType="text"
+                propName="firstName"
+                isRequired={true}
+                value={paymentDetails.firstName}
+                onInputChange={handleInputChange}
+              ></ControlledInputField>
             </div>
-          ) : (
-            ""
-          )}
-          {authHandler.isAuthenticated && userInfoHasChanged ? (
-            <div id="remember-changed-details-wrapper">
-              <input
-                type="checkbox"
-                onChange={handleUserDetailsChange}
-                checked={rememberUserDetails}
-                id="payment-remember-me-cx"
-              />
-              <p> Save information for future orders</p>
+            <div
+              id="payment-last-name-wrapper"
+              className="payment-input-wrapper"
+            >
+              <ControlledInputField
+                inputId="payment-last-name-input"
+                inputName="Last name"
+                inputType="text"
+                propName="lastName"
+                isRequired={true}
+                value={paymentDetails.lastName}
+                onInputChange={handleInputChange}
+              ></ControlledInputField>
             </div>
-          ) : (
-            ""
-          )}
-          <div id="pay-btn-wrapper">
-            <button className="action-btn" type="submit">
-              Pay $ {cartTotal}
-            </button>
-          </div>
-        </form>
+
+            <div id="payment-email-wrapper" className="payment-input-wrapper">
+              <ControlledInputField
+                inputId="payment-email-input"
+                inputName="Email"
+                inputType="email"
+                propName="email"
+                isRequired={true}
+                value={paymentDetails.id}
+                onInputChange={handleInputChange}
+                disabled={authHandler.isAuthenticated}
+              ></ControlledInputField>
+            </div>
+            <div id="payment-phone-wrapper" className="payment-input-wrapper">
+              <ControlledInputField
+                inputId="payment-phone-input"
+                inputName="Phone number"
+                inputType="tel"
+                propName="contactPhoneNumber"
+                maxLength={10}
+                isRequired={true}
+                value={paymentDetails.contactPhoneNumber}
+                onInputChange={handleInputChange}
+              ></ControlledInputField>
+            </div>
+            <div id="payment-delivery-label" className="payment-form-label">
+              <h3>Delivery</h3>
+            </div>
+            <div id="payment-street-wrapper" className="payment-input-wrapper">
+              <ControlledInputField
+                inputId="payment-street-input"
+                inputName="Street name"
+                inputType="text"
+                propName="streetName"
+                isRequired={true}
+                value={paymentDetails.streetName}
+                onInputChange={handleInputChange}
+              ></ControlledInputField>
+            </div>
+            <div
+              id="payment-house-number-wrapper"
+              className="payment-input-wrapper"
+            >
+              <ControlledInputField
+                inputId="payment-house-number-input"
+                inputName="House/apartment number"
+                inputType="text"
+                propName="houseNumber"
+                isRequired={true}
+                value={paymentDetails.houseNumber}
+                onInputChange={handleInputChange}
+              ></ControlledInputField>
+            </div>
+            <div
+              id="payment-postal-number-wrapper"
+              className="payment-input-wrapper"
+            >
+              <ControlledInputField
+                inputId="payment-postal-number-input"
+                inputName="Postal number"
+                inputType="text"
+                propName="postalNumber"
+                isRequired={true}
+                value={paymentDetails.postalNumber}
+                onInputChange={handleInputChange}
+              ></ControlledInputField>
+            </div>
+            <div id="payment-city-wrapper" className="payment-input-wrapper">
+              <ControlledInputField
+                inputId="payment-city-input"
+                inputName="City"
+                inputType="text"
+                propName="city"
+                isRequired={true}
+                value={paymentDetails.city}
+                onInputChange={handleInputChange}
+              ></ControlledInputField>
+            </div>
+            <div id="payment-payment-label" className="payment-form-label">
+              <h3>Payment</h3>
+            </div>
+            <div
+              id="payment-payment-type-wrapper"
+              className="payment-input-wrapper"
+            >
+              <label>
+                Payment type{" "}
+                {paymentDetails.paymentOption !== "" ? (
+                  <i className="bi bi-check-circle-fill"></i>
+                ) : (
+                  ""
+                )}
+              </label>
+              <select
+                defaultValue={paymentDetails.paymentOption}
+                onChange={handlePaymentSelect}
+                required
+              >
+                <option value="" disabled hidden>
+                  Select payment type
+                </option>
+                <option value="swish">Swish</option>
+                <option value="credit-card">Credit card</option>
+              </select>
+            </div>
+            {paymentDetails.paymentOption === "swish" ? (
+              <div id="payment-swish-wrapper" className="payment-input-wrapper">
+                <UncontrolledInputField
+                  inputId="payment-paying-phone-input"
+                  inputName="Phone number"
+                  inputType="tel"
+                  propName="payingPhoneNumber"
+                  defaultValue={paymentDetails.contactPhoneNumber}
+                  maxLength={10}
+                  isRequired={paymentDetails.paymentOption === "swish"}
+                  onInputChange={handleInputChange}
+                />
+              </div>
+            ) : paymentDetails.paymentOption === "credit-card" ? (
+              <div
+                id="payment-credit-card-wrapper"
+                className="payment-input-wrapper"
+              >
+                <div
+                  id="payment-card-number-wrapper"
+                  className="payment-input-wrapper"
+                >
+                  <ControlledInputField
+                    inputId="payment-card-number-input"
+                    inputName="Card number"
+                    inputType="text"
+                    propName="cardNumber"
+                    maxLength={16}
+                    isRequired={paymentDetails.paymentOption === "credit-card"}
+                    value={paymentDetails.cardNumber}
+                    onInputChange={handleInputChange}
+                  ></ControlledInputField>
+                </div>
+                <div
+                  id="payment-credit-card-exp-date-wrapper"
+                  className="payment-input-wrapper"
+                >
+                  <ControlledInputField
+                    inputId="payment-card-expiration-input"
+                    inputName="Expiration date"
+                    inputType="month"
+                    propName="expirationDate"
+                    minValue={todaysYearAndMonth}
+                    isRequired={paymentDetails.paymentOption === "credit-card"}
+                    value={paymentDetails.expirationDate}
+                    onInputChange={handleInputChange}
+                  ></ControlledInputField>
+                </div>
+                <div
+                  id="payment-credit-card-cvc-wrapper"
+                  className="payment-input-wrapper"
+                >
+                  <ControlledInputField
+                    inputId="payment-card-cvc-input"
+                    inputName="CVC"
+                    inputType="text"
+                    propName="cvc"
+                    maxLength={3}
+                    isRequired={paymentDetails.paymentOption === "credit-card"}
+                    value={paymentDetails.cvc}
+                    onInputChange={handleInputChange}
+                  ></ControlledInputField>
+                </div>
+              </div>
+            ) : (
+              ""
+            )}
+            {authHandler.isAuthenticated && userInfoHasChanged ? (
+              <div id="remember-changed-details-wrapper">
+                <input
+                  type="checkbox"
+                  onChange={handleUserDetailsChange}
+                  checked={rememberUserDetails}
+                  id="payment-remember-me-cx"
+                />
+                <p> Save information for future orders</p>
+              </div>
+            ) : (
+              ""
+            )}
+            <div id="pay-btn-wrapper">
+              <button className="action-btn" type="submit">
+                Pay $ {cartTotal}
+              </button>
+            </div>
+          </form>
+        </>
       ) : (
         <div id="payment-cart-empty-wrapper">
           <CartEmpty />
