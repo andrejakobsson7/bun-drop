@@ -39,3 +39,14 @@
 #error-dialog p {
   margin-top: 10px;
 }
+.error-go-to-home-btn {
+  margin: 1rem;
+  padding: 1rem;
+  max-height: 25vh;
+  width: auto;
+  background-color: rgb(109, 114, 104);
+  color: white;
+}
+.error-go-to-home-btn:hover {
+  background-color: rgb(55, 57, 52);
+}

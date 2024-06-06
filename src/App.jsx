@@ -13,7 +13,7 @@ import "./App.css";
 import { AuthProvider } from "./contexts/AuthProvider";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 import UserSettings from "./pages/UserSettings";
-
+import NotFound from "./pages/NotFound";
 function App() {
   return (
     <AuthProvider>
@@ -38,6 +38,7 @@ function App() {
               </ProtectedRoute>
             }
           ></Route>
+          <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </Router>
     </AuthProvider>

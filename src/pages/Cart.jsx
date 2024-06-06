@@ -4,6 +4,7 @@ import CartItem from "../components/CartItem";
 import useLocalStorage from "../hooks/useLocalStorage";
 import { Link } from "react-router-dom";
 import "../styles//pages/Cart.css";
+import CartEmpty from "../components/CartEmpty";
 function Cart() {
   const [cart, setCart] = useState([]);
   const localStorageHandler = useLocalStorage();
@@ -63,10 +64,7 @@ function Cart() {
           </div>
         ) : (
           <div id="cart-cart-empty-wrapper">
-            <p>Cart is empty</p>
-            <Link to="/menu">
-              <button className="cart-go-to-menu-btn">Go to menu</button>
-            </Link>
+            <CartEmpty />
           </div>
         )}
       </>
