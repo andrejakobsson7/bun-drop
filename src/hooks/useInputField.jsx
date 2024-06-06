@@ -65,15 +65,27 @@ function useInputField() {
     const foundPattern = findPattern(inputType, propName);
     return `${foundPattern.error}`;
   }
+  function getNonMatchingInputsErrorMessage(inputType) {
+    const formattedInputTypeName =
+      inputType[0].toUpperCase() + inputType.slice(1);
+    return `${formattedInputTypeName}s doesn't match`;
+  }
 
   function setErrorMessage(input, props, pattern) {
-    if (input.trim().length === 0 && props.isRequired) {
+    const trimmedInput = input.trim();
+    if (trimmedInput.length === 0 && props.isRequired) {
       return getDefaultErrorMessage(props.inputName);
     } else if (
-      input.trim().length > 0 &&
+      trimmedInput.length > 0 &&
       validateInputVsPattern(input, pattern) === false
     ) {
       return getFormatErrorMessage(props.inputType, props.propName);
+    } else if (
+      trimmedInput.length > 0 &&
+      props.comparisonValue !== undefined &&
+      compareInputs(trimmedInput, props.comparisonValue) === false
+    ) {
+      return getNonMatchingInputsErrorMessage(props.inputType);
     } else {
       return "";
     }
