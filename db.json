@@ -229,32 +229,7 @@
       "cardNumber": "1234567898765413",
       "expirationDate": "2024-11",
       "cvc": "111",
-      "favorites": [
-        {
-          "id": "1",
-          "title": "Classic Burger",
-          "price": 4.99,
-          "description": "A classic beef burger with lettuce, tomato and onion",
-          "category": "burgers",
-          "image": "images/menu/burgers/classic-burger-lg.png"
-        },
-        {
-          "id": "2",
-          "title": "Cheeseburger",
-          "price": 5.49,
-          "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
-          "category": "burgers",
-          "image": "images/menu/burgers/cheeseburger-lg.png"
-        },
-        {
-          "id": "7",
-          "title": "Sweet potato fries",
-          "price": 4.49,
-          "description": "Our world famous sweet potato fries",
-          "category": "sides",
-          "image": "images/menu/sides/sweet-potato-fries-lg.png"
-        }
-      ]
+      "favorites": []
     },
     {
       "id": "email@bundrop.com",
