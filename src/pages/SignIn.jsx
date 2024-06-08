@@ -61,7 +61,7 @@ function SignIn() {
       <form id="sign-in-form-wrapper" onSubmit={handleSubmit}>
         <div className="sign-in-user-input-wrapper">
           <ControlledInputField
-            inputName="Email/Username"
+            inputName="Email"
             inputId="sign-in-email-input"
             inputType="text"
             propName="emailUsername"
