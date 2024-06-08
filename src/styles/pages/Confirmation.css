@@ -2,7 +2,7 @@
 #confirmation-container {
   display: grid;
   grid-template-columns: 0.5fr 2fr 0.5fr;
-  grid-template-rows: repeat(2, 0.3fr) 2fr;
+  grid-template-rows: auto;
   font-family: "Poetsen One";
 }
 #confirmation-text-wrapper {

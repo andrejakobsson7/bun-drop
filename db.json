@@ -6,7 +6,7 @@
       "price": 4.99,
       "description": "A classic beef burger with lettuce, tomato and onion",
       "category": "burgers",
-      "image": "images/menu/burgers/classic-burger-lg.png"
+      "image": "../images/menu/burgers/classic-burger-lg.png"
     },
     {
       "id": "2",
@@ -14,7 +14,7 @@
       "price": 5.49,
       "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
       "category": "burgers",
-      "image": "images/menu/burgers/cheeseburger-lg.png"
+      "image": "../images/menu/burgers/cheeseburger-lg.png"
     },
     {
       "id": "3",
@@ -22,7 +22,7 @@
       "price": 5.99,
       "description": "A juicy beef patty topped with crispy bacon, melted cheese, lettuce, and tomato",
       "category": "burgers",
-      "image": "images/menu/burgers/cheese-and-bacon-burger-lg.png"
+      "image": "../images/menu/burgers/cheese-and-bacon-burger-lg.png"
     },
     {
       "id": "4",
@@ -30,7 +30,7 @@
       "price": 6.49,
       "description": "Two beef patties layered with melted American cheese",
       "category": "burgers",
-      "image": "images/menu/burgers/double-cheeseburger-lg.png"
+      "image": "../images/menu/burgers/double-cheeseburger-lg.png"
     },
     {
       "id": "5",
@@ -38,7 +38,7 @@
       "price": 5.99,
       "description": "A crispy chicken topped with melted cheese, parmesan, lettuce, onion and tomato",
       "category": "burgers",
-      "image": "images/menu/burgers/chicken-parmesan-burger-lg.png"
+      "image": "../images/menu/burgers/chicken-parmesan-burger-lg.png"
     },
     {
       "id": "6",
@@ -46,7 +46,7 @@
       "price": 3.99,
       "description": "Fries made from our founder's secret recipe",
       "category": "sides",
-      "image": "images/menu/sides/crispy-fries-lg.png"
+      "image": "../images/menu/sides/crispy-fries-lg.png"
     },
     {
       "id": "7",
@@ -54,7 +54,7 @@
       "price": 4.49,
       "description": "Our world famous sweet potato fries",
       "category": "sides",
-      "image": "images/menu/sides/sweet-potato-fries-lg.png"
+      "image": "../images/menu/sides/sweet-potato-fries-lg.png"
     },
     {
       "id": "8",
@@ -62,7 +62,7 @@
       "price": 3.49,
       "description": "Crispy fresh onion rings, served hot",
       "category": "sides",
-      "image": "images/menu/sides/onion-rings-lg.png"
+      "image": "../images/menu/sides/onion-rings-lg.png"
     },
     {
       "id": "9",
@@ -70,7 +70,7 @@
       "price": 2.99,
       "description": "Crispy and hot, fried cheddar cheese with jalapeños",
       "category": "sides",
-      "image": "images/menu/sides/chili-cheese-lg.png"
+      "image": "../images/menu/sides/chili-cheese-lg.png"
     },
     {
       "id": "10",
@@ -78,7 +78,7 @@
       "price": 2.99,
       "description": "Crispy, sweet apple slices",
       "category": "sides",
-      "image": "images/menu/sides/apple-slices-lg.png"
+      "image": "../images/menu/sides/apple-slices-lg.png"
     },
     {
       "id": "11",
@@ -86,7 +86,7 @@
       "price": 2.49,
       "description": "Classic Coca Cola",
       "category": "drinks",
-      "image": "images/menu/drinks/coca-cola-lg.png"
+      "image": "../images/menu/drinks/coca-cola-lg.png"
     },
     {
       "id": "12",
@@ -94,7 +94,7 @@
       "price": 2.49,
       "description": "The classic drink without sugar",
       "category": "drinks",
-      "image": "images/menu/drinks/coca-cola-zero-lg.png"
+      "image": "../images/menu/drinks/coca-cola-zero-lg.png"
     },
     {
       "id": "13",
@@ -102,7 +102,7 @@
       "price": 2.49,
       "description": "Soda with orange flavour",
       "category": "drinks",
-      "image": "images/menu/drinks/fanta-lg.png"
+      "image": "../images/menu/drinks/fanta-lg.png"
     },
     {
       "id": "14",
@@ -110,7 +110,7 @@
       "price": 2.49,
       "description": "Refreshing apple juice from Kullamust",
       "category": "drinks",
-      "image": "images/menu/drinks/apple-juice-lg.png"
+      "image": "../images/menu/drinks/apple-juice-lg.png"
     },
     {
       "id": "15",
@@ -118,7 +118,7 @@
       "price": 3.49,
       "description": "Handmade smoothie with strawberries, blueberry, banana, apple juice and ice",
       "category": "drinks",
-      "image": "images/menu/drinks/smoothie-lg.png"
+      "image": "../images/menu/drinks/smoothie-lg.png"
     },
     {
       "id": "16",
@@ -126,7 +126,7 @@
       "price": 3.49,
       "description": "A tasty dessert fitting all chocolate lovers, topped with ice cream",
       "category": "desserts",
-      "image": "images/menu/desserts/lava-cake-lg.png"
+      "image": "../images/menu/desserts/lava-cake-lg.png"
     },
     {
       "id": "17",
@@ -134,7 +134,7 @@
       "price": 3.49,
       "description": "Raspberry pie with ice cream",
       "category": "desserts",
-      "image": "images/menu/desserts/raspberry-pie-lg.png"
+      "image": "../images/menu/desserts/raspberry-pie-lg.png"
     },
     {
       "id": "18",
@@ -142,7 +142,7 @@
       "price": 4.49,
       "description": "Handmade milkshake on soft ice cream whipped with milk and sweet strawberries, topped with whipped cream",
       "category": "desserts",
-      "image": "images/menu/desserts/luxury-shake-lg.png"
+      "image": "../images/menu/desserts/luxury-shake-lg.png"
     },
     {
       "id": "19",
@@ -150,7 +150,7 @@
       "price": 3.49,
       "description": "Soft ice cream with fudge and sprinkles",
       "category": "desserts",
-      "image": "images/menu/desserts/sundae-lg.png"
+      "image": "../images/menu/desserts/sundae-lg.png"
     },
     {
       "id": "20",
@@ -158,7 +158,7 @@
       "price": 3.49,
       "description": "Soft ice cream with chocolate sauce",
       "category": "desserts",
-      "image": "images/menu/desserts/sundae-chocolate-lg.png"
+      "image": "../images/menu/desserts/sundae-chocolate-lg.png"
     }
   ],
   "users": [
@@ -228,8 +228,16 @@
       "payingPhoneNumber": "0707526057",
       "cardNumber": "1234567898765413",
       "expirationDate": "2024-11",
-      "cvc": "124",
+      "cvc": "111",
       "favorites": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png"
+        },
         {
           "id": "2",
           "title": "Cheeseburger",
@@ -840,6 +848,51 @@
       "expirationDate": "",
       "cvc": "",
       "favorites": []
+    },
+    {
+      "id": "hello@hello.com1",
+      "firstName": "hello12",
+      "lastName": "hellosson",
+      "password": "Password123!",
+      "contactPhoneNumber": "0234567891",
+      "streetName": "Money street",
+      "houseNumber": "99",
+      "postalNumber": "12345",
+      "city": "Stockholm",
+      "paymentOption": "credit-card",
+      "payingPhoneNumber": "",
+      "cardNumber": "1234567890123456",
+      "expirationDate": "2024-07",
+      "cvc": "123",
+      "favorites": []
+    },
+    {
+      "id": "user",
+      "firstName": "",
+      "lastName": "",
+      "password": "password",
+      "contactPhoneNumber": "",
+      "streetName": "",
+      "houseNumber": "",
+      "postalNumber": "",
+      "city": "",
+      "paymentOption": "",
+      "payingPhoneNumber": "",
+      "cardNumber": "",
+      "expirationDate": "",
+      "cvc": "",
+      "favorites": [
+        {
+          "id": "2",
+          "title": "Cheeseburger",
+          "price": 5.49,
+          "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+          "category": "burgers",
+          "image": "images/menu/burgers/cheeseburger-lg.png",
+          "quantity": 1,
+          "totalPrice": 5.49
+        }
+      ]
     }
   ],
   "orders": [
@@ -9673,6 +9726,2734 @@
           "image": "images/menu/burgers/classic-burger-lg.png",
           "quantity": 1,
           "totalPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "792c",
+      "orderTime": "2024-06-06T20:05:04.377Z",
+      "user": {
+        "firstName": "guest",
+        "lastName": "guest",
+        "id": "",
+        "password": "",
+        "contactPhoneNumber": "0707070707",
+        "streetName": "malmö",
+        "houseNumber": "10",
+        "postalNumber": "111111",
+        "city": "malmö",
+        "paymentOption": "swish",
+        "payingPhoneNumber": "0707070707",
+        "cardNumber": "",
+        "expirationDate": "",
+        "cvc": "",
+        "favorites": [],
+        "email": "guest@guest.com"
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png",
+          "quantity": 2,
+          "totalPrice": 9.98
+        },
+        {
+          "id": "2",
+          "title": "Cheeseburger",
+          "price": 5.49,
+          "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+          "category": "burgers",
+          "image": "images/menu/burgers/cheeseburger-lg.png",
+          "quantity": 2,
+          "totalPrice": 10.98
+        },
+        {
+          "id": "3",
+          "title": "Cheese and bacon burger",
+          "price": 5.99,
+          "description": "A juicy beef patty topped with crispy bacon, melted cheese, lettuce, and tomato",
+          "category": "burgers",
+          "image": "images/menu/burgers/cheese-and-bacon-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 5.99
+        },
+        {
+          "id": "4",
+          "title": "Double cheeseburger",
+          "price": 6.49,
+          "description": "Two beef patties layered with melted American cheese",
+          "category": "burgers",
+          "image": "images/menu/burgers/double-cheeseburger-lg.png",
+          "quantity": 2,
+          "totalPrice": 12.98
+        },
+        {
+          "id": "5",
+          "title": "Chicken Parmesan Burger",
+          "price": 5.99,
+          "description": "A crispy chicken topped with melted cheese, parmesan, lettuce, onion and tomato",
+          "category": "burgers",
+          "image": "images/menu/burgers/chicken-parmesan-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 5.99
+        },
+        {
+          "id": "6",
+          "title": "Crispy fries",
+          "price": 3.99,
+          "description": "Fries made from our founder's secret recipe",
+          "category": "sides",
+          "image": "images/menu/sides/crispy-fries-lg.png",
+          "quantity": 1,
+          "totalPrice": 3.99
+        },
+        {
+          "id": "7",
+          "title": "Sweet potato fries",
+          "price": 4.49,
+          "description": "Our world famous sweet potato fries",
+          "category": "sides",
+          "image": "images/menu/sides/sweet-potato-fries-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.49
+        },
+        {
+          "id": "16",
+          "title": "Lava cake with ice cream",
+          "price": 3.49,
+          "description": "A tasty dessert fitting all chocolate lovers, topped with ice cream",
+          "category": "desserts",
+          "image": "images/menu/desserts/lava-cake-lg.png",
+          "quantity": 1,
+          "totalPrice": 3.49
+        }
+      ]
+    },
+    {
+      "id": "a627",
+      "orderTime": "2024-06-06T20:21:38.136Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png",
+          "quantity": 20,
+          "totalPrice": 99.8
+        }
+      ]
+    },
+    {
+      "id": "493a",
+      "orderTime": "2024-06-06T20:26:47.381Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "deef",
+      "orderTime": "2024-06-08T06:45:22.776Z",
+      "user": {
+        "id": "user",
+        "firstName": "user",
+        "lastName": "usersson",
+        "password": "password",
+        "contactPhoneNumber": "0123456789",
+        "streetName": "user street",
+        "houseNumber": "11",
+        "postalNumber": "11122",
+        "city": "Malmö",
+        "paymentOption": "swish",
+        "payingPhoneNumber": "0123456789",
+        "cardNumber": "",
+        "expirationDate": "",
+        "cvc": "",
+        "favorites": [
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png",
+            "quantity": 1,
+            "totalPrice": 5.49
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "2",
+          "title": "Cheeseburger",
+          "price": 5.49,
+          "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+          "category": "burgers",
+          "image": "images/menu/burgers/cheeseburger-lg.png",
+          "quantity": 1,
+          "totalPrice": 5.49
+        },
+        {
+          "id": "4",
+          "title": "Double cheeseburger",
+          "price": 6.49,
+          "description": "Two beef patties layered with melted American cheese",
+          "category": "burgers",
+          "image": "images/menu/burgers/double-cheeseburger-lg.png",
+          "quantity": 1,
+          "totalPrice": 6.49
+        }
+      ]
+    },
+    {
+      "id": "b369",
+      "orderTime": "2024-06-08T06:46:06.870Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "2cbe",
+      "orderTime": "2024-06-08T06:47:04.262Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "086a",
+      "orderTime": "2024-06-08T07:04:55.962Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "68a1",
+      "orderTime": "2024-06-08T07:10:09.881Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "2a39",
+      "orderTime": "2024-06-08T07:11:06.425Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "73d3",
+      "orderTime": "2024-06-08T07:13:16.032Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "a6dc",
+      "orderTime": "2024-06-08T07:14:21.377Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "bcab",
+      "orderTime": "2024-06-08T07:14:58.984Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "../images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "2e20",
+      "orderTime": "2024-06-08T07:15:15.672Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "../images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
+        },
+        {
+          "id": "2",
+          "title": "Cheeseburger",
+          "price": 5.49,
+          "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+          "category": "burgers",
+          "image": "images/menu/burgers/cheeseburger-lg.png",
+          "quantity": 1,
+          "totalPrice": 5.49
+        }
+      ]
+    },
+    {
+      "id": "8093",
+      "orderTime": "2024-06-08T07:15:33.904Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "2",
+          "title": "Cheeseburger",
+          "price": 5.49,
+          "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+          "category": "burgers",
+          "image": "../images/menu/burgers/cheeseburger-lg.png",
+          "quantity": 1,
+          "totalPrice": 5.49
+        }
+      ]
+    },
+    {
+      "id": "6935",
+      "orderTime": "2024-06-08T07:15:47.416Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "3",
+          "title": "Cheese and bacon burger",
+          "price": 5.99,
+          "description": "A juicy beef patty topped with crispy bacon, melted cheese, lettuce, and tomato",
+          "category": "burgers",
+          "image": "images/menu/burgers/cheese-and-bacon-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 5.99
+        }
+      ]
+    },
+    {
+      "id": "16a7",
+      "orderTime": "2024-06-08T07:16:01.312Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "../images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
+        },
+        {
+          "id": "3",
+          "title": "Cheese and bacon burger",
+          "price": 5.99,
+          "description": "A juicy beef patty topped with crispy bacon, melted cheese, lettuce, and tomato",
+          "category": "burgers",
+          "image": "../images/menu/burgers/cheese-and-bacon-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 5.99
+        }
+      ]
+    },
+    {
+      "id": "e386",
+      "orderTime": "2024-06-08T07:16:15.855Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "4",
+          "title": "Double cheeseburger",
+          "price": 6.49,
+          "description": "Two beef patties layered with melted American cheese",
+          "category": "burgers",
+          "image": "../images/menu/burgers/double-cheeseburger-lg.png",
+          "quantity": 1,
+          "totalPrice": 6.49
+        }
+      ]
+    },
+    {
+      "id": "d127",
+      "orderTime": "2024-06-08T07:16:28.847Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "5",
+          "title": "Chicken Parmesan Burger",
+          "price": 5.99,
+          "description": "A crispy chicken topped with melted cheese, parmesan, lettuce, onion and tomato",
+          "category": "burgers",
+          "image": "../images/menu/burgers/chicken-parmesan-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 5.99
+        }
+      ]
+    },
+    {
+      "id": "3f15",
+      "orderTime": "2024-06-08T07:16:43.087Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "6",
+          "title": "Crispy fries",
+          "price": 3.99,
+          "description": "Fries made from our founder's secret recipe",
+          "category": "sides",
+          "image": "images/menu/sides/crispy-fries-lg.png",
+          "quantity": 1,
+          "totalPrice": 3.99
+        }
+      ]
+    },
+    {
+      "id": "59bf",
+      "orderTime": "2024-06-08T07:16:58.751Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "6",
+          "title": "Crispy fries",
+          "price": 3.99,
+          "description": "Fries made from our founder's secret recipe",
+          "category": "sides",
+          "image": "../images/menu/sides/crispy-fries-lg.png",
+          "quantity": 10,
+          "totalPrice": 39.9
+        }
+      ]
+    },
+    {
+      "id": "6acb",
+      "orderTime": "2024-06-08T07:17:22.762Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "7",
+          "title": "Sweet potato fries",
+          "price": 4.49,
+          "description": "Our world famous sweet potato fries",
+          "category": "sides",
+          "image": "images/menu/sides/sweet-potato-fries-lg.png",
+          "quantity": 9,
+          "totalPrice": 40.41
+        },
+        {
+          "id": "8",
+          "title": "Onion rings",
+          "price": 3.49,
+          "description": "Crispy fresh onion rings, served hot",
+          "category": "sides",
+          "image": "images/menu/sides/onion-rings-lg.png",
+          "quantity": 1,
+          "totalPrice": 3.49
+        }
+      ]
+    },
+    {
+      "id": "d9cd",
+      "orderTime": "2024-06-08T07:17:41.176Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "../images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
+        },
+        {
+          "id": "7",
+          "title": "Sweet potato fries",
+          "price": 4.49,
+          "description": "Our world famous sweet potato fries",
+          "category": "sides",
+          "image": "images/menu/sides/sweet-potato-fries-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.49
+        },
+        {
+          "id": "8",
+          "title": "Onion rings",
+          "price": 3.49,
+          "description": "Crispy fresh onion rings, served hot",
+          "category": "sides",
+          "image": "images/menu/sides/onion-rings-lg.png",
+          "quantity": 1,
+          "totalPrice": 3.49
+        }
+      ]
+    },
+    {
+      "id": "1baf",
+      "orderTime": "2024-06-08T07:18:07.473Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "7",
+          "title": "Sweet potato fries",
+          "price": 4.49,
+          "description": "Our world famous sweet potato fries",
+          "category": "sides",
+          "image": "images/menu/sides/sweet-potato-fries-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.49
+        }
+      ]
+    },
+    {
+      "id": "ab56",
+      "orderTime": "2024-06-08T07:18:23.790Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "7",
+          "title": "Sweet potato fries",
+          "price": 4.49,
+          "description": "Our world famous sweet potato fries",
+          "category": "sides",
+          "image": "images/menu/sides/sweet-potato-fries-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.49
+        }
+      ]
+    },
+    {
+      "id": "1dc1",
+      "orderTime": "2024-06-08T07:19:39.454Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "7",
+          "title": "Sweet potato fries",
+          "price": 4.49,
+          "description": "Our world famous sweet potato fries",
+          "category": "sides",
+          "image": "..images/menu/sides/sweet-potato-fries-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.49
+        }
+      ]
+    },
+    {
+      "id": "8daa",
+      "orderTime": "2024-06-08T07:20:02.751Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "7",
+          "title": "Sweet potato fries",
+          "price": 4.49,
+          "description": "Our world famous sweet potato fries",
+          "category": "sides",
+          "image": "../images/menu/sides/sweet-potato-fries-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.49
+        }
+      ]
+    },
+    {
+      "id": "3913",
+      "orderTime": "2024-06-08T07:20:15.911Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "8",
+          "title": "Onion rings",
+          "price": 3.49,
+          "description": "Crispy fresh onion rings, served hot",
+          "category": "sides",
+          "image": "../images/menu/sides/onion-rings-lg.png",
+          "quantity": 1,
+          "totalPrice": 3.49
+        }
+      ]
+    },
+    {
+      "id": "15df",
+      "orderTime": "2024-06-08T07:20:31.344Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "9",
+          "title": "Chili cheese",
+          "price": 2.99,
+          "description": "Crispy and hot, fried cheddar cheese with jalapeños",
+          "category": "sides",
+          "image": "images/menu/sides/chili-cheese-lg.png",
+          "quantity": 1,
+          "totalPrice": 2.99
+        }
+      ]
+    },
+    {
+      "id": "c243",
+      "orderTime": "2024-06-08T07:20:45.991Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "8",
+          "title": "Onion rings",
+          "price": 3.49,
+          "description": "Crispy fresh onion rings, served hot",
+          "category": "sides",
+          "image": "../images/menu/sides/onion-rings-lg.png",
+          "quantity": 17,
+          "totalPrice": 59.33
+        }
+      ]
+    },
+    {
+      "id": "936e",
+      "orderTime": "2024-06-08T07:21:22.073Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "9",
+          "title": "Chili cheese",
+          "price": 2.99,
+          "description": "Crispy and hot, fried cheddar cheese with jalapeños",
+          "category": "sides",
+          "image": "images/menu/sides/chili-cheese-lg.png",
+          "quantity": 20,
+          "totalPrice": 59.8
+        }
+      ]
+    },
+    {
+      "id": "1cb3",
+      "orderTime": "2024-06-08T07:21:39.543Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "9",
+          "title": "Chili cheese",
+          "price": 2.99,
+          "description": "Crispy and hot, fried cheddar cheese with jalapeños",
+          "category": "sides",
+          "image": "../images/menu/sides/chili-cheese-lg.png",
+          "quantity": 20,
+          "totalPrice": 59.8
+        }
+      ]
+    },
+    {
+      "id": "ef72",
+      "orderTime": "2024-06-08T07:22:06.462Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "10",
+          "title": "Apple slices",
+          "price": 2.99,
+          "description": "Crispy, sweet apple slices",
+          "category": "sides",
+          "image": "images/menu/sides/apple-slices-lg.png",
+          "quantity": 20,
+          "totalPrice": 59.8
+        }
+      ]
+    },
+    {
+      "id": "9133",
+      "orderTime": "2024-06-08T07:22:23.087Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "10",
+          "title": "Apple slices",
+          "price": 2.99,
+          "description": "Crispy, sweet apple slices",
+          "category": "sides",
+          "image": "../images/menu/sides/apple-slices-lg.png",
+          "quantity": 10,
+          "totalPrice": 29.9
+        }
+      ]
+    },
+    {
+      "id": "3df1",
+      "orderTime": "2024-06-08T07:22:56.614Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "11",
+          "title": "Coca cola",
+          "price": 2.49,
+          "description": "Classic Coca Cola",
+          "category": "drinks",
+          "image": "images/menu/drinks/coca-cola-lg.png",
+          "quantity": 1,
+          "totalPrice": 2.49
+        }
+      ]
+    },
+    {
+      "id": "601f",
+      "orderTime": "2024-06-08T07:23:19.238Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "11",
+          "title": "Coca cola",
+          "price": 2.49,
+          "description": "Classic Coca Cola",
+          "category": "drinks",
+          "image": "../images/menu/drinks/coca-cola-lg.png",
+          "quantity": 12,
+          "totalPrice": 29.88
+        }
+      ]
+    },
+    {
+      "id": "acc4",
+      "orderTime": "2024-06-08T07:23:36.741Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "12",
+          "title": "Coca cola Zero",
+          "price": 2.49,
+          "description": "The classic drink without sugar",
+          "category": "drinks",
+          "image": "images/menu/drinks/coca-cola-zero-lg.png",
+          "quantity": 1,
+          "totalPrice": 2.49
+        }
+      ]
+    },
+    {
+      "id": "3f2e",
+      "orderTime": "2024-06-08T07:23:56.373Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "12",
+          "title": "Coca cola Zero",
+          "price": 2.49,
+          "description": "The classic drink without sugar",
+          "category": "drinks",
+          "image": "images/menu/drinks/coca-cola-zero-lg.png",
+          "quantity": 13,
+          "totalPrice": 32.37
+        }
+      ]
+    },
+    {
+      "id": "cec6",
+      "orderTime": "2024-06-08T07:25:51.551Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "20",
+          "title": "Sundae chocolate",
+          "price": 3.49,
+          "description": "Soft ice cream with chocolate sauce",
+          "category": "desserts",
+          "image": "../images/menu/desserts/sundae-chocolate-lg.png",
+          "quantity": 1,
+          "totalPrice": 3.49
+        },
+        {
+          "id": "19",
+          "title": "Sundae Fudge & Sprinkles",
+          "price": 3.49,
+          "description": "Soft ice cream with fudge and sprinkles",
+          "category": "desserts",
+          "image": "../images/menu/desserts/sundae-lg.png",
+          "quantity": 1,
+          "totalPrice": 3.49
+        },
+        {
+          "id": "18",
+          "title": "Luxury shake",
+          "price": 4.49,
+          "description": "Handmade milkshake on soft ice cream whipped with milk and sweet strawberries, topped with whipped cream",
+          "category": "desserts",
+          "image": "../images/menu/desserts/luxury-shake-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.49
+        },
+        {
+          "id": "17",
+          "title": "Raspberry pie",
+          "price": 3.49,
+          "description": "Raspberry pie with ice cream",
+          "category": "desserts",
+          "image": "../images/menu/desserts/raspberry-pie-lg.png",
+          "quantity": 1,
+          "totalPrice": 3.49
+        },
+        {
+          "id": "16",
+          "title": "Lava cake with ice cream",
+          "price": 3.49,
+          "description": "A tasty dessert fitting all chocolate lovers, topped with ice cream",
+          "category": "desserts",
+          "image": "../images/menu/desserts/lava-cake-lg.png",
+          "quantity": 1,
+          "totalPrice": 3.49
+        },
+        {
+          "id": "15",
+          "title": "Strawberry Smoothie",
+          "price": 3.49,
+          "description": "Handmade smoothie with strawberries, blueberry, banana, apple juice and ice",
+          "category": "drinks",
+          "image": "../images/menu/drinks/smoothie-lg.png",
+          "quantity": 1,
+          "totalPrice": 3.49
+        },
+        {
+          "id": "14",
+          "title": "Apple juice",
+          "price": 2.49,
+          "description": "Refreshing apple juice from Kullamust",
+          "category": "drinks",
+          "image": "../images/menu/drinks/apple-juice-lg.png",
+          "quantity": 1,
+          "totalPrice": 2.49
+        },
+        {
+          "id": "13",
+          "title": "Fanta",
+          "price": 2.49,
+          "description": "Soda with orange flavour",
+          "category": "drinks",
+          "image": "../images/menu/drinks/fanta-lg.png",
+          "quantity": 1,
+          "totalPrice": 2.49
+        },
+        {
+          "id": "12",
+          "title": "Coca cola Zero",
+          "price": 2.49,
+          "description": "The classic drink without sugar",
+          "category": "drinks",
+          "image": "../images/menu/drinks/coca-cola-zero-lg.png",
+          "quantity": 1,
+          "totalPrice": 2.49
+        },
+        {
+          "id": "11",
+          "title": "Coca cola",
+          "price": 2.49,
+          "description": "Classic Coca Cola",
+          "category": "drinks",
+          "image": "../images/menu/drinks/coca-cola-lg.png",
+          "quantity": 1,
+          "totalPrice": 2.49
+        },
+        {
+          "id": "10",
+          "title": "Apple slices",
+          "price": 2.99,
+          "description": "Crispy, sweet apple slices",
+          "category": "sides",
+          "image": "../images/menu/sides/apple-slices-lg.png",
+          "quantity": 1,
+          "totalPrice": 2.99
+        },
+        {
+          "id": "9",
+          "title": "Chili cheese",
+          "price": 2.99,
+          "description": "Crispy and hot, fried cheddar cheese with jalapeños",
+          "category": "sides",
+          "image": "../images/menu/sides/chili-cheese-lg.png",
+          "quantity": 1,
+          "totalPrice": 2.99
+        },
+        {
+          "id": "8",
+          "title": "Onion rings",
+          "price": 3.49,
+          "description": "Crispy fresh onion rings, served hot",
+          "category": "sides",
+          "image": "../images/menu/sides/onion-rings-lg.png",
+          "quantity": 1,
+          "totalPrice": 3.49
+        },
+        {
+          "id": "7",
+          "title": "Sweet potato fries",
+          "price": 4.49,
+          "description": "Our world famous sweet potato fries",
+          "category": "sides",
+          "image": "../images/menu/sides/sweet-potato-fries-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.49
+        },
+        {
+          "id": "6",
+          "title": "Crispy fries",
+          "price": 3.99,
+          "description": "Fries made from our founder's secret recipe",
+          "category": "sides",
+          "image": "../images/menu/sides/crispy-fries-lg.png",
+          "quantity": 1,
+          "totalPrice": 3.99
+        },
+        {
+          "id": "5",
+          "title": "Chicken Parmesan Burger",
+          "price": 5.99,
+          "description": "A crispy chicken topped with melted cheese, parmesan, lettuce, onion and tomato",
+          "category": "burgers",
+          "image": "../images/menu/burgers/chicken-parmesan-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 5.99
+        },
+        {
+          "id": "4",
+          "title": "Double cheeseburger",
+          "price": 6.49,
+          "description": "Two beef patties layered with melted American cheese",
+          "category": "burgers",
+          "image": "../images/menu/burgers/double-cheeseburger-lg.png",
+          "quantity": 1,
+          "totalPrice": 6.49
+        },
+        {
+          "id": "3",
+          "title": "Cheese and bacon burger",
+          "price": 5.99,
+          "description": "A juicy beef patty topped with crispy bacon, melted cheese, lettuce, and tomato",
+          "category": "burgers",
+          "image": "../images/menu/burgers/cheese-and-bacon-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 5.99
+        },
+        {
+          "id": "2",
+          "title": "Cheeseburger",
+          "price": 5.49,
+          "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+          "category": "burgers",
+          "image": "../images/menu/burgers/cheeseburger-lg.png",
+          "quantity": 1,
+          "totalPrice": 5.49
+        },
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "../images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "d689",
+      "orderTime": "2024-06-08T07:26:11.262Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "7",
+          "title": "Sweet potato fries",
+          "price": 4.49,
+          "description": "Our world famous sweet potato fries",
+          "category": "sides",
+          "image": "images/menu/sides/sweet-potato-fries-lg.png",
+          "quantity": 20,
+          "totalPrice": 89.8
+        }
+      ]
+    },
+    {
+      "id": "6ea4",
+      "orderTime": "2024-06-08T07:26:52.710Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "../images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
+        }
+      ]
+    },
+    {
+      "id": "cd9c",
+      "orderTime": "2024-06-08T07:27:02.341Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "7",
+          "title": "Sweet potato fries",
+          "price": 4.49,
+          "description": "Our world famous sweet potato fries",
+          "category": "sides",
+          "image": "../images/menu/sides/sweet-potato-fries-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.49
+        }
+      ]
+    },
+    {
+      "id": "80ac",
+      "orderTime": "2024-06-08T07:28:40.377Z",
+      "user": {
+        "id": "bundrop@master.com",
+        "firstName": "MASTERMAN2125",
+        "lastName": "Bundrop",
+        "password": "Password123!",
+        "contactPhoneNumber": "0707526057",
+        "streetName": "Money street",
+        "houseNumber": "99",
+        "postalNumber": "12345",
+        "city": "Stockholm",
+        "paymentOption": "credit-card",
+        "payingPhoneNumber": "0707526057",
+        "cardNumber": "1234567898765413",
+        "expirationDate": "2024-11",
+        "cvc": "111",
+        "favorites": [
+          {
+            "id": "1",
+            "title": "Classic Burger",
+            "price": 4.99,
+            "description": "A classic beef burger with lettuce, tomato and onion",
+            "category": "burgers",
+            "image": "images/menu/burgers/classic-burger-lg.png"
+          },
+          {
+            "id": "2",
+            "title": "Cheeseburger",
+            "price": 5.49,
+            "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+            "category": "burgers",
+            "image": "images/menu/burgers/cheeseburger-lg.png"
+          },
+          {
+            "id": "7",
+            "title": "Sweet potato fries",
+            "price": 4.49,
+            "description": "Our world famous sweet potato fries",
+            "category": "sides",
+            "image": "images/menu/sides/sweet-potato-fries-lg.png"
+          }
+        ]
+      },
+      "dishes": [
+        {
+          "id": "1",
+          "title": "Classic Burger",
+          "price": 4.99,
+          "description": "A classic beef burger with lettuce, tomato and onion",
+          "category": "burgers",
+          "image": "../images/menu/burgers/classic-burger-lg.png",
+          "quantity": 1,
+          "totalPrice": 4.99
+        },
+        {
+          "id": "2",
+          "title": "Cheeseburger",
+          "price": 5.49,
+          "description": "A juicy beef burger with lettuce, tomato, onion and cheese",
+          "category": "burgers",
+          "image": "../images/menu/burgers/cheeseburger-lg.png",
+          "quantity": 16,
+          "totalPrice": 87.84
         }
       ]
     }

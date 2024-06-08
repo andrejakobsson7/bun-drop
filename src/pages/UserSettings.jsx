@@ -32,12 +32,7 @@ function UserSettings() {
         setOriginalName(user.firstName + " " + user.lastName);
       }
     };
-    if (authHandler.isAuthenticated) {
-      getSignedInUser();
-    } else {
-      console.log("You are not authenticated...");
-      //TODO: REDIRECT TO ERROR PAGE OR SHOW ERROR
-    }
+    getSignedInUser();
   }, [authHandler]);
 
   useEffect(() => {

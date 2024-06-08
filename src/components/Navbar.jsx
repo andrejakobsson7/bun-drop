@@ -20,7 +20,7 @@ function Navbar() {
       <nav id="navbar-container">
         <div id="nav-logo-wrapper">
           <NavLink to="/">
-            <img id="nav-logo-image" src="images\logo black.png" />
+            <img id="nav-logo-image" src="../images/logo black.png" />
           </NavLink>
         </div>
         <div id="nav-links-wrapper">
@@ -109,7 +109,6 @@ function Navbar() {
           </ul>
         </div>
       </nav>
-      <div id="under-nav"></div>
     </>
   );
 }
