@@ -10,7 +10,7 @@ import "../styles/pages/SignIn.css";
 function SignIn() {
   const [validationError, setValidationError] = useState("");
   const [userCredentials, setUserCredentials] = useState({
-    email: "",
+    emailUsername: "",
     password: "",
   });
   const fetchUrl = "http://localhost:9999/users/";
@@ -26,7 +26,7 @@ function SignIn() {
     e.preventDefault();
     //Get user with email
     const foundUser = await fetchHandler.fetchData(
-      fetchUrl + userCredentials.email
+      fetchUrl + userCredentials.emailUsername
     );
     if (foundUser !== null) {
       //Check password
@@ -61,12 +61,12 @@ function SignIn() {
       <form id="sign-in-form-wrapper" onSubmit={handleSubmit}>
         <div className="sign-in-user-input-wrapper">
           <ControlledInputField
-            inputName="Email"
+            inputName="Email/Username"
             inputId="sign-in-email-input"
-            inputType="email"
-            propName="email"
+            inputType="text"
+            propName="emailUsername"
             isRequired={true}
-            value={userCredentials.email}
+            value={userCredentials.emailUsername}
             onInputChange={handleInputChange}
           />
         </div>

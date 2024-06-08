@@ -5,10 +5,8 @@ function useInputField() {
       error: "Email should be formatted as example@example.com",
     },
     password: {
-      pattern:
-        "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*\\-]).{8,}$",
-      error:
-        "Password should be a minimum of eight characters with one uppercase letter, one lowercase letter, one number and one special character",
+      pattern: "^.{8,}$",
+      error: "Password should be a minimum of eight characters",
     },
     tel: {
       pattern: "0[0-9]{9}",
