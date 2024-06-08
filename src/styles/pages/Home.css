@@ -9,7 +9,7 @@
 #home-hero-wrapper {
   height: 55vh;
   min-height: 55vh;
-  background-image: url("images/large-burger-drone-8685610_1920.jpg");
+  background-image: url("../images/large-burger-drone-8685610_1920.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -38,7 +38,7 @@
 @media (max-width: 760px) {
   #home-hero-wrapper {
     padding-left: 1rem;
-    background-image: url("images/small-burger-drone-8685610_1920.jpg");
+    background-image: url("../images/small-burger-drone-8685610_1920.jpg");
     background-position-x: 23%;
   }
   #home-hero-wrapper h1 {
